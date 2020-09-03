@@ -1,0 +1,31 @@
+.mainMenuBox {
+  width: 100%;
+}
+
+.icon {
+  font-size: 25px;
+}
+
+.mainMenuBox > * {
+  margin-bottom: 5px;
+  /*position: ;*/
+  /*background: linear-gradient(0deg, #770f0f, #530b51, #770f0f);*/
+}
+.sortInMenu {
+  display: none;
+}
+
+@media (max-width: 1150px) {
+  .menuLogoBox {
+    display: flex;
+  }
+  .sortInMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu {
+    display: inline-block;
+  }
+}

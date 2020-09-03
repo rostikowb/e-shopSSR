@@ -1,0 +1,246 @@
+.cardBox {
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 15px 5px 10px;
+  border: 1px solid #b3b3b3;
+  box-sizing: border-box;
+  margin: 5px;
+}
+.bottomPart {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottomPart > div:not(.imgBox) {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rightRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.topPart {
+  display: none;
+}
+.imgBox {
+  height: 100px;
+  width: 116px;
+  /*width: auto;*/
+  user-select: none;
+  cursor: pointer;
+}
+.imgBox a {
+  width: 100%;
+  height: 100%;
+}
+.imgBox picture {
+  width: 100%;
+}
+.imgBox img,
+.imgBox source {
+  /*width: 100%;*/
+  height: 100%;
+}
+.name {
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+}
+.NamePrice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-left: 8px;
+}
+.priceBox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 5px;
+  font-family: "Times New Roman", serif;
+}
+.price {
+  font-size: 40px;
+  font-weight: lighter;
+  /*margin: 5px;*/
+}
+.oldPrice {
+  text-decoration: line-through;
+  color: #898989;
+  font-size: 23px;
+  margin: 0 10px 0 20px;
+  font-weight: lighter;
+}
+.newPrice {
+  color: rgb(226, 19, 19);
+  font-size: 32px;
+  font-weight: lighter;
+  margin: 0 5px 0 0;
+}
+.delBtn {
+  font-size: 24px;
+  color: #000;
+  transition: all 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+.delBtn:hover {
+  color: rgb(156, 0, 7);
+  transition: all 0.2s;
+}
+.countBtn {
+  font-size: 28px;
+  margin: 0 10px;
+  /*padding: 5px;*/
+  width: 30px;
+  height: 30px;
+  /*background-color: #eaeaea;*/
+  color: #000000;
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  transition: all 0.2s;
+}
+.countBtn:hover {
+  transition: all 0.2s;
+  color: white;
+  background-color: black;
+}
+.count {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 40px;
+}
+.isCount {
+  width: 30px;
+  border: none;
+  height: 30px;
+  font-size: 24px;
+  /*padding: 0 5px;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .namePc {
+    display: none;
+  }
+  .topPart {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .rightRight {
+    flex-direction: column !important;
+    align-items: flex-end !important;
+  }
+  .rightRight > * {
+    margin: 5px 0;
+  }
+
+  .rightBox {
+    flex-direction: column;
+  }
+  .rightBox > * {
+    margin: 5px 0;
+  }
+  .imgBox {
+    height: 150px;
+    max-width: 175px;
+    /*overflow: hidden;*/
+  }
+  .count {
+    margin: 0;
+  }
+  .NamePrice {
+    margin: 0;
+  }
+  .countBtn {
+    margin: 0 15px;
+  }
+  .delBtn {
+    width: 122px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    user-select: none;
+  }
+  .delBtn:active {
+    color: red;
+  }
+}
+@media (max-width: 560px) {
+  .delBtn {
+    width: 109px;
+  }
+  .countBtn {
+    margin: 0 8px;
+  }
+  .cardBox {
+    padding: 0;
+    margin: 5px 0;
+  }
+}
+@media (max-width: 400px) {
+  .imgBox {
+    height: 125px;
+    max-width: 130px;
+    /*overflow: hidden;*/
+  }
+  .delBtn {
+    width: 103px;
+  }
+  .countBtn {
+    margin: 0 5px;
+  }
+  .priceBox {
+    margin: 0;
+  }
+  .oldPrice {
+    margin: 0 5px 0 0;
+  }
+  .cardBox {
+    border: none;
+  }
+}
+@media (max-width: 400px) {
+  .priceBox {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .oldPrice {
+    font-size: 19px;
+  }
+  .newPrice {
+    font-size: 33px;
+  }
+}

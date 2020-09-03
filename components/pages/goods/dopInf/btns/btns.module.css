@@ -1,0 +1,125 @@
+.btnBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0 0 0;
+  width: 100%;
+  /*padding: 0 20px;*/
+}
+.saleBtn {
+  /*position: relative;*/
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+  margin: 0 25px;
+  border: 1px solid #6b0d68;
+  border-radius: 2px;
+  /*padding: 0 5px;*/
+  font-size: 170%;
+  transition: all 0.15s;
+  user-select: none;
+}
+.saleBtn:hover {
+  /*transition: background-color, color 0.2s;*/
+  /*background-color: #6b0d68;*/
+  transition: all 0.15s;
+  color: white;
+}
+.likeBtn {
+  /*background-color: white;*/
+  color: #919191;
+  /*border-radius: 100px;*/
+  /*border: 1px solid #919191;*/
+  width: 70px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 20px;
+  transition: all 0.3s;
+  user-select: none;
+}
+.likeBtn:hover {
+  color: #980000;
+  /*background-color: ;*/
+  transition: all 0.3s;
+}
+.likeBtnAct {
+  color: #980000;
+}
+.likeBtnNoAct > * {
+  color: #919191;
+}
+.icon {
+  /*color: white;*/
+  margin: 0;
+  padding: 0;
+  font-size: 46px;
+}
+.iconBasket {
+  margin-right: 5px;
+}
+@media (max-width: 500px) {
+  .saleBtn {
+    margin: 0 -5px;
+    font-size: 200%;
+    padding: 5px 0;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .likeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    border: 1px solid #dc0400;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 200%;
+    padding: 5px 0;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    transition: none;
+  }
+  .likeBtnAct {
+    background-color: #980000;
+    width: 100%;
+    height: 100%;
+  }
+  .likeBtn:hover {
+    transition: none;
+  }
+  .likeBtnAct > * {
+    color: white;
+  }
+  .likeBtnNoAct > * {
+    color: #919191;
+    background-color: white;
+  }
+  .btnBox {
+    flex-direction: column;
+  }
+}
+@media (max-width: 366px) {
+  .saleBtn {
+    font-size: 140%;
+  }
+  .btnBox {
+    margin: 0;
+  }
+}
+@media (max-width: 280px) {
+  .saleBtn {
+    font-size: 100%;
+    height: 35px;
+    margin: 0 15px;
+  }
+}

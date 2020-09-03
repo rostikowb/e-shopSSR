@@ -1,0 +1,78 @@
+.priceBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.priceInBox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  font-family: "Times New Roman", serif;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: #898989;
+  font-size: 180%;
+  margin: 0 10px 0 20px;
+  font-weight: lighter;
+}
+.newPrice {
+  color: rgb(226, 19, 19);
+  font-size: 250%;
+  font-weight: lighter;
+  margin: 0 5px 0 0;
+}
+.price {
+  font-size: 60px;
+  margin-left: 50px;
+  font-weight: lighter;
+}
+.avlbl {
+  font-size: 120%;
+  width: 123px;
+  /*margin: 0 0 0 0;*/
+}
+.avlblYes {
+  color: #0dc00c;
+}
+.avlblNo {
+  color: #999aa4;
+}
+@media (max-width: 1150px) {
+  .oldPrice {
+    font-size: 190%;
+  }
+  .newPrice {
+    font-size: 280%;
+  }
+}
+@media (max-width: 366px) {
+  .oldPrice {
+    font-size: 130%;
+  }
+  .newPrice {
+    font-size: 220%;
+  }
+  .avlbl {
+    font-size: 100%;
+  }
+  .price {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 283px) {
+  .oldPrice {
+    font-size: 120%;
+  }
+  .newPrice {
+    font-size: 210%;
+  }
+  .avlbl {
+    font-size: 100%;
+  }
+}

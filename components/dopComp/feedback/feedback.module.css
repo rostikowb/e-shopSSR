@@ -1,0 +1,124 @@
+.modal_feedback_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(68, 68, 68, 0.31);
+  z-index: 15;
+}
+
+.modal_feedback {
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  max-height: 85vh;
+  height: 64%;
+  background-color: white;
+  box-shadow: 0 0 20px 5px rgba(68, 68, 68, 0.7);
+  /*background: linear-gradient(0deg, rgba(245, 0, 226, 0.11), rgba(0, 138, 255, 0.1));*/
+  border-radius: 8px;
+  z-index: 16;
+  transition: all 1s;
+  color: black;
+  /*overflow: auto;*/
+  /*padding: 25px;*/
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+}
+.feedbackBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /*height: 25px;*/
+  margin: 15px 0;
+}
+.feedbackBlock > *:last-child {
+  width: 40%;
+}
+.feedbackTitle {
+  font-size: 16px;
+}
+.doneMsg {
+  color: #139113;
+  font-size: 25px;
+  margin: 0 auto;
+}
+.errMsg {
+  color: red;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.title {
+  font-size: 18px;
+}
+.topModal {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #6d6d6d;
+  padding: 5px;
+  color: #6d6d6d;
+}
+
+.clsModalBtn {
+  font-size: 200%;
+  cursor: pointer;
+}
+
+.feedbackBox {
+  margin: 20px;
+}
+@media (max-width: 1050px) {
+  .titlePc {
+    display: none;
+  }
+  .topModal {
+    display: flex;
+  }
+  .modal_feedback {
+    left: 10%;
+    width: 80%;
+  }
+}
+@media (max-width: 850px) {
+  .modal_feedback {
+    left: 5%;
+    width: 90%;
+  }
+}
+@media (max-width: 550px) {
+  .modal_feedback {
+    left: 2%;
+    width: 96%;
+    height: 80%;
+  }
+  .feedbackBlock:last-child > *:last-child {
+    width: 80%;
+    margin: 5px;
+    height: 40px;
+  }
+  .feedbackBlock {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .feedbackBlock > * {
+    width: 80% !important;
+  }
+}
+@media (max-width: 400px) {
+  .modal_feedback {
+    height: 80%;
+  }
+  .feedbackBox {
+    margin: 5px;
+  }
+}

@@ -1,0 +1,21 @@
+.btnBox {
+  /*padding: 15px 5px;*/
+  border: 1px solid black;
+  /*border-radius: 3px;*/
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+  width: 70%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  margin: 24% auto 0 auto;
+}
+.btnBox:hover {
+  transition: all 0.2s;
+  background: linear-gradient(0deg, #770039, #530b51);
+  color: white;
+}

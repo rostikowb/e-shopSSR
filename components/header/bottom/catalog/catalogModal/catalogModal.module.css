@@ -1,0 +1,223 @@
+.modal_catalog {
+  position: fixed;
+  top: 5%;
+  left: 25%;
+  width: 50%;
+  height: 77vh;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 20px 5px rgba(68, 68, 68, 0.7);
+  border-radius: 8px;
+  z-index: 11;
+  transition: all 1s;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  /*overflow: scroll;*/
+  max-height: 90%;
+}
+.modal_catalog * {
+  color: black;
+}
+.modal_catalog_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(68, 68, 68, 0.31);
+  z-index: 10;
+}
+
+.catalogInBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+}
+.title,
+.titlePod {
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 20px;
+}
+.titlePod {
+  justify-content: space-between;
+  margin: 0;
+}
+.titlePod > * {
+  margin: 0 20px;
+}
+.mainMenu {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border-right: 1px solid black;
+  height: 100%;
+}
+
+.menuBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+.menuBox > span {
+  margin: 10px 20px 10px 20px;
+  font-size: 18px;
+  padding: 5px;
+  border: 1px solid rgba(148, 0, 211, 0.2);
+  cursor: pointer;
+}
+.menuBox > span:hover,
+.activeCat {
+  border: 1px solid rgb(148, 0, 211) !important;
+}
+.modal_catalog ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 20px;
+  /*font-weight: bold;*/
+}
+
+.podMenu ul li {
+  width: 100%;
+  margin: 3px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(148, 0, 211, 0.2);
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+}
+.podMenu ul li a {
+  width: 100%;
+  height: 100%;
+}
+
+.clsModalBtn {
+  font-size: 150%;
+  cursor: pointer;
+  color: #6d6d6d;
+  user-select: none;
+}
+.podMenu {
+  /*margin-top: 40px;*/
+  width: 100%;
+}
+.catalogBoxMobile {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: scroll;
+  height: 100%;
+}
+.catalogBoxMobile > * {
+  width: 100% !important;
+  margin: 15px 0;
+}
+.catalogBoxMobile ul {
+  width: 100%;
+}
+.catalogBoxMobile ul li {
+  margin: 5px 0;
+  width: 100%;
+}
+.catalogBoxMobile ul li a {
+  font-size: 19px;
+  width: 100%;
+  height: 100%;
+}
+.catalogBoxMobile > div > div > div > div > p {
+  font-size: 20px;
+}
+.clsModalBtnMobile {
+  font-size: 250%;
+  user-select: none;
+}
+.mobileBox {
+  display: none;
+  width: 100%;
+  margin: 0 25px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.closeBtnBox {
+  height: 85px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 25;
+  user-select: none;
+}
+.closeBtnBox > span {
+  font-size: 28px;
+  border: 1px solid black;
+  width: 100%;
+  z-index: 26;
+  background-color: white;
+}
+@media (max-width: 1335px) {
+  .menuBox > span {
+    margin: 10px 10px 10px 10px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1150px) {
+  .mobileBox {
+    display: flex;
+  }
+  .modal_catalog {
+    height: 90%;
+    background-color: #ebebeb;
+  }
+  .catalogBoxMobile {
+    display: flex;
+  }
+  .mainMenu {
+    display: none;
+  }
+  .podMenu {
+    display: none;
+  }
+  .modal_catalog {
+    max-height: 90%;
+  }
+}
+@media (max-width: 750px) {
+  .modal_catalog {
+    left: 5%;
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  .modal_catalog {
+    left: 2%;
+    width: 96%;
+    height: 95%;
+  }
+  .mobileBox {
+    margin: 0 5px;
+  }
+  .catalogBoxMobile ul {
+    margin: 0;
+  }
+}

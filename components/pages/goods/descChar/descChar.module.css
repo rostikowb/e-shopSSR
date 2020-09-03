@@ -1,0 +1,88 @@
+.descCharBox {
+  width: 65%;
+  margin: 20px 0;
+}
+.charBox {
+  /*margin: 20px 0;*/
+  width: 100%;
+  color: #000000;
+
+  /*background-color: #f5f5f5;*/
+  /*border: 1px solid #c3c1bb;*/
+  /*box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);*/
+}
+.charBox > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.charBox > ul > li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  padding: 5px 0;
+  /*margin: 0 25px;*/
+}
+.charBox li:not(:last-child) {
+  border-bottom: 1px solid #bababa;
+}
+.charBox > ul > li > span {
+  margin: 0 25px;
+}
+.prmValue {
+  font-weight: bold;
+}
+.descBox {
+  width: 100%;
+  margin-top: 20px;
+}
+.desc {
+  overflow: hidden;
+  width: 100%;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.desc table {
+  width: auto !important;
+  padding: 0 3px;
+}
+.desc table tr {
+  width: auto !important;
+}
+.desc > * {
+  margin: 10px !important;
+}
+.desc span {
+  font-size: 16px !important;
+}
+.desc img {
+  width: 100% !important;
+}
+.desc {
+  text-align: justify;
+}
+
+.openBtn {
+  color: #000000;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  font-weight: bold;
+}
+@media (max-width: 1150px) {
+  .descCharBox {
+    width: 99%;
+  }
+}
+@media (max-width: 450px) {
+  .charBox > ul > li {
+    font-size: 16px;
+  }
+  .charBox > ul > li > span {
+    margin: 0 10px;
+  }
+}

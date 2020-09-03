@@ -1,0 +1,31 @@
+.dopInfBox {
+  /*background-color: blue;*/
+  min-width: 35%;
+  /*max-width: 60%;*/
+  /*height: 800px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+.topInfBox {
+  margin: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.topInfBox > * {
+  /*margin: 0 5px;*/
+}
+@media (max-width: 1600px) {
+  .dopInfBox {
+    min-width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .topInfBox {
+    margin: 20px 0;
+  }
+}

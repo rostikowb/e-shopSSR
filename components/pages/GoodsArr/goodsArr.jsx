@@ -6,24 +6,36 @@ import {FETCH_GOODS, STUB_ON} from "../../../redux/types";
 import {StubArr} from "./stubArr/stubArr";
 import {GoodsArrLoad} from "./goodsArrLoad/goodsArrLoad";
 import {useRouter} from 'next/router'
-const GoodsAr = (props) => {
+import {lsToStore} from "../../../localStorage/initAction";
 
+const GoodsAr = (props) => {
     const location = useRouter();
     let page = Number(location.query?.page);
+    let catalog = location.query?.catalog;
     let sort = location.query?.sort || props?.sort;
 
     const firstLoad = () => {
-        props.stubOn({type: STUB_ON});
         props.fetchGoods({
             type: FETCH_GOODS,
-            sort: sort,
-            page: page,
+            catalog,
+            sort,
+            page,
         });
     };
-
+    // console.log(location.route);
     useEffect(() => {
-        !props.isFirstL || firstLoad();
-    }, []);
+        props.lsToStore();
+        // if(!props.currGoods.length){
+        //     console.log(props.currGoods);
+
+        // if(!page) firstLoad();
+
+            // props.stubOn({type: STUB_ON});
+        // }
+        // props.stubOn({type: STUB_ON});
+        // !props.isFirstL || firstLoad();
+        console.log('location.pathname', location.pathname);
+    }, [location.pathname]);
 
     return (
         <div className={s.goodsArr}>
@@ -40,6 +52,8 @@ const GoodsAr = (props) => {
 
 const mapStateToProps = (state) => {
     return {
+        currGoods: state.AllGoodsR.currGoods,
+        sort: state.AllGoodsR.sort,
         isFirstL: state.AllGoodsR.isFirstL,
         stub: state.AllGoodsR.stub,
         stubP: state.AllGoodsR.stubP,
@@ -49,4 +63,5 @@ const mapStateToProps = (state) => {
 export const GoodsArr = connect(mapStateToProps, {
     fetchGoods,
     stubOn,
+    lsToStore
 })(GoodsAr);

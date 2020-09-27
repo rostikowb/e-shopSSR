@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import s from "./descChar.module.css";
 
 export const DescChar = (props) => {
-  const [isActive, setActive] = useState(0);
+  // const [isActive, setActive] = useState(0);
 
   return (
     <div className={s.descCharBox}>

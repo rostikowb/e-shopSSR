@@ -8,18 +8,25 @@ import {
   delProdToCash,
   sumProdToCash,
 } from "../../../../../../redux/likesBasket/actions";
-// import { NavLink } from "react-router-dom";
+import Link from 'next/link';
 import { changeStateBasketModal } from "../../../../../../redux/modal/actions";
 import { fetchOneGoods } from "../../../../../../redux/oneGoods/action";
 import { setCatalog } from "../../../../../../redux/goodsArr/actions";
-// import { useHistory } from "react-router";
+import {useRouter} from 'next/router';
 import { option } from "../../../../../../option";
 
 const BasketCar = (props) => {
-  let d = props.data;
+    console.log(useRouter());
+    let d = props.data;
   let count = props.basketArr[props.index].countSale;
-  // let loc = useHistory().location.pathname.split("__")[0].split("/")[2];
+  let loc;
   let link = d._id + "__" + d["nm"].replace(/\s/gi, "_").replace(/\//gi, "-");
+
+  try {
+      loc = useRouter().query['onegoods'].split("__")[0].split("/")[2];
+  }catch (e) {
+      
+  }
 
   const price = d["rtlPrc"];
   const mainPrice = Math.round(Number(price)).toLocaleString("ru-RU");
@@ -47,15 +54,18 @@ const BasketCar = (props) => {
   return (
     <div className={s.cardBox}>
       <div className={s.topPart}>
-        <NavLink to={`/${d["ctgrId"]}/${link}`}>
+        <Link href="/pages/[catalog]/[onegoods]" as={`/${d["ctgrId"]}/${link}`}>
+          <a>
           <span onClick={() => loadOneGoods()} className={s.name}>
             {d.nm}
           </span>
-        </NavLink>
+          </a>
+        </Link>
       </div>
       <div className={s.bottomPart}>
         <div onClick={() => loadOneGoods()} className={s.imgBox}>
-          <NavLink to={`/${d["ctgrId"]}/${link}`}>
+          <Link href="/pages/[catalog]/[onegoods]" as={`/${d["ctgrId"]}/${link}`}>
+            <a>
             <picture style={{ width: "100%" }}>
               <source
                 className={s.imgOne}
@@ -73,16 +83,21 @@ const BasketCar = (props) => {
                 alt={"Фото " + d.nm}
               />
             </picture>
-          </NavLink>
+            </a>
+          </Link>
         </div>
         <div className={s.rightRight}>
           <div className={s.leftBox}>
             <div className={s.NamePrice}>
-              <NavLink className={s.namePc} to={`/${d["ctgrId"]}/${link}`}>
+              <span className={s.namePc} >
+                <Link href="/pages/[catalog]/[onegoods]" as={`/${d["ctgrId"]}/${link}`}>
+                  <a>
                 <span onClick={() => loadOneGoods()} className={s.name}>
                   {d.nm}
                 </span>
-              </NavLink>
+                  </a>
+              </Link>
+              </span>
               <div className={s.priceBox}>
                 {interest ? (
                   <>

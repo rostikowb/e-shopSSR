@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./notComments.module.css";
-// import { NavLink } from "react-router-dom";
+import Link from 'next/link';
 
 export const NotComments = (props) => {
   const isBuy = props.data;
@@ -21,7 +21,7 @@ export const NotComments = (props) => {
         </span>
       )}
       <small>
-        <NavLink to="">подробней</NavLink>
+        <Link href={``} as={``} passHref={true} shallow={true}><a>подробней</a></Link>
       </small>
     </>
   );

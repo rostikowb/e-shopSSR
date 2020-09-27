@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import s from "./catalogModal.module.css";
 import { fetchGoods, stubOn } from "../../../../../redux/goodsArr/actions";
-// import { NavLink } from "react-router-dom";
-import { option } from "../../../../../option";
 import { changeStateCatalogModal } from "../../../../../redux/modal/actions";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +9,8 @@ import { Smart } from "../podMenu/smart";
 import { Electro } from "../podMenu/electro";
 import { Another } from "../podMenu/another";
 import { Acordeon } from "../../../../dopComp/acardeon/acardeon";
+import {FETCH_GOODS, STUB_ON} from "../../../../../redux/types";
+import {useRouter} from 'next/router'
 
 const mapStateToProps = (state) => {
   return {
@@ -25,6 +25,17 @@ export const CatalogModal = connect(mapStateToProps, {
   stubOn,
 })((props) => {
   const [isCatalog, setCatalog] = useState("smart");
+  const loc = useRouter();
+
+  const isUnderAttack = (value)=>{
+      props.changeStateCatalogModal();
+      props.stubOn({type: STUB_ON});
+      props.fetchGoods({
+          type: FETCH_GOODS,
+          sort: loc.query?.sort||props.sort,
+          catalog: value,
+      });
+  };
 
   return props.isActive ? (
     <div>
@@ -69,17 +80,17 @@ export const CatalogModal = connect(mapStateToProps, {
             <div className={s.menuBox}>
               {isCatalog === "smart" ? (
                 <div className={s.forSmart}>
-                  <Smart modal={props.changeStateCatalogModal} />
+                  <Smart modal={isUnderAttack} />
                 </div>
               ) : null}
               {isCatalog === "elec" ? (
                 <div className={s.smallElec}>
-                  <Electro modal={props.changeStateCatalogModal} />
+                  <Electro modal={isUnderAttack} />
                 </div>
               ) : null}
               {isCatalog === "another" ? (
                 <div className={s.another}>
-                  <Another modal={props.changeStateCatalogModal} />
+                  <Another modal={isUnderAttack} />
                 </div>
               ) : null}
             </div>
@@ -95,7 +106,7 @@ export const CatalogModal = connect(mapStateToProps, {
                   title: "Для смартфона",
                   open: false,
                   render: true,
-                  content: <Smart modal={props.changeStateCatalogModal} />,
+                  content: <Smart modal={isUnderAttack} />,
                 }}
               />
               <Acordeon
@@ -103,7 +114,7 @@ export const CatalogModal = connect(mapStateToProps, {
                   title: "Электронное",
                   open: false,
                   render: true,
-                  content: <Electro modal={props.changeStateCatalogModal} />,
+                  content: <Electro modal={isUnderAttack} />,
                 }}
               />
               <Acordeon
@@ -111,7 +122,7 @@ export const CatalogModal = connect(mapStateToProps, {
                   title: "Разное",
                   open: false,
                   render: true,
-                  content: <Another modal={props.changeStateCatalogModal} />,
+                  content: <Another modal={isUnderAttack} />,
                 }}
               />
             </div>

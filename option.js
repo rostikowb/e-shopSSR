@@ -2,10 +2,14 @@ export const option = {
   // api: "http://localhost:3001",
   // api: "http://192.168.1.104:3001",
   api: "https://api.vsivuha.online",
-  STATIC: "https://vsivuha.online/static",
+  STATIC: "https://vsivuha.online",
+
+  DOMEN: "http://localhost",
+
+    DOMENREGEX: /localhost/,
 
   // goodsCount
-  GC: 59,
+  GC: 29,
 
   // procent skidki
   interest: 20,

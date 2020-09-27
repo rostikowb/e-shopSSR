@@ -1,293 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/dopComp/drawer/drawer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/dopComp/invisComp/invisComp.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/goods/imgs/useResizeSwiper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localStorage/initAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/[catalog]/[onegoods]/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo4.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/acardeon/acardeon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/acardeon/acardeon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/feedback/feedback.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/feedback/feedback.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsBlock/goodsBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsBlock/goodsBlock.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsBlock/goodsBlock.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsBlock/goodsBlock.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsSideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsSideBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsSideBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsSideBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/loginForm/login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/loginForm/login.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/tovZnk/tovZnk.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/tovZnk/tovZnk.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/tovZnk/tovZnk.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/tovZnk/tovZnk.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/sort/sort.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/sort/sort.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/sort/sort.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/sort/sort.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/bottom.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/bottom.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/another.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/another.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/electro.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/electro.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/smart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/smart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/logo/logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/logo/logo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/menu/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/menu/menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/menu/menu.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/top/info/info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/top/info/info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/logo/logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/logo/logo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArr.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArr.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArrLoad/goodsArrLoad.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArrLoad/goodsArrLoad.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/like/cardLike.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/like/cardLike.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/checkout/checkout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/checkout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/commentBox/notComments/notComments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/commentBox/notComments/notComments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/descChar/descChar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/descChar/descChar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/descChar/descChar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/descChar/descChar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/delivery/delivery.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/delivery/delivery.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/delivery/delivery.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/delivery/delivery.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/starsBar/starsBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/starsBar/starsBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/goods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/goods.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/goods.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/goods.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/imgs/imgs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/imgs/imgs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/imgs/imgs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/imgs/imgs.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/sidebar/sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/sidebar/sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/sidebar/sidebar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/sidebar/sidebar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localStorage/localStorFunc.js" beforeDir="false" afterPath="$PROJECT_DIR$/localStorage/localStorFunc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/option.js" beforeDir="false" afterPath="$PROJECT_DIR$/option.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/[catalog]/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[catalog]/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/auth/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/auth/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/goodsArr/AllGoodsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/goodsArr/AllGoodsReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/goodsArr/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/goodsArr/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/likesBasket/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/likesBasket/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/oneGoods/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/oneGoods/action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/oneGoods/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/oneGoods/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/rootReducer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/redux/rootReducer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/store.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/redux/store.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/goodsArr.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/goodsArr.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/index.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="globals.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/globals.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="902">
-              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="goodsArr.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsArr.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="902">
-              <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/_app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-                <element signature="e#189#234#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="goodsArrLoad.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsArrLoad/goodsArrLoad.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="goodsCard.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="goodsCard.module.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.module.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shortHaract.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/shortHaract/shortHaract.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shortHaract.module.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/shortHaract/shortHaract.module.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="React" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>from &quot;react-router-dom&quot;;</find>
-      <find>TextField</find>
-      <find>@material-ui/core</find>
-      <find>TextField.js</find>
-      <find>import {Paper</find>
-      <find>import Paper</find>
-      <find>@fortawesome/fontawesome-svg-core</find>
-      <find>export default</find>
-      <find>localS</find>
       <find>localStorage</find>
       <find>next-redux-wrapper</find>
       <find>Link</find>
       <find>React.createFactory</find>
       <find>ReactDOM.hydrate(reactEl, domEl, markHydrateComplete)</find>
+      <find>@fortawesome</find>
+      <find>react-addons-css-transition-group</find>
+      <find>logo4.svg</find>
+      <find>label</find>
+      <find>import</find>
+      <find>closeBtnBox</find>
+      <find>400</find>
+      <find>270</find>
+      <find>// import { NavLink } from &quot;react-router-dom&quot;;</find>
+      <find>// import { useHistory } from &quot;react-router&quot;;</find>
+      <find>countBtn</find>
+      <find>NavLink</find>
+      <find>FETCH_GOODS_PAGES</find>
+      <find>59</find>
+      <find>store.getState</find>
+      <find>passHref={true}</find>
+      <find>@material-ui/lab/es</find>
+      <find>salt</find>
+      <find>rightMain</find>
+      <find>goodsArr</find>
+      <find>podMenu</find>
+      <find>descCharComBox</find>
+      <find>deliveryBox</find>
+      <find>id</find>
+      <find>acor</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>Link</replace>
+      <replace>270</replace>
+      <replace>import Link from 'next/link';</replace>
+      <replace>import {useRouter} from 'next/router';</replace>
+      <replace>400</replace>
+      <replace>passHref={true} shallow={true}</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\nodePro\MyE-Store\client_ssr\pages\[catalo]</dir>
+      <dir>C:\nodePro\MyE-Store\client_ssr</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/pages/goods/goods.jsx" />
-        <option value="$PROJECT_DIR$/components/pages/goods/goods.jsx" />
-        <option value="$PROJECT_DIR$/pages/index.js" />
-        <option value="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/basket/cardBasket.jsx" />
-        <option value="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.jsx" />
-        <option value="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.jsx" />
-        <option value="$PROJECT_DIR$/pages/goods/index.jsx" />
-        <option value="$PROJECT_DIR$/localStorage/localStorFunc.js" />
-        <option value="$PROJECT_DIR$/redux/likesBasket/reducer.js" />
-        <option value="$PROJECT_DIR$/redux/oneGoods/reducer.js" />
-        <option value="$PROJECT_DIR$/components/layout/Layout.jsx" />
-        <option value="$PROJECT_DIR$/redux/rootReducer.jsx" />
-        <option value="$PROJECT_DIR$/redux/with-redux-store.jsx" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/pages/[catalog]/index.jsx" />
-        <option value="$PROJECT_DIR$/redux/goodsArr/AllGoodsReducer.js" />
-        <option value="$PROJECT_DIR$/redux/store.jsx" />
-        <option value="$PROJECT_DIR$/redux/goodsArr/actions.js" />
-        <option value="$PROJECT_DIR$/pages/_app.js" />
-        <option value="$PROJECT_DIR$/components/pages/GoodsArr/goodsArrLoad/goodsArrLoad.jsx" />
-        <option value="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.jsx" />
-        <option value="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.module.css" />
-        <option value="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/shortHaract/shortHaract.jsx" />
-        <option value="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.jsx" />
-        <option value="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.module.css" />
-        <option value="$PROJECT_DIR$/components/pages/GoodsArr/goodsArr.jsx" />
-        <option value="$PROJECT_DIR$/styles/globals.css" />
-        <option value="$PROJECT_DIR$/pages/index.jsx" />
-        <option value="$PROJECT_DIR$/styles/goodsArr.module.css" />
-      </list>
-    </option>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="45" />
-    <option name="width" value="1940" />
-    <option name="height" value="1045" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="client_ssr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client_ssr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client_ssr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client_ssr" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client_ssr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client_ssr" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client_ssr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client_ssr" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="GoodsArr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client_ssr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client_ssr" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1i3misjLpJqtAlHAmOlFxVpkVMk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="C:\nodePro\MyE-Store\client_ssr\node_modules\eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\nodePro\MyE-Store\client_ssr\components\pages\GoodsArr" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\pages\[catalog]" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\pages\goods" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\nodePro\MyE-Store\client_ssr\public" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\pages" />
       <recent name="C:\nodePro\MyE-Store\client_ssr" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\styles" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\pages\goods" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\components\pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\nodePro\MyE-Store\client_ssr\assets\img" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\components\pages\GoodsArr" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\pages\[catalog]" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\pages\goods" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="dev" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="init-server.js.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="init-server.js.js" working-dir="$PROJECT_DIR$/.next/server">
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
@@ -295,10 +232,29 @@
       </scripts>
       <node-interpreter value="project" />
       <envs />
+      <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.init-server.js.js" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.build" />
+      <item itemvalue="npm.start" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -314,384 +270,52 @@
       <updated>1598535318340</updated>
       <workItem from="1598535319831" duration="21724000" />
       <workItem from="1598867593869" duration="22032000" />
-      <workItem from="1599133533424" duration="259000" />
+      <workItem from="1599133533424" duration="87991000" />
+      <workItem from="1599914266933" duration="17018000" />
+      <workItem from="1600695690856" duration="79448000" />
+      <workItem from="1601144789297" duration="577000" />
+      <workItem from="1601145400464" duration="12511000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44015000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="36" width="1550" height="835" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36480686" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.24606581" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25704697" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="TypeScript" order="8" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32904148" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/redux/store.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsArrLoad/goodsArrLoad.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/[catalog]/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redux/goodsArr/AllGoodsReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/_app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#189#234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/vercel.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/dopComp/tovZnk/tovZnk.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/goods/goods.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-506">
-          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/goods/goods.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="13" selection-start-line="13" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/option.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/basket/cardBasket.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/es/Paper/Paper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="110" column="15" selection-start-line="110" selection-start-column="15" selection-end-line="110" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/stubArr/stubArr.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.next/server/pages/goods.js" />
-    <entry file="file://$PROJECT_DIR$/pages/api/hello.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.next/static/chunks/pages/_app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="121" selection-start-line="12" selection-start-column="121" selection-end-line="12" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/localStorage/localStorFunc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.next/server/pages/_app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="93" column="9" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="74" selection-start-line="9" selection-start-column="74" selection-end-line="10" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redux/oneGoods/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redux/likesBasket/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="9" selection-start-line="9" selection-start-column="3" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redux/with-redux-store.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/layout/Layout.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/redux-thunk/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/next/router.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/next/dist/client/router.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/[catalog]/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="65" selection-start-line="65" selection-end-line="77" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redux/goodsArr/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redux/store.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="58" column="38" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redux/goodsArr/AllGoodsReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redux/rootReducer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/next/dist/client/link.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2054">
-          <caret line="132" column="16" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/rating/rating.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsArrLoad/goodsArrLoad.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/shortHaract/shortHaract.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/shortHaract/shortHaract.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/Home.module.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/_app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#189#234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsArr.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/globals.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/goodsArr.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="762">
-          <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="487" y="215" key="#ESLint" timestamp="1601145461849">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state x="487" y="215" key="#ESLint/0.43.1536.821@0.43.1536.821" timestamp="1601145461849" />
+    <state width="1515" height="617" key="GridCell.Tab.0.bottom" timestamp="1601147953769">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state width="1515" height="617" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1601147953769" />
+    <state width="1515" height="617" key="GridCell.Tab.0.center" timestamp="1601147953769">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state width="1515" height="617" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1601147953769" />
+    <state width="1515" height="617" key="GridCell.Tab.0.left" timestamp="1601147953768">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state width="1515" height="617" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1601147953768" />
+    <state width="1515" height="617" key="GridCell.Tab.0.right" timestamp="1601147953769">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state width="1515" height="617" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1601147953769" />
+    <state x="142" y="132" key="SettingsEditor" timestamp="1601145388616">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1601145388616" />
   </component>
 </project>

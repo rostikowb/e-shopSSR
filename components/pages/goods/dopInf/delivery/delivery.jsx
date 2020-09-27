@@ -6,7 +6,7 @@ export const DeliveryGoodsPage = () => {
     <div className={s.deliveryBox}>
       {/*<h3>Оплата и доставка:</h3>*/}
       <span>
-        Доставка в отделение <b>Новой Почты.</b>
+        Доставка в отделение&nbsp;<b>Новой Почты.</b>
       </span>
       <ul>
         <li>

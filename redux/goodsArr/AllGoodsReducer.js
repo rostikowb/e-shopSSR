@@ -21,7 +21,7 @@ const initialState = {
 export const AllGoodsR = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_GOODS:
-        console.log(action.payload.length);
+        // console.log(action.payload.length);
         if (action.sort) state.sort = action.sort;
       state.isFirstL = false;
       state.currGoods = action.payload;
@@ -29,8 +29,8 @@ export const AllGoodsR = (state = initialState, action) => {
       state.stub = false;
         return { ...state };
 
-    case FETCH_GOODS_PAGES:
-      state.currGoods = [...new Set(state.currGoods.concat(action.payload))];
+      case FETCH_GOODS_PAGES:
+      state.currGoods = [...state.currGoods, ...action.payload];
       state.catalog = action.catalog;
       state.stub = false;
       state.stubP = false;

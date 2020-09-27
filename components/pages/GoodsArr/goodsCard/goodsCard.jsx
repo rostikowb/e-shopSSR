@@ -52,8 +52,8 @@ export const GoodsCard = (props) => {
         </div>
         {dt["stck_qntt"] > 0 ? null : <div className={s.notAval} />}
       </div>
-      {/*<CardLikeBox data={dt} />*/}
-      {/*{dt["stck_qntt"] > 0 ? <CardBasketBox data={dt} /> : null}*/}
+      <CardLikeBox data={dt} />
+      {dt["stck_qntt"] > 0 ? <CardBasketBox data={dt} /> : null}
     </Paper>
   );
 };

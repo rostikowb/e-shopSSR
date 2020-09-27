@@ -49,21 +49,21 @@ export const initializeStore = (preloadedState) => {
         _store = initStore({
             ...store.getState(),
             ...preloadedState,
-        })
+        });
         // Reset the current store
-        store = undefined
-        console.log(store);
+        store = undefined;
+        // console.log(store);
     }
 
     // For SSG and SSR always create a new store
-    if (typeof window === 'undefined') return _store
+    if (typeof window === 'undefined') return _store;
     // Create the store once in the client
-    if (!store) store = _store
+    if (!store) store = _store;
 
     return _store
-}
+};
 
 export function useStore(initialState) {
-    const store = useMemo(() => initializeStore(initialState), [initialState])
-    return store
+    return useMemo(() => initializeStore(initialState), [initialState])
 }
+

@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./starsBar.module.css";
-import { Rating } from "@material-ui/lab/es";
-// import { NavLink } from "react-router-dom";
+import {Rating} from "@material-ui/lab/es";
+import Link from 'next/link';
 
 export const StarsBar = (props) => {
   const data = props.data;

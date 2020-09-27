@@ -61,7 +61,7 @@
 }
 
 @media (max-width: 1150px) {
-  header {
+  .header {
     z-index: 4;
     position: fixed;
   }

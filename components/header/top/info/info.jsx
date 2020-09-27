@@ -1,18 +1,18 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
+import Link from 'next/link'
 import s from "./info.module.css";
 export const Info = () => {
   return (
     <ul className={s.infoBox}>
       <li>
-        <NavLink aria-label="Контакты" to="/contacts">
-          Контакты
-        </NavLink>
+        {/*<Link aria-label="Контакты" href="/contacts">*/}
+          {/*Контакты*/}
+        {/*</Link>*/}
       </li>
       <li>
-        <NavLink aria-label="QA" to="/qa">
-          Ответы на частые вопросы
-        </NavLink>
+        {/*<Link aria-label="QA" href="/qa">*/}
+          {/*Ответы на частые вопросы*/}
+        {/*</Link>*/}
       </li>
     </ul>
   );

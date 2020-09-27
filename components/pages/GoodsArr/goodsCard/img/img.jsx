@@ -24,9 +24,11 @@ const Im = (props) => {
 
   let styleImg1 = {
     display: "",
+      width: "100%"
   };
   let styleImg2 = {
     display: "",
+      width: "100%"
   };
   if (d?.img.length < 2) {
     styleImg1.display = "block";
@@ -43,8 +45,8 @@ const Im = (props) => {
 
   return (
     <div onClick={() => (dvnld ? loadOneGoods() : null)}>
-      <Link href={`/${d["ctgrId"]}/${link}`}>
-          <div className={s.imgBox}>
+        <Link href={'/[catalog]/[onegoods]'} as={`/${d["ctgrId"]}/${link}`} prefetch={false} shallow={true} passHref={true}>
+          <a className={s.imgBox}>
               <div className={s.mobileBox}>
                   <Swiper
                       slidesPerView={1}
@@ -89,48 +91,43 @@ const Im = (props) => {
                                       alt=""
                                   />
                               </picture>
-                              <img style={{ width: "100%" }} src={d.img[1]} />
                           </SwiperSlide>
                       ) : null}
                   </Swiper>
               </div>
               <div className={s.deckstopBox}>
-                  <picture style={{ width: "100%" }}>
+                  <picture className={s.imgOne} style={styleImg1}>
                       <source
-                          className={s.imgOne}
                           type="image/webp"
                           srcSet={`${option.STATIC}/webp/${d._id}/${d.img[0]}-400.webp`}
                       />
                       <source
-                          className={s.imgOne}
                           type="image/jpeg"
                           srcSet={`${option.STATIC}/jpeg/${d._id}/${d.img[0]}-400.jpeg`}
                       />
                       <img
-                          className={s.imgOne}
                           src={`${option.STATIC}/jpeg/${d._id}/${d.img[0]}-400.jpeg`}
                           alt=""
                       />
                   </picture>
-                  <picture style={{ width: "100%" }}>
+                  {d.img[1] ? (<picture className={s.imgTwo} style={styleImg2}>
                       <source
-                          className={s.imgTwo}
+
                           type="image/webp"
                           srcSet={`${option.STATIC}/webp/${d._id}/${d.img[1]}-400.webp`}
                       />
                       <source
-                          className={s.imgTwo}
                           type="image/jpeg"
                           srcSet={`${option.STATIC}/jpeg/${d._id}/${d.img[1]}-400.jpeg`}
                       />
                       <img
-                          className={s.imgTwo}
                           src={`${option.STATIC}/jpeg/${d._id}/${d.img[1]}-400.jpeg`}
                           alt=""
+                          // https://vsivuha.online/img/webp/5f4268ccac31fda09820d762/0801ccc71a5f750085e8d63da7a14fd5-300.webp
                       />
-                  </picture>
+                  </picture>):null}
               </div>
-          </div>
+          </a>
       </Link>
     </div>
   );

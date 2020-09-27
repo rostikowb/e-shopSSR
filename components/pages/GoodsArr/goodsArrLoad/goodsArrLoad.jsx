@@ -2,18 +2,20 @@ import React from "react";
 import { connect } from "react-redux";
 import s from "../../../../styles/goodsArr.module.css";
 import { GoodsCard } from "../goodsCard/goodsCard";
-// import { NextBtnCard } from "../nextBtnCard/nextBtnCard";
+import { NextBtnCard } from "../nextBtnCard/nextBtnCard";
 
 const GoodsArrLoa = (props) => {
-  return (
+  const goods = props.currGoods;
+
+    return (
     <>
       {/*Кількість блоків повинна бути кратна ---24---*/}
-      {props.currGoods.map((value) => (
-        <li className={s.goodsElem} key={value["_id"]}>
+      {goods.length?goods.map((value) => (
+        <li className={s.goodsElem} key={value["_id"]+'GCa'}>
           <GoodsCard data={[value]} />
         </li>
-      ))}
-      {/*{!props.stubP ? <NextBtnCard /> : null}*/}
+      )):null}
+      {!props.stubP ? <NextBtnCard /> : null}
     </>
   );
 };

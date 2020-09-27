@@ -14,7 +14,7 @@
   margin-bottom: 15px;
 }
 .secLoginMenu > span {
-  margin: 5px;
+  margin: 5px auto;
   color: #000;
   font-size: 14px;
   cursor: pointer;
@@ -29,4 +29,5 @@
   font-size: 16px;
   text-align: center;
   width: 100%;
+  display: block;
 }

@@ -1,5 +1,5 @@
 .goodsArr {
-  width: 100%;
+  width: 99.5%;
   /*background-color: red;*/
   min-height: 600px;
 }
@@ -41,7 +41,7 @@
 }
 
 .rightMain {
-  width: 74.5vw;
+  width: 75.5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +65,7 @@
 }
 @media (max-width: 1150px) {
   .goodsArr {
-    /*width: 70vw;*/
+    width: 100%;
   }
   .rightMain {
     width: 100%;

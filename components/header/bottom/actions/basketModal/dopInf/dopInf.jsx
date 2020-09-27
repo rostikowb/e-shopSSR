@@ -2,7 +2,6 @@ import React from "react";
 import Link from 'next/link'
 import s from "./dopInf.module.css";
 import ss from "../../../../../pages/GoodsArr/goodsCard/basket/cardBasket.module.css";
-// import { NavLink } from "react-router-dom";
 
 export const SumInf = (props) => {
   let count = props.data[0];

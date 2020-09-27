@@ -1,20 +1,20 @@
 import {
-  ADD_LIKES,
-  ADD_BASKET,
-  DEL_LIKES,
-  DEL_BASKET,
-  SUM_BASKET,
+    ADD_LIKES,
+    ADD_BASKET,
+    DEL_LIKES,
+    DEL_BASKET,
+    SUM_BASKET, LB_INIT,
 } from "../types";
-// import { set, get, contains } from "../../localStorage/localStorFunc";
+import { set, get, contains } from "../../localStorage/localStorFunc";
 
-// const addArr = (state, value) => {
-//   if (!contains(state, value)) {
-//     value.countSale = 1;
-//     return [...state, value];
-//   } else {
-//     return state;
-//   }
-// };
+const addArr = (state, value) => {
+  if (!contains(state, value)) {
+    value.countSale = 1;
+    return [...state, value];
+  } else {
+    return state;
+  }
+};
 
 const delArr = (state, value) => {
   let index = contains(state, value, true);
@@ -53,18 +53,27 @@ const sumArrDo = (state) => {
   return { count, sum };
 };
 
-let likesArr = get("goods/likes");
-let basketArr = get("goods/basket");
+// let likesArr = get("goods/likes");
+// let basketArr = get("goods/basket");
 
 const initialState = {
   // visitedArr: visArr?.length ? visArr : set("goods/visited", ""),
-  likesArr: likesArr?.length ? likesArr : set("goods/likes", ""),
-  basketArr: basketArr?.length ? basketArr : set("goods/basket", ""),
-  basketSum: sumArrDo(get("goods/basket")) || 0,
+    likesArr: null,
+    basketArr:null,
+    basketSum:null,
+  // likesArr: likesArr?.length ? likesArr : set("goods/likes", ""),
+  // basketArr: basketArr?.length ? basketArr : set("goods/basket", ""),
+  // basketSum: sumArrDo(get("goods/basket")) || 0,
 };
 
 export const addLikesBasket = (state = initialState, action) => {
   switch (action.type) {
+    case LB_INIT:
+      if(!state.likesArr) state.likesArr = get("goods/likes");
+      if (!state.basketArr) state.basketArr = get("goods/basket");
+      state.basketSum = sumArrDo(get("goods/basket")) || 0;
+      return { ...state };
+
     case ADD_LIKES:
       if (!state.likesArr) state.likesArr = get("goods/likes");
       console.log("state.likesArr", state.likesArr);

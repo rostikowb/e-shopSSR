@@ -11,6 +11,13 @@
   /*border: 1px solid #c3c1bb;*/
   /*box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);*/
 }
+.charBox > h2 {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
 .charBox > ul {
   width: 100%;
   display: flex;
@@ -39,12 +46,27 @@
   width: 100%;
   margin-top: 20px;
 }
+.descBox > h2 {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
 .desc {
   overflow: hidden;
   width: 100%;
   font-size: 15px;
   text-align: justify;
 }
+/*.descCharBox h1,*/
+/*.descCharBox h2,*/
+/*.descCharBox h3,*/
+/*.descCharBox h4,*/
+/*.descCharBox h5,*/
+/*.descCharBox h6{*/
+
+/*}*/
 
 .desc table {
   width: auto !important;

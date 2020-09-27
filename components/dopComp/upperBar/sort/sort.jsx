@@ -8,7 +8,7 @@ import {
   thisUrl,
 } from "../../../../redux/goodsArr/actions";
 import { FETCH_GOODS, STUB_ON } from "../../../../redux/types";
-import { useHistory } from "react-router";
+import {useRouter} from 'next/router'
 
 const options = [
   // { value: "random", label: "Стандарту" },
@@ -19,10 +19,23 @@ const options = [
   // { value: "byDate", label: "По дате поступления" },
 ];
 
+const customStyles = {
+    control: base => ({
+        ...base,
+        height: 35,
+        minHeight: 35
+    })
+};
+
 const Sor = (props) => {
-  let history = useHistory();
+  let loc = useRouter();
+
   const loadGoods = (value) => {
-    history.push("?sort=" + value.value);
+    loc.push(
+        {pathname: loc.pathname, query: {sort: value.value, page: 0}},
+        {pathname: loc.query?.catalog?'/'+loc.query.catalog:'/', query: {sort: value.value, page: 0}},
+        {shallow:true}
+      );
     props.stubOn({ type: STUB_ON });
     props.fetchGoods({
       type: FETCH_GOODS,
@@ -40,6 +53,8 @@ const Sor = (props) => {
         onChange={(e) => loadGoods(e)}
         name="Сортировка"
         className={s.sortSelect}
+        styles={customStyles}
+        value={defaul}
       />
     </div>
   );

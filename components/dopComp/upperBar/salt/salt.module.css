@@ -1,11 +1,16 @@
 .saltBox {
   overflow: auto;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .saltBox > * {
   padding: 0 3px;
+  font-size: 100%;
 }
-.saltBox span {
+.saltBox a {
   /*width: 100%;*/
   white-space: pre;
   height: 100%;
@@ -16,12 +21,17 @@
   text-wrap: normal;
 }
 
-.saltBox span:hover {
+.saltBox a:hover {
   color: #00cc9d;
 }
 
 .goodsName {
-  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis !important;
+}
+.icon{
+  font-size: 157%;
 }
 @media (max-width: 800px) {
   .saltBox {

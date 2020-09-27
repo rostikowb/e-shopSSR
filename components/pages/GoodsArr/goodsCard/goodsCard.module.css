@@ -48,7 +48,9 @@
   /*align-items: flex-start;*/
   justify-content: flex-start;
 }
-
+.top > div:first-child {
+  height: 244px;
+}
 .bottom {
   height: 100%;
   width: 100%;

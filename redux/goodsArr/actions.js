@@ -1,8 +1,8 @@
 import {
-  FETCH_GOODS,
-  FETCH_GOODS_PAGES,
-  SET_CATALOG,
-  THIS_URL,
+    FETCH_GOODS,
+    FETCH_GOODS_PAGES,
+    SET_CATALOG,
+    THIS_URL,
 } from "../types";
 import bent from "bent";
 import { option } from "../../option";
@@ -28,31 +28,55 @@ export const setCatalog = (catalog) => {
 
 let oldUrl;
 
-export const fetchGoods = async (props) => {
-  let cat;
-  const dispatch = props.dispatch;
+export const fetchGoods = (props) => {
+    return async (dispatch) => {
+        let cat;
+        console.log(props);
+        cat = props.catalog ? "/" + props.catalog : "/";
+        let page = props.page;
+        let sort = props.sort ? props.sort : null;
+        let url = option.api + cat + "?page=" + page + "&sort=" + sort;
+        let isFetch;
 
-    cat = props.catalog ? "/" + props.catalog : "/";
-  // console.log(cat);
-  let page = props.page;
-  let sort = props.sort ? props.sort : null;
-  let url = option.api + cat + "?page=" + page + "&sort=" + sort;
-  let isFetch;
+        oldUrl = url;
 
-  oldUrl = url;
-  //   dispatch({type:FETCH_GOODS});
-  // return async () => {
-  //     dispatch({type:FETCH_GOODS});
-    isFetch = !page ? FETCH_GOODS : FETCH_GOODS_PAGES;
-    const res = await bent(url, "string", "POST", 200)();
+        // dispatch({type: STUB_ON});
+        isFetch = !page ? FETCH_GOODS : FETCH_GOODS_PAGES;
+        const res = await bent(url, "json", "POST", 200)();
+
+        let dispatchObj = {
+            type: isFetch,
+            catalog: props.catalog||null,
+            payload: res,
+        };
+
+        if (sort) dispatchObj.sort = sort;
+        await dispatch(dispatchObj);
+    }
+
+};
+export const fetchGoodsSSR = async (props) => {
+        let cat;
+        let dispatch = props.dispatch;
+
+        cat = props.catalog ? "/" + props.catalog : "/";
+
+        let page = props.page;
+        let sort = props.sort ? props.sort : null;
+        let url = option.api + cat + "?page=" + page + "&sort=" + sort;
+        let isFetch;
+
+        oldUrl = url;
+
+        isFetch = !page ? FETCH_GOODS : FETCH_GOODS_PAGES;
+        const res = await bent(url, "json", "POST", 200)();
 
     let dispatchObj = {
-      type: isFetch,
-      catalog: props.catalog||null,
-      payload: JSON.parse(res),
-    };
+            type: isFetch,
+            catalog: props.catalog||null,
+            payload: res,
+        };
 
-    if (sort) dispatchObj.sort = sort;
-      await dispatch(dispatchObj);
-  // };
+        if (sort) dispatchObj.sort = sort;
+        await dispatch(dispatchObj);
 };

@@ -16,7 +16,7 @@ export const CardLikeBo = (props) => {
   const add = (type) => {
     props.addProdToCash(d["_id"], type, true, d);
   };
-  console.log(isLikes);
+  // console.log(isLikes);
   const remove = (type) => {
     props.delProdToCash(type, d);
   };

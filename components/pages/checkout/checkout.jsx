@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./checkout.module.css";
-// import { NavLink } from "react-router-dom";
+import Link from 'next/link';
 import { connect } from "react-redux";
 import { changeStateAuthModal } from "../../../redux/modal/actions";
 import { CheckoutForm } from "./form/form";

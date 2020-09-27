@@ -1,6 +1,6 @@
 .imgsBox {
   /*background-color: black;*/
-  max-width: 60%;
+  width: 60%;
   /*min-height: 576px;*/
   display: flex;
   flex-direction: row-reverse;
@@ -40,7 +40,7 @@
 }
 .imgBig > img {
   /*max-height: 600px;*/
-  max-width: 100%;
+  width: 100%;
   /*max-height: 679px;*/
   display: flex;
   /*flex-direction: column;*/

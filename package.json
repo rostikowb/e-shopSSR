@@ -17,6 +17,7 @@
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.56",
+    "@zeit/next-sass": "^1.0.1",
     "bent": "^7.3.7",
     "clsx": "^1.1.1",
     "core-js": "^3.6.5",
@@ -25,20 +26,33 @@
     "draft-js": "^0.11.6",
     "draftjs-to-html": "^0.9.1",
     "form-data": "latest",
+    "imagemin-mozjpeg": "^9.0.0",
     "material-ui": "^0.20.2",
     "next": "9.5.2",
+    "next-compose-plugins": "^2.2.0",
+    "next-images": "^1.4.1",
+    "next-optimized-images": "^2.6.2",
     "next-redux-wrapper": "^6.0.2",
+    "next-transpile-modules": "^4.1.0",
+    "rc-drawer": "^4.1.0",
     "react": "16.13.1",
+    "react-addons-css-transition-group": "latest",
     "react-dom": "16.13.1",
     "react-lazyload": "^3.0.0",
+    "react-pretty-drawer": "^0.2.7",
     "react-redux": "^7.2.1",
     "react-select": "^3.1.0",
+    "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-lazy-scroll": "^0.1.1",
     "redux-thunk": "^2.3.0",
     "sass": "^1.26.10",
     "styled-components": "^5.1.1",
-    "swiper": "^6.1.2"
+    "swiper": "^6.1.2",
+    "webp-loader": "^0.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0"
   }
 }

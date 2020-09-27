@@ -1,30 +1,45 @@
 import React from "react";
 import { option } from "../../../../../option";
-// import { NavLink } from "react-router-dom";
-import { Acordeon } from "../../../../dopComp/acardeon/acardeon";
+import Link from 'next/link'
+import {useRouter} from "next/router";
+
+// переписать цю діч на пуш замість лінк, в одну функцію
 
 export const Another = (props) => {
   const loadGoods = props.modal;
+  let loc = useRouter();
   let opt = option;
+
+    const href = ()=>{
+        let obj = {pathname: '/[catalog]'};
+        if(loc.query?.sort) obj.query = {sort: loc.query.sort};
+        return obj
+    };
+    const as = (value)=>{
+        let obj = {pathname: '/'+value};
+        if(loc.query?.sort) obj.query = {sort: loc.query.sort};
+        return obj;
+    };
+
   return (
     <ul>
       <li onClick={() => loadGoods(opt.goods[15].value)}>
-        <NavLink to={"/" + opt.goods[15].value}>{opt.goods[15].label}</NavLink>
+          <Link href={href()} as={as(opt.goods[9].value)} passHref={true} shallow={true}><a href="">{opt.goods[15].label}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[16].value)}>
-        <NavLink to={"/" + opt.goods[16].value}>{opt.goods[16].label}</NavLink>
+          <Link href={href()} as={as(opt.goods[9].value)} passHref={true} shallow={true}><a href="">{opt.goods[16].label}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[17].value)}>
-        <NavLink to={"/" + opt.goods[17].value}>{opt.goods[17].label}</NavLink>
+          <Link href={href()} as={as(opt.goods[9].value)} passHref={true} shallow={true}><a href="">{opt.goods[17].label}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[18].value)}>
-        <NavLink to={"/" + opt.goods[18].value}>{opt.goods[18].label}</NavLink>
+          <Link href={href()} as={as(opt.goods[9].value)} passHref={true} shallow={true}><a href="">{opt.goods[18].label}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[19].value)}>
-        <NavLink to={"/" + opt.goods[19].value}>{opt.goods[19].label}</NavLink>
+          <Link href={href()} as={as(opt.goods[9].value)} passHref={true} shallow={true}><a href="">{opt.goods[19].label}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[20].value)}>
-        <NavLink to={"/" + opt.goods[20].value}>{opt.goods[20].label}</NavLink>
+          <Link href={href()} as={as(opt.goods[9].value)} passHref={true} shallow={true}><a href="">{opt.goods[20].label}</a></Link>
       </li>
     </ul>
   );

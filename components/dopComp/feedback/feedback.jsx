@@ -62,17 +62,17 @@ export const Feedbac = (props) => {
     question: "simple",
     comm: "email",
     msg: "",
-    email: UD.email || "",
-    tel: UD.tel || Number("+380"),
+    email: UD?.email || "",
+    tel: UD?.tel || Number("+380"),
     telegram: "",
   });
   const [dataV, setDataV] = useState({
-    question: !!data.question,
-    comm: !!data.comm,
-    msg: !!data.msg,
-    email: !!data.email,
-    tel: data.tel.length > 3,
-    telegram: data.telegram.length > 2,
+    question: !!data?.question,
+    comm: !!data?.comm,
+    msg: !!data?.msg,
+    email: !!data?.email,
+    tel: data?.tel.length > 3,
+    telegram: data?.telegram.length > 2,
   });
 
   const sendData = () => {
@@ -128,7 +128,7 @@ export const Feedbac = (props) => {
     );
   }, [data]);
 
-  return props.modal ? (
+  return(
     <>
       <div
         onClick={() => props.changeStateFeedbackModal()}
@@ -140,7 +140,7 @@ export const Feedbac = (props) => {
             <div className={s.topModal}>
               <span className={s.title}>Обратная связь</span>
               <FontAwesomeIcon
-                onClick={() => props.changeStateBasketModal()}
+                onClick={() => props.changeStateFeedbackModal()}
                 className={s.clsModalBtn}
                 icon={faTimesCircle}
               />
@@ -245,13 +245,11 @@ export const Feedbac = (props) => {
           </span>
         )}
       </div>
-    </>
-  ) : null;
+    </>)
 };
 
 const mapStateToProps = (state) => {
   return {
-    modal: state.modal.feedback,
     UD: state.auth.userData,
     token: state.auth.token,
     stub: state.ticket.stub,

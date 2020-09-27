@@ -2,7 +2,7 @@ import React from "react";
 import s from "./info.module.css";
 import { connect } from "react-redux";
 import { changeStateAuthModal } from "../../../../redux/modal/actions";
-// import { NavLink } from "react-router-dom";
+import Link from 'next/link';
 import Select from "react-select";
 import { setCupon } from "../../../../redux/checkout/actions";
 import { option } from "../../../../option";

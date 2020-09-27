@@ -4,6 +4,7 @@ import { Bottom } from "./bottom/bottom.jsx";
 import s from "./header.module.css";
 
 export const Header = () => {
+    // debugger;
   return (
     <header className={s.header}>
       <div className={s.wrapper}>

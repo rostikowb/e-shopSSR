@@ -1,5 +1,5 @@
 .goodsBox {
-  width: 99%;
+  width: 98.5%;
   /*position: relative;*/
   /*width: 106vw;*/
   /*min-height: 600px;*/
@@ -21,6 +21,9 @@
   border-top: 2px solid #e8e8e8;
 }
 @media (max-width: 1150px) {
+  .goodsBox {
+    width: 100%;
+  }
   .goodsInfo {
     flex-direction: column;
     justify-content: flex-start;

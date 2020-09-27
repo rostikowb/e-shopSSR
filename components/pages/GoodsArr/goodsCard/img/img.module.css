@@ -11,6 +11,7 @@
   /*display: block;*/
   height: 243px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .imgBox:hover .imgOne {

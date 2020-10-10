@@ -16,12 +16,14 @@ export async function getServerSideProps(context) {
         const query = context.query;
         const reduxStore = initializeStore();
         const {dispatch} = reduxStore;
+    const userAgent = context.req.headers["user-agent"];
 
         await fetchGoodsSSR({
             type: FETCH_GOODS,
             catalog: query?.catalog,
             sort: query?.sort,
             page: query?.page,
+            userAgent,
             dispatch
         });
         return {props: {initialReduxState: reduxStore.getState()}}

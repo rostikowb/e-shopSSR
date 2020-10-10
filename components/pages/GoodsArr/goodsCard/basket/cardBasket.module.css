@@ -25,7 +25,7 @@
 
 .icon {
   color: white;
-  font-size: 150%;
+  font-size: 150% !important;
 }
 .cardBox:hover .icon {
   transform: rotate(360deg);

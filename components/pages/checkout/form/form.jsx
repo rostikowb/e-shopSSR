@@ -16,34 +16,15 @@ import {
 } from "../../../../redux/checkout/actions";
 import s from "./form.module.css";
 import { OPT_SEND_STUB, OPT_STUB } from "../../../../redux/types";
+import {checkoutFormTheme} from "../../../../styles/theme";
+
 
 const validateEmail = (email) => {
   let pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return pattern.test(email);
 };
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    marginTop: theme.spacing(8),
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
-  },
-  form: {
-    width: "100%", // Fix IE 11 issue.
-    marginTop: theme.spacing(0),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
-  typo: {
-    color: "black",
-  },
-}));
+const useStyles = checkoutFormTheme;
 
 const CheckoutFor = (props) => {
   const arr = props.basketArr;
@@ -57,18 +38,19 @@ const CheckoutFor = (props) => {
   const [done, setDone] = useState(false);
   const [isReg, setIsReg] = useState(!token);
   const [data, setData] = useState({
-    userId: UD.userId || "",
-    email: UD.email || "",
-    tel: UD.tel || Number("+380"),
+    userId: UD?.userId || "",
+    email: UD?.email || "",
+    tel: UD?.tel || Number("+380"),
     pass: "",
-    FN: UD.FN || UD.FN || "",
-    LN: UD.LN || "",
-    SN: UD.SN || "",
-    optCity: UD.city || "",
-    optBranchN: UD.branchN || "",
-    cupon: props.cupon || 0,
-  });
-  const [dataV, setDataV] = useState({
+    FN: UD?.FN || UD?.FN || "",
+    LN: UD?.LN || "",
+    SN: UD?.SN || "",
+    optCity: UD?.city || "",
+    optBranchN: UD?.branchN || "",
+    cupon: props?.cupon || 0,
+  })
+
+  const [dataV, setDataV] = useState(data?{
     email: !!data.email,
     tel: data.tel.length > 3,
     pass: !!token || !isReg || !!data.pass,
@@ -78,7 +60,7 @@ const CheckoutFor = (props) => {
     city: !!data.city,
     branchN: !!data.branchN,
     iAgree: false,
-  });
+  }:null);
 
   const sendData = () => {
     let obj = {
@@ -135,7 +117,7 @@ const CheckoutFor = (props) => {
   };
 
   useEffect(() => {
-    setDone(
+    !!UD?setDone(
       dataV.city &&
         dataV.branchN &&
         dataV.FN &&
@@ -145,9 +127,9 @@ const CheckoutFor = (props) => {
         dataV.SN &&
         dataV.tel &&
         dataV.iAgree
-    );
+    ):null;
 
-    if (data.optCity && data.optBranchN) {
+    if (data?.optCity && data?.optBranchN) {
       dataV.city = true;
       dataV.branchN = true;
       setDataV({ ...dataV });
@@ -155,13 +137,13 @@ const CheckoutFor = (props) => {
   }, [data, isReg]);
 
   useEffect(() => {
-    if (UD.email) data.email = UD.email;
-    if (UD.tel) data.tel = UD.tel;
-    if (UD.FN || UD.FN) data.FN = UD.FN;
-    if (UD.LN) data.LN = UD.LN;
-    if (UD.SN) data.SN = UD.SN;
-    if (UD.city) data.optCity = UD.city;
-    if (UD.branchN) data.optBranchN = UD.branchN;
+    if (UD?.email) data.email = UD.email;
+    if (UD?.tel) data.tel = UD.tel;
+    if (UD?.FN || UD?.FN) data.FN = UD.FN;
+    if (UD?.LN) data.LN = UD.LN;
+    if (UD?.SN) data.SN = UD.SN;
+    if (UD?.city) data.optCity = UD.city;
+    if (UD?.branchN) data.optBranchN = UD.branchN;
     setData({ ...data });
   }, [UD]);
 
@@ -183,11 +165,11 @@ const CheckoutFor = (props) => {
             label="Емейл Адрес"
             name="email"
             autoComplete="email"
-            error={!dataV.email}
+            error={!dataV?.email}
             type="email"
-            value={data.email}
+            value={data?.email}
             helperText={
-              !dataV.email ? "Пример email'a - example@gmail.com" : null
+              !dataV?.email ? "Пример email'a - example@gmail.com" : null
             }
             onChange={(event) => chngInpLn("email", event.target.value)}
           />
@@ -202,10 +184,10 @@ const CheckoutFor = (props) => {
             name="number"
             autoComplete="number"
             type="number"
-            value={data.tel}
-            error={!dataV.tel}
+            value={data?.tel}
+            error={!dataV?.tel}
             onChange={(event) => chngInpLn("tel", event.target.value, 10)}
-            helperText={!dataV.tel ? "Минимум 10 цифр" : null}
+            helperText={!dataV?.tel ? "Минимум 10 цифр" : null}
           />
         </div>
         <div className={s.namesGroup}>
@@ -221,11 +203,11 @@ const CheckoutFor = (props) => {
             autoComplete="given-name"
             name="name"
             type="text"
-            value={data.LN}
-            error={!dataV.LN}
+            value={data?.LN}
+            error={!dataV?.LN}
             onChange={(event) => chngInpLn("LN", event.target.value, 1)}
             helperText={
-              !dataV.LN ? "Фамилия должна содержать минимум две буквы" : null
+              !dataV?.LN ? "Фамилия должна содержать минимум две буквы" : null
             }
           />
           <TextField
@@ -238,11 +220,11 @@ const CheckoutFor = (props) => {
             autoComplete="additional-name"
             name="name"
             type="text"
-            value={data.FN}
-            error={!dataV.FN}
+            value={data?.FN}
+            error={!dataV?.FN}
             onChange={(event) => chngInpLn("FN", event.target.value, 1)}
             helperText={
-              !dataV.FN ? "Имя должно содержать минимум две буквы" : null
+              !dataV?.FN ? "Имя должно содержать минимум две буквы" : null
             }
           />
           <TextField
@@ -255,11 +237,11 @@ const CheckoutFor = (props) => {
             autoComplete="family-name"
             name="name"
             type="text"
-            value={data.SN}
-            error={!dataV.SN}
+            value={data?.SN}
+            error={!dataV?.SN}
             onChange={(event) => chngInpLn("SN", event.target.value, 1)}
             helperText={
-              !dataV.SN ? "Отчество должно содержать минимум две буквы" : null
+              !dataV?.SN ? "Отчество должно содержать минимум две буквы" : null
             }
           />
         </div>
@@ -273,7 +255,7 @@ const CheckoutFor = (props) => {
               loadingText={"Ищем..."}
               noOptionsText={"Нет совпадений"}
               freeSolo
-              value={data.optCity}
+              value={data?.optCity}
               getOptionSelected={(option, value) => {
                 return (
                   (typeof option === "string" ? option : option.Present) ===
@@ -313,7 +295,7 @@ const CheckoutFor = (props) => {
               loadingText={"Ищем..."}
               freeSolo
               noOptionsText={"Нет совпадений"}
-              value={data.optBranchN}
+              value={data?.optBranchN}
               getOptionSelected={(option, value) =>
                 (typeof option === "string" ? option : option.Description) ===
                 value?.Description
@@ -374,8 +356,8 @@ const CheckoutFor = (props) => {
                 id="password"
                 autoComplete={"new-password"}
                 onChange={(event) => chngInpLn("pass", event.target.value, 7)}
-                error={!dataV.pass}
-                helperText={!dataV.pass ? "Минимум 8 знаков" : null}
+                error={!dataV?.pass}
+                helperText={!dataV?.pass ? "Минимум 8 знаков" : null}
               />
             </div>
           ) : null}
@@ -383,7 +365,7 @@ const CheckoutFor = (props) => {
             <FormControlLabel
               control={
                 <Checkbox
-                  checked={dataV.iAgree}
+                  checked={dataV?.iAgree}
                   onChange={() => checkboxChange()}
                   name="checkediAgree"
                   color="primary"

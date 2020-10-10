@@ -2,7 +2,7 @@ import {
   CLEAR_CATALOG,
   FETCH_GOODS,
   FETCH_GOODS_PAGES,
-  SET_CATALOG,
+  SET_CATALOG, SET_WIDTH,
   STUB_ON,
   STUB_ON_P,
   THIS_URL,
@@ -16,6 +16,7 @@ const initialState = {
   stubP: false,
   url: "",
   sort: "byRating",
+  width: 0,
 };
 
 export const AllGoodsR = (state = initialState, action) => {
@@ -61,6 +62,10 @@ export const AllGoodsR = (state = initialState, action) => {
       state.isFirstL = false;
       return { ...state };
 
+    case SET_WIDTH:
+      state.width = action.width;
+
+      return { ...state };
     default:
       return state;
   }

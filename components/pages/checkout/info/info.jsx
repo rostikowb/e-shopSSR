@@ -12,12 +12,12 @@ const CheckoutInf = (props) => {
   const UD = props.userData;
   const defOpt = { value: 0, label: "Нет" };
   const dscnt = props.cupon;
-  const cupon = UD.cupon.map((item) => {
+  const cupon = UD?UD.cupon.map((item) => {
     return { value: item, label: item + "% скидки!" };
-  });
-  const allPrice = Math.round(
+  }):null;
+  const allPrice = !!UD?Math.round(
     props.basketSum.sum - (props.basketSum.sum / 100) * dscnt
-  ).toLocaleString("ru-RU");
+  ).toLocaleString("ru-RU"):null;
 
   return (
     <div className={s.mainInfoBox}>
@@ -27,44 +27,59 @@ const CheckoutInf = (props) => {
             <span className={s.cuponTitle}>Применить купон: </span>
             <Select
               defaultValue={defOpt}
-              options={[defOpt, ...cupon]}
+              options={!!UD?[defOpt, ...cupon]:defOpt}
               onChange={(e) => props.setCupon(e.value)}
               name="cupon"
               className={s.cuponSelect}
             />
           </div>
-          {arr.map((g) => (
+          {UD?arr.map((g) => (
             <div key={"checkout" + g._id} className={s.goods}>
-              <NavLink to={`/${g["ctgrId"]}/${g._id}`} className={s.titleMob}>
-                {g.nm}
-              </NavLink>
+              <Link href={'/[catalog]/[onegoods]'}
+                    as={`/${g["ctgrId"]}/${g._id}`}
+                    prefetch={false}
+                    passHref={true}
+                    shallow={true}>
+                <a className={s.titleMob}>{g.nm}</a>
+              </Link>
               <div className={s.bottom}>
                 <div className={s.left}>
-                  <NavLink to={`/${g["ctgrId"]}/${g._id}`} className={s.imgBox}>
-                    <picture style={{ width: "100%" }}>
-                      <source
-                        className={s.imgOne}
-                        type="image/webp"
-                        srcSet={`${option.STATIC}/webp/${g._id}/${g.img[0]}-400.webp`}
-                      />
-                      <source
-                        className={s.imgOne}
-                        type="image/jpeg"
-                        srcSet={`${option.STATIC}/jpeg/${g._id}/${g.img[0]}-400.jpeg`}
-                      />
-                      <img
-                        className={s.imgOne}
-                        src={`${option.STATIC}/jpeg/${g._id}/${g.img[0]}-400.jpeg`}
-                        alt={`Фото ${g.nm}`}
-                      />
-                    </picture>
-                  </NavLink>
-                  <NavLink
-                    to={`/${g["ctgrId"]}/${g._id}`}
-                    className={s.titlePc}
+                  <Link href={'/[catalog]/[onegoods]'}
+                        as={`/${g["ctgrId"]}/${g._id}`}
+                        prefetch={false}
+                        passHref={true}
+                        shallow={true}>
+                    <a className={s.imgBox}>
+                      <picture style={{ width: "100%" }}>
+                        <source
+                            className={s.imgOne}
+                            type="image/webp"
+                            srcSet={`${option.STATIC}/webp/${g._id}/${g.img[0]}-400.webp`}
+                        />
+                        <source
+                            className={s.imgOne}
+                            type="image/jpeg"
+                            srcSet={`${option.STATIC}/jpeg/${g._id}/${g.img[0]}-400.jpeg`}
+                        />
+                        <img
+                            className={s.imgOne}
+                            src={`${option.STATIC}/jpeg/${g._id}/${g.img[0]}-400.jpeg`}
+                            alt={`Фото ${g.nm}`}
+                        />
+                      </picture>
+                    </a>
+                  </Link>
+                  <Link
+                      href={'/[catalog]/[onegoods]'}
+                      as={`/${g["ctgrId"]}/${g._id}`}
+                      prefetch={false}
+                      passHref={true}
+                      shallow={true}
                   >
-                    {g.nm}
-                  </NavLink>
+                    <a className={s.titlePc}>
+                      {g.nm}
+                    </a>
+                  </Link>
                 </div>
                 <div className={s.right}>
                   <div className={s.count}>{g.countSale} шт.</div>
@@ -77,7 +92,7 @@ const CheckoutInf = (props) => {
                 </div>
               </div>
             </div>
-          ))}
+          )):null}
         </div>
         <div className={s.infoBox}>
           <div className={s.suma}>

@@ -24,6 +24,7 @@ const Img = (props) => {
         }
     }, [widthR])
 
+
     return (
     <div className={s.imgsBox} ref={ref}>
         <Swiper
@@ -32,7 +33,7 @@ const Img = (props) => {
         roundLengths={true}
         // width={width < height ? height : width}
         width={width}
-        // height={height}
+        // height={100}
         autoplay={{ delay: 2000 }}
         pagination={{ clickable: true }}
         userAgent={props.userAgent}

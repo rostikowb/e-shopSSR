@@ -14,7 +14,7 @@ export const option = {
   // procent skidki
   interest: 20,
   // nova poshta keyAPI
-  NPkey: "81bf0c9eeec4d3e5ab728de8fbdfc52e",
+  NPkey: "11e6b768f60094240422f5c8af2d5a24", // обновлять кожен місяць 30.09.2021 16:08:07
   // 0 = в обработке 1 = готовится к отправке 2 = у новой почты 3 = забрано 4 = отказался
   status: [
     "в обработке",

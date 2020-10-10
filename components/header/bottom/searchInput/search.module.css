@@ -80,7 +80,7 @@
   position: absolute;
   left: 5px;
   top: 10px;
-  font-size: 20px;
+  font-size: 20px !important;
   z-index: 5;
   color: #ababab;
 }

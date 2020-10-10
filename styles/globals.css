@@ -36,6 +36,12 @@ h2{
   align-items: center;
   justify-content: center;
 }
+
+.clsModalBtn {
+  font-size: 250% !important;
+  cursor: pointer;
+}
+
 .main {
   display: flex;
   flex-direction: row;

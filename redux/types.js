@@ -9,6 +9,7 @@ export const FETCH_GOODS_PAGES = "GOODS/FETCH_GOODS_PAGES";
 export const STUB_ON = "GOODS/STUB_ON";
 export const STUB_ON_P = "GOODS/STUB_ON_P";
 export const THIS_URL = "GOODS/THIS_URL";
+export const SET_WIDTH = "GOODS/SET_WIDTH_CARD_SWIPE";
 export const VISIT_INIT = "ONEGOODS/VISIT_INIT";
 export const PRODUCT = "ONEGOODS/SET_PRODUCT";
 export const SET_IMG = "ONEGOODS/SET_IMG_SHOW";

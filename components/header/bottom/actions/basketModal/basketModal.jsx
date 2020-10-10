@@ -22,7 +22,7 @@ export const BasketModa = (props) => {
           <span className={s.title}>Корзина</span>
           <FontAwesomeIcon
             onClick={() => props.changeStateBasketModal()}
-            className={s.clsModalBtn}
+            className='clsModalBtn'
             icon={faTimesCircle}
           />
         </div>

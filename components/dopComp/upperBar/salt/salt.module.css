@@ -31,7 +31,7 @@
   text-overflow: ellipsis !important;
 }
 .icon{
-  font-size: 157%;
+  font-size: 157% !important;
 }
 @media (max-width: 800px) {
   .saltBox {

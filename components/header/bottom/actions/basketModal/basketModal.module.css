@@ -73,10 +73,10 @@
   color: #6d6d6d;
 }
 
-.clsModalBtn {
-  font-size: 250%;
-  cursor: pointer;
-}
+/*.clsModalBtn {*/
+  /*font-size: 250%;*/
+  /*cursor: pointer;*/
+/*}*/
 @media (max-width: 1250px) {
   .modal_basked {
     left: 2%;

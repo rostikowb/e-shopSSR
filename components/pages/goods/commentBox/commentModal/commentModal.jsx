@@ -3,7 +3,7 @@ import s from "./commentModal.module.css";
 import { connect } from "react-redux";
 import { changeStateCommentsModal } from "../../../../../redux/modal/actions";
 import { TextField, Button, makeStyles } from "@material-ui/core";
-import Rating from "@material-ui/lab/rating";
+import {Rating} from "@material-ui/lab";
 import { addComments } from "../../../../../redux/oneGoods/action";
 
 const useStyles = makeStyles((theme) => ({

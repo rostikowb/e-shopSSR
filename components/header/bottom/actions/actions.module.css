@@ -17,7 +17,7 @@
 
 .icon {
   width: 3.5em !important;
-  height: auto;
+  height: auto !important;
   color: #ffffff;
   cursor: pointer;
 }

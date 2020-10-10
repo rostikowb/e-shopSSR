@@ -19,91 +19,49 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/components/dopComp/drawer/drawer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/dopComp/invisComp/invisComp.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/goods/imgs/useResizeSwiper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localStorage/initAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/[catalog]/[onegoods]/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo4.svg" afterDir="false" />
+    <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="dd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/acardeon/acardeon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/acardeon/acardeon.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/feedback/feedback.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/feedback/feedback.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsBlock/goodsBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsBlock/goodsBlock.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsBlock/goodsBlock.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsBlock/goodsBlock.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsSideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsSideBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsSideBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsSideBar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/loginForm/login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/loginForm/login.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/tovZnk/tovZnk.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/tovZnk/tovZnk.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/tovZnk/tovZnk.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/tovZnk/tovZnk.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/sort/sort.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/sort/sort.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/sort/sort.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/sort/sort.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/actions.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/actions.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basketModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basketModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basketModal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basketModal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likes/likes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likes/likes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likes/likes.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likes/likes.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/header/bottom/bottom.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/bottom.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/another.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/another.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/electro.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/electro.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/smart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/smart.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/header/bottom/logo/logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/logo/logo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/menu/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/menu/menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/menu/menu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/top/info/info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/top/info/info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menuContent/logo/logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/logo/logo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArr.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArr.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArrLoad/goodsArrLoad.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArrLoad/goodsArrLoad.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/searchInput/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/searchInput/search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/searchInput/search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/searchInput/search.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/informPage/comanda/comanda.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/debounce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/informPage/comanda/comanda.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/informPage/contacts/contacts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/informPage/contacts/contacts.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/informPage/statut/statut.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/informPage/statut/statut.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/informPage/structura/structura.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/informPage/structura/structura.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/styles/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/basket/cardBasket.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/basket/cardBasket.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/like/cardLike.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/like/cardLike.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/like/cardLike.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/like/cardLike.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/checkout/checkout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/checkout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/commentBox/notComments/notComments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/commentBox/notComments/notComments.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/descChar/descChar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/descChar/descChar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/descChar/descChar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/descChar/descChar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/delivery/delivery.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/delivery/delivery.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/delivery/delivery.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/delivery/delivery.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/starsBar/starsBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/starsBar/starsBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/goods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/goods.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/goods.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/goods.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/commentBox/commentModal/commentModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/commentBox/commentModal/commentModal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/goods/imgs/imgs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/imgs/imgs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/imgs/imgs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/imgs/imgs.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/sidebar/sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/sidebar/sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/sidebar/sidebar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/sidebar/sidebar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localStorage/localStorFunc.js" beforeDir="false" afterPath="$PROJECT_DIR$/localStorage/localStorFunc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/statusCodePages/404/404.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/statusCodePages/404/404.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/statusCodePages/500/500.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/statusCodePages/500/500.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/option.js" beforeDir="false" afterPath="$PROJECT_DIR$/option.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/[catalog]/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[catalog]/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/auth/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/auth/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redux/goodsArr/AllGoodsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/goodsArr/AllGoodsReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redux/goodsArr/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/goodsArr/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/likesBasket/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/likesBasket/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/oneGoods/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/oneGoods/action.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/oneGoods/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/oneGoods/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/rootReducer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/redux/rootReducer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/store.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/redux/store.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redux/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/goodsArr.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/goodsArr.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,56 +72,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="React" />
+        <option value="JSX File" />
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>localStorage</find>
-      <find>next-redux-wrapper</find>
-      <find>Link</find>
-      <find>React.createFactory</find>
-      <find>ReactDOM.hydrate(reactEl, domEl, markHydrateComplete)</find>
-      <find>@fortawesome</find>
-      <find>react-addons-css-transition-group</find>
-      <find>logo4.svg</find>
-      <find>label</find>
-      <find>import</find>
-      <find>closeBtnBox</find>
-      <find>400</find>
-      <find>270</find>
-      <find>// import { NavLink } from &quot;react-router-dom&quot;;</find>
-      <find>// import { useHistory } from &quot;react-router&quot;;</find>
-      <find>countBtn</find>
-      <find>NavLink</find>
-      <find>FETCH_GOODS_PAGES</find>
-      <find>59</find>
-      <find>store.getState</find>
-      <find>passHref={true}</find>
-      <find>@material-ui/lab/es</find>
-      <find>salt</find>
-      <find>rightMain</find>
-      <find>goodsArr</find>
-      <find>podMenu</find>
-      <find>descCharComBox</find>
-      <find>deliveryBox</find>
-      <find>id</find>
-      <find>acor</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-      <replace>Link</replace>
-      <replace>270</replace>
-      <replace>import Link from 'next/link';</replace>
-      <replace>import {useRouter} from 'next/router';</replace>
-      <replace>400</replace>
-      <replace>passHref={true} shallow={true}</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\nodePro\MyE-Store\client_ssr\pages\[catalo]</dir>
-      <dir>C:\nodePro\MyE-Store\client_ssr</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -174,14 +86,19 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="1i3misjLpJqtAlHAmOlFxVpkVMk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -196,11 +113,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\nodePro\MyE-Store\client_ssr\styles" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\components\pages\GoodsArr" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\src" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\public" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\pages" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\styles" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\pages\goods" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\nodePro\MyE-Store\client_ssr\assets\img" />
@@ -210,7 +127,7 @@
       <recent name="C:\nodePro\MyE-Store\client_ssr\pages\goods" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.build">
     <configuration name="init-server.js.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="init-server.js.js" working-dir="$PROJECT_DIR$/.next/server">
       <method v="2" />
     </configuration>
@@ -252,9 +169,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -274,8 +191,21 @@
       <workItem from="1599914266933" duration="17018000" />
       <workItem from="1600695690856" duration="79448000" />
       <workItem from="1601144789297" duration="577000" />
-      <workItem from="1601145400464" duration="12511000" />
+      <workItem from="1601145400464" duration="21960000" />
+      <workItem from="1601313956654" duration="15683000" />
+      <workItem from="1601487755374" duration="1033000" />
+      <workItem from="1601567074788" duration="5935000" />
+      <workItem from="1602071350708" duration="10406000" />
+      <workItem from="1602330668536" duration="1321000" />
     </task>
+    <task id="LOCAL-00001" summary="dd">
+      <created>1601218595170</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601218595170</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,31 +221,48 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dd" />
+    <option name="LAST_COMMIT_MESSAGE" value="dd" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="215" key="#ESLint" timestamp="1601145461849">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="487" y="215" key="#ESLint/0.43.1536.821@0.43.1536.821" timestamp="1601145461849" />
-    <state width="1515" height="617" key="GridCell.Tab.0.bottom" timestamp="1601147953769">
+    <state x="549" y="209" key="FileChooserDialogImpl" timestamp="1601576294560">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="617" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1601147953769" />
-    <state width="1515" height="617" key="GridCell.Tab.0.center" timestamp="1601147953769">
+    <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1601576294560" />
+    <state width="1515" height="421" key="GridCell.Tab.0.bottom" timestamp="1602331989948">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="617" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1601147953769" />
-    <state width="1515" height="617" key="GridCell.Tab.0.left" timestamp="1601147953768">
+    <state width="1515" height="421" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1602331989948" />
+    <state width="1515" height="421" key="GridCell.Tab.0.center" timestamp="1602331989948">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="617" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1601147953768" />
-    <state width="1515" height="617" key="GridCell.Tab.0.right" timestamp="1601147953769">
+    <state width="1515" height="421" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1602331989948" />
+    <state width="1515" height="421" key="GridCell.Tab.0.left" timestamp="1602331989948">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="617" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1601147953769" />
-    <state x="142" y="132" key="SettingsEditor" timestamp="1601145388616">
+    <state width="1515" height="421" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1602331989948" />
+    <state width="1515" height="421" key="GridCell.Tab.0.right" timestamp="1602331989948">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1601145388616" />
+    <state width="1515" height="421" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1602331989948" />
+    <state x="142" y="132" key="SettingsEditor" timestamp="1601575148455">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1601575148455" />
+    <state x="361" y="187" key="Vcs.Push.Dialog.v2" timestamp="1601218599670">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state x="361" y="187" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1601218599669" />
+    <state x="433" y="56" width="1103" height="795" key="find.popup" timestamp="1602331632350">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state x="433" y="56" width="1103" height="795" key="find.popup/0.43.1536.821@0.43.1536.821" timestamp="1602331632350" />
   </component>
 </project>

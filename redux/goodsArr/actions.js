@@ -1,7 +1,8 @@
 import {
+    AUTH_USERAGENT,
     FETCH_GOODS,
     FETCH_GOODS_PAGES,
-    SET_CATALOG,
+    SET_CATALOG, SET_WIDTH,
     THIS_URL,
 } from "../types";
 import bent from "bent";
@@ -26,6 +27,12 @@ export const setCatalog = (catalog) => {
   };
 };
 
+export const setWidthCard = (width) => {
+    return {
+        type: SET_WIDTH,
+        width,
+    };
+};
 let oldUrl;
 
 export const fetchGoods = (props) => {
@@ -58,6 +65,7 @@ export const fetchGoods = (props) => {
 export const fetchGoodsSSR = async (props) => {
         let cat;
         let dispatch = props.dispatch;
+        const userAgent = props.userAgent;
 
         cat = props.catalog ? "/" + props.catalog : "/";
 
@@ -76,6 +84,11 @@ export const fetchGoodsSSR = async (props) => {
             catalog: props.catalog||null,
             payload: res,
         };
+
+    dispatch({
+        type: AUTH_USERAGENT,
+        userAgent,
+    });
 
         if (sort) dispatchObj.sort = sort;
         await dispatch(dispatchObj);

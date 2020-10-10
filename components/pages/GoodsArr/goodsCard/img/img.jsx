@@ -8,6 +8,7 @@ import { changeStateLikeModal } from "../../../../../redux/modal/actions";
 import SwiperCore, { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { option } from "../../../../../option";
+import {AllGoodsR} from "../../../../../redux/goodsArr/AllGoodsReducer";
 
 const sliderStyle = {
   display: "flex",
@@ -52,6 +53,7 @@ const Im = (props) => {
                       slidesPerView={1}
                       roundLengths={true}
                       pagination={{ clickable: true }}
+                      width={props.width}
                   >
                       <SwiperSlide style={sliderStyle}>
                           <picture style={{ width: "100%" }}>
@@ -132,7 +134,14 @@ const Im = (props) => {
     </div>
   );
 };
-export const Img = connect(null, {
+
+const mapStateToProps = (state) => {
+    return {
+        width: state.AllGoodsR.width,
+    };
+};
+
+export const Img = connect(mapStateToProps, {
   fetchOneGoods,
   setCatalog,
   changeStateLikeModal,

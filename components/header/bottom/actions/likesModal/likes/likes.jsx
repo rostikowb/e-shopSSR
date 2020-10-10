@@ -19,7 +19,7 @@ export const Like = (props) => {
         <span className={s.title}>Избранное</span>
         <FontAwesomeIcon
           onClick={() => props.changeStateLikeModal()}
-          className={s.clsModalBtn}
+          className='clsModalBtn'
           icon={faTimesCircle}
         />
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./notComments.module.css";
+// import s from "./notComments.module.css";
 import Link from 'next/link';
 
 export const NotComments = (props) => {
@@ -21,7 +21,7 @@ export const NotComments = (props) => {
         </span>
       )}
       <small>
-        <Link href={``} as={``} passHref={true} shallow={true}><a>подробней</a></Link>
+        <Link href={`/`} as={`/`} passHref={true} shallow={true}><a>подробней</a></Link>
       </small>
     </>
   );

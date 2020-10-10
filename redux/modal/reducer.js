@@ -16,7 +16,7 @@ const initialState = {
   feedback: false,
 };
 
-export default (state = initialState, action) => {
+export const modal = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_AUTH_MODAL:
       return { ...state, auth: !state.auth };

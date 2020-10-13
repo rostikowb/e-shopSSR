@@ -15,10 +15,10 @@ const CheckoutInf = (props) => {
   const cupon = UD?UD.cupon.map((item) => {
     return { value: item, label: item + "% скидки!" };
   }):null;
-  const allPrice = !!UD?Math.round(
+  const allPrice = !!arr?Math.round(
     props.basketSum.sum - (props.basketSum.sum / 100) * dscnt
   ).toLocaleString("ru-RU"):null;
-
+  console.log(UD);
   return (
     <div className={s.mainInfoBox}>
       <div className={s.infoInBox}>
@@ -27,13 +27,13 @@ const CheckoutInf = (props) => {
             <span className={s.cuponTitle}>Применить купон: </span>
             <Select
               defaultValue={defOpt}
-              options={!!UD?[defOpt, ...cupon]:defOpt}
-              onChange={(e) => props.setCupon(e.value)}
+              options={!!UD?[defOpt, ...cupon]:[defOpt]}
+              onChange={(e) => !!UD?props.setCupon(e.value):null}
               name="cupon"
               className={s.cuponSelect}
             />
           </div>
-          {UD?arr.map((g) => (
+          {arr?arr.map((g) => (
             <div key={"checkout" + g._id} className={s.goods}>
               <Link href={'/[catalog]/[onegoods]'}
                     as={`/${g["ctgrId"]}/${g._id}`}

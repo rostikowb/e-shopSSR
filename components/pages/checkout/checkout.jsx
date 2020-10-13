@@ -12,22 +12,22 @@ const Checkou = (props) => {
 
     useEffect(()=>{
         props.lsToStore()
-        const jssStyles = document.querySelector('#jss-server-side');
-        console.log('jssStylespropspropspropsprops',jssStyles);
+        // const jssStyles = document.querySelector('#jss-server-side');
+        // console.log('jssStylespropspropspropsprops',jssStyles);
     },[])
 
   return (
     <>
       <header className={s.header}>
         <div className={s.headerWrapper}>
-          <Link href={`/`} as={`/`}>Вернутся на главную</Link>
-          <Link href={`/`} as={`/`}>Контакты</Link>
+            <Link href={`/`} as={`/`} passHref><a>Вернутся на главную</a></Link>
+          <Link href={`/`} as={`/`} passHref><a>Контакты</a></Link>
         </div>
       </header>
       <div className={`main ${s.wrapper}`}>
         <div className={s.content}>
-            <NoSsr><CheckoutForm /></NoSsr>
-          <CheckoutInfo />
+            <NoSsr><CheckoutForm />
+          <CheckoutInfo /></NoSsr>
         </div>
       </div>
     </>

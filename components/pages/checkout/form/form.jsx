@@ -4,7 +4,7 @@ import {
   Checkbox,
   CircularProgress,
   FormControlLabel,
-  makeStyles,
+  // makeStyles,
   TextField,
 } from "@material-ui/core";
 import { Autocomplete } from "@material-ui/lab";
@@ -20,7 +20,7 @@ import {checkoutFormTheme} from "../../../../styles/theme";
 
 
 const validateEmail = (email) => {
-  let pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  let pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return pattern.test(email);
 };
 
@@ -30,7 +30,7 @@ const CheckoutFor = (props) => {
   const arr = props.basketArr;
   const classes = useStyles();
   const stub = props.stub;
-  const errMsg = props.invalid;
+  // const errMsg = props.invalid;
   const UD = props.userData;
   const token = props.token;
   const optCity = props.optCity;
@@ -198,7 +198,7 @@ const CheckoutFor = (props) => {
             margin="normal"
             required={true}
             fullWidth
-            id="name"
+            id="LN"
             label="Фамилия"
             autoComplete="given-name"
             name="name"
@@ -215,7 +215,7 @@ const CheckoutFor = (props) => {
             margin="normal"
             required={true}
             fullWidth
-            id="name"
+            id="FN"
             label="Имя"
             autoComplete="additional-name"
             name="name"
@@ -232,7 +232,7 @@ const CheckoutFor = (props) => {
             margin="normal"
             required={true}
             fullWidth
-            id="name"
+            id="SN"
             label="Отчество"
             autoComplete="family-name"
             name="name"

@@ -19,14 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="big update">
+    <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="link clearing">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/rating/rating.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/rating/rating.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/commentBox/notComments/notComments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/commentBox/notComments/notComments.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/modal/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/modal/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/rootReducer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/redux/rootReducer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/checkout/checkout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/checkout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -92,7 +91,7 @@
       <recent name="C:\nodePro\MyE-Store\client_ssr\pages\goods" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="init-server.js.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="init-server.js.js" working-dir="$PROJECT_DIR$/.next/server">
       <method v="2" />
     </configuration>
@@ -134,8 +133,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -161,7 +160,10 @@
       <workItem from="1601487755374" duration="1033000" />
       <workItem from="1601567074788" duration="5935000" />
       <workItem from="1602071350708" duration="10406000" />
-      <workItem from="1602330668536" duration="3250000" />
+      <workItem from="1602330668536" duration="9283000" />
+      <workItem from="1602508486831" duration="782000" />
+      <workItem from="1602599203033" duration="257000" />
+      <workItem from="1602617280633" duration="1511000" />
     </task>
     <task id="LOCAL-00001" summary="dd">
       <created>1601218595170</created>
@@ -177,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602332247616</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="link clearing">
+      <created>1602334739997</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602334739997</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,44 +207,45 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dd" />
     <MESSAGE value="big update" />
-    <option name="LAST_COMMIT_MESSAGE" value="big update" />
+    <MESSAGE value="link clearing" />
+    <option name="LAST_COMMIT_MESSAGE" value="link clearing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="215" key="#ESLint" timestamp="1601145461849">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="487" y="215" key="#ESLint/0.43.1536.821@0.43.1536.821" timestamp="1601145461849" />
-    <state x="549" y="209" key="FileChooserDialogImpl" timestamp="1601576294560">
+    <state x="549" y="209" key="FileChooserDialogImpl" timestamp="1602508666397">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1601576294560" />
-    <state width="1515" height="421" key="GridCell.Tab.0.bottom" timestamp="1602332212870">
+    <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1602508666397" />
+    <state width="1515" height="421" key="GridCell.Tab.0.bottom" timestamp="1602617459177">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="421" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1602332212870" />
-    <state width="1515" height="421" key="GridCell.Tab.0.center" timestamp="1602332212870">
+    <state width="1515" height="421" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1602617459177" />
+    <state width="1515" height="421" key="GridCell.Tab.0.center" timestamp="1602617459177">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="421" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1602332212870" />
-    <state width="1515" height="421" key="GridCell.Tab.0.left" timestamp="1602332212870">
+    <state width="1515" height="421" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1602617459177" />
+    <state width="1515" height="421" key="GridCell.Tab.0.left" timestamp="1602617459177">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="421" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1602332212870" />
-    <state width="1515" height="421" key="GridCell.Tab.0.right" timestamp="1602332212870">
+    <state width="1515" height="421" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1602617459177" />
+    <state width="1515" height="421" key="GridCell.Tab.0.right" timestamp="1602617459177">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="421" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1602332212870" />
+    <state width="1515" height="421" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1602617459177" />
     <state x="142" y="132" key="SettingsEditor" timestamp="1601575148455">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1601575148455" />
-    <state x="361" y="187" key="Vcs.Push.Dialog.v2" timestamp="1602332259293">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1602334768661">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="361" y="187" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1602332259293" />
-    <state x="433" y="56" width="1103" height="795" key="find.popup" timestamp="1602334666511">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1602334768661" />
+    <state x="433" y="56" width="1103" height="795" key="find.popup" timestamp="1602617820889">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="433" y="56" width="1103" height="795" key="find.popup/0.43.1536.821@0.43.1536.821" timestamp="1602334666511" />
+    <state x="433" y="56" width="1103" height="795" key="find.popup/0.43.1536.821@0.43.1536.821" timestamp="1602617820889" />
   </component>
 </project>

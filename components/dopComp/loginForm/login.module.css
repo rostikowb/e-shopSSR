@@ -31,3 +31,12 @@
   width: 100%;
   display: block;
 }
+
+.steps {
+  width: 100%;
+  font-size: 16px;
+  color: #0f0f0f;
+  margin: 20px 0 5px 0;
+  text-align: justify;
+  font-style: italic;
+}

@@ -27,6 +27,7 @@ export const AUTH_INIT = "AUTH/AUTH_INIT";
 export const AUTH_USERAGENT = "AUTH/AUTH_SET_USERAGENT";
 export const AUTH_STUB = "AUTH/STUB_CHANGE";
 export const AUTH_API = "AUTH/AUTH_API_SEND";
+export const RESTORE_PASS = "AUTH/RESTORE_PASS";
 export const AUTH_EXIT = "AUTH/EXIT";
 export const UD_COMMENT = "AUTH/UD_COMMENT_ALREADY_SET";
 export const AUTH_UPDATE = "AUTH/UPDATE_UD";

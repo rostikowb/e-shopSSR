@@ -5,7 +5,7 @@ import {
     AUTH_STUB,
     AUTH_UPDATE,
     AUTH_USERAGENT,
-    FORM_CHANGE,
+    FORM_CHANGE, RESTORE_PASS,
     UD_COMMENT,
 } from "../types";
 import {get, set} from "../../localStorage/localStorFunc";
@@ -21,6 +21,7 @@ let initialState = {
     token: null,
     userAgent: null,
     userData: null,
+    rePassStep: 0
     // userData: {
     //   email: user?.email,
     //   tel: user?.tel,
@@ -51,7 +52,7 @@ export const auth = (state = initialState, action) => {
 
         case AUTH_API:
             if (action.payload?.invalid) {
-                state.invalid = action.payload.message;
+                state.invalid = action.payload?.message ||action.payload?.msg;
             } else {
                 if (action.payload?.token) {
                     state.token = action.payload.token;
@@ -61,7 +62,19 @@ export const auth = (state = initialState, action) => {
                     state.userData = action.userData;
                     set("auth/userData", state.userData);
                 }
+                state.rePassStep = 0
             }
+            return {...state};
+
+
+        case RESTORE_PASS:
+            if (action.payload?.invalid){
+                state.invalid = action.payload.msg;
+            }else if(action.step < 3){
+                state.invalid = null;
+                state.rePassStep = action.step + 1;
+            }
+
             return {...state};
 
         case AUTH_UPDATE:

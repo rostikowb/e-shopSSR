@@ -4,13 +4,14 @@ import {
   CHANGE_CATALOG_MODAL,
   CHANGE_COMMENTS_MODAL,
   CHANGE_FEEDBACK_MODAL,
-  CHANGE_LIKE_MODAL,
+  CHANGE_LIKE_MODAL, FORM_CHANGE,
   TICKET_DONE,
 } from "../types";
 
 export const changeStateAuthModal = () => {
-  return {
-    type: CHANGE_AUTH_MODAL,
+  return (dispatch)=>{
+    dispatch({type: FORM_CHANGE, form: 'L'});
+    dispatch({type: CHANGE_AUTH_MODAL})
   };
 };
 

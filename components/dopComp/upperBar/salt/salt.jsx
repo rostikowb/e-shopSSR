@@ -5,7 +5,7 @@ import {FETCH_GOODS, STUB_ON} from "../../../../redux/types";
 import {connect} from "react-redux";
 import {fetchGoods, stubOn} from "../../../../redux/goodsArr/actions";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGhost} from "@fortawesome/free-solid-svg-icons/index";
+import {faGhost} from "@fortawesome/free-solid-svg-icons";
 import {option} from "../../../../option";
 import {useRouter} from 'next/router'
 
@@ -24,6 +24,9 @@ export const Sal = (props) => {
     }catch (e) {
 
     }
+
+    console.log(prodLab);
+
     // catalogLabel
     // console.log(loc);
     const mainPage = () => {
@@ -64,12 +67,12 @@ export const Sal = (props) => {
                 <a onClick={() => mainPage()}>Главная</a>
             </Link>{" "}
             <FontAwesomeIcon className={s.icon} icon={faGhost}/>
-            {prodLab[1] ? (
+            {prodLab[1] === "[catalog]"? (
                 <>
                     <Link href={href('/[catalog]')} as={as(`/${catalog}`)} passHref={true} shallow={true}>
                         <a onClick={() => catalogPage()}> {catalogLabel}</a>
                     </Link>
-                    {prodLab[2] ? (
+                    {prodLab[2] === "[onegoods]" ? (
                         <>
                             <FontAwesomeIcon className={s.icon} icon={faGhost}/>{" "}
                             <span className={s.goodsName}>{onegoods} </span>
@@ -80,6 +83,7 @@ export const Sal = (props) => {
         </div>
     );
 };
+
 const mapStateToProps = (state) => {
     return {
         currGoods: state.AllGoodsR.currGoods,

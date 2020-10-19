@@ -48,6 +48,7 @@ const CheckoutFor = (props) => {
     optCity: UD?.city || "",
     optBranchN: UD?.branchN || "",
     cupon: props?.cupon || 0,
+    msg: '',
   })
 
   const [dataV, setDataV] = useState(data?{
@@ -60,6 +61,7 @@ const CheckoutFor = (props) => {
     city: !!data.city,
     branchN: !!data.branchN,
     iAgree: false,
+    msg: true,
   }:null);
 
   const sendData = () => {
@@ -325,6 +327,28 @@ const CheckoutFor = (props) => {
               )}
             />
           </div>
+        </div>
+        <h2 className={s.title}>Дополнительно</h2>
+        <div className={s.select}>
+        <TextField
+            style={{ margin: 0 }}
+            multiline={true}
+            variant="outlined"
+            // color={"secondary"}
+            margin="normal"
+            required={false}
+            fullWidth
+            id="msg"
+            label="Примечание к заказу (необязательно)"
+            autoComplete="msg"
+            name="msg"
+            type="text"
+            rows={5}
+            rowsMax={14}
+            // error={!dataV.msg}
+            helperText="Что нам принять к сведению?"
+            onChange={(event) => chngInpLn("msg", event.target.value, 4)}
+        />
         </div>
         <div className={s.namesGroup}>
           {!token ? (

@@ -19,20 +19,35 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="restorePassword and also thinks">
-      <change afterPath="$PROJECT_DIR$/components/pages/info/FAQ/FAQ.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/info/aboutUs/aboutUs.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/info/contact/contact.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/info/licagr/licagr.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/info/return/return.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/info/FAQ/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/info/aboutUs/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/info/contact/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/info/licagr/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/info/return/index.jsx" afterDir="false" />
+    <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="add msg inputs to checkout and add invalid info page">
+      <change afterPath="$PROJECT_DIR$/components/dopComp/upperBar/salt/SaltLib.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/info/FAQ/FAQ.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/info/aboutUs/aboutUs.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/info/contact/contact.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/info/info.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/info/licagr/licagr.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/info/promotions/promotions.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/info/promotions/promotions.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/info/return/return.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/info/promotions/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/info/info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/info/info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/info/infoContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/info/infoContent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/menuContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/menuContent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/info/FAQ/FAQ.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/info/FAQ/FAQ.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/info/aboutUs/aboutUs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/info/aboutUs/aboutUs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/info/contact/contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/info/contact/contact.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/info/licagr/licagr.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/info/licagr/licagr.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/info/return/return.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/info/return/return.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/FAQ/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/FAQ/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/aboutUs/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/aboutUs/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/contact/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/contact/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/licagr/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/licagr/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/return/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/return/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +59,8 @@
       <list>
         <option value="React" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="module.css" />
         <option value="JSX File" />
       </list>
     </option>
@@ -70,6 +87,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/components/pages" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -175,7 +193,12 @@
       <workItem from="1602679907720" duration="5000" />
       <workItem from="1602783990145" duration="231000" />
       <workItem from="1602855569283" duration="22179000" />
-      <workItem from="1603106996992" duration="8654000" />
+      <workItem from="1603106996992" duration="8891000" />
+      <workItem from="1603204294311" duration="5950000" />
+      <workItem from="1603290006060" duration="5778000" />
+      <workItem from="1603464313929" duration="2763000" />
+      <workItem from="1603553120040" duration="3606000" />
+      <workItem from="1603811190181" duration="6976000" />
     </task>
     <task id="LOCAL-00001" summary="dd">
       <created>1601218595170</created>
@@ -212,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602882926994</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add msg inputs to checkout and add invalid info page">
+      <created>1603120672873</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603120672873</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,33 +266,38 @@
     <MESSAGE value="link clearing" />
     <MESSAGE value="checkout fix price&amp;cupon&amp;arrGoods" />
     <MESSAGE value="restorePassword and also thinks" />
-    <option name="LAST_COMMIT_MESSAGE" value="restorePassword and also thinks" />
+    <MESSAGE value="add msg inputs to checkout and add invalid info page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add msg inputs to checkout and add invalid info page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="215" key="#ESLint" timestamp="1601145461849">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="487" y="215" key="#ESLint/0.43.1536.821@0.43.1536.821" timestamp="1601145461849" />
+    <state x="410" y="221" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1603208915960">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state x="410" y="221" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.43.1536.821@0.43.1536.821" timestamp="1603208915960" />
     <state x="549" y="209" key="FileChooserDialogImpl" timestamp="1603110281855">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1603110281855" />
-    <state width="1515" height="127" key="GridCell.Tab.0.bottom" timestamp="1603113130679">
+    <state width="1515" height="242" key="GridCell.Tab.0.bottom" timestamp="1603826546191">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="127" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1603113130679" />
-    <state width="1515" height="127" key="GridCell.Tab.0.center" timestamp="1603113130679">
+    <state width="1515" height="242" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1603826546191" />
+    <state width="1515" height="242" key="GridCell.Tab.0.center" timestamp="1603826546191">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="127" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1603113130679" />
-    <state width="1515" height="127" key="GridCell.Tab.0.left" timestamp="1603113130679">
+    <state width="1515" height="242" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1603826546191" />
+    <state width="1515" height="242" key="GridCell.Tab.0.left" timestamp="1603826546190">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="127" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1603113130679" />
-    <state width="1515" height="127" key="GridCell.Tab.0.right" timestamp="1603113130679">
+    <state width="1515" height="242" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1603826546190" />
+    <state width="1515" height="242" key="GridCell.Tab.0.right" timestamp="1603826546191">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="127" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1603113130679" />
+    <state width="1515" height="242" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1603826546191" />
     <state width="1515" height="260" key="GridCell.Tab.1.bottom" timestamp="1602882952621">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
@@ -315,13 +350,13 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1601575148455" />
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1602882932826">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1603120678479">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1602882932826" />
-    <state x="433" y="56" width="1103" height="795" key="find.popup" timestamp="1602784001884">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1603120678479" />
+    <state x="433" y="56" width="1103" height="795" key="find.popup" timestamp="1603826922628">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="433" y="56" width="1103" height="795" key="find.popup/0.43.1536.821@0.43.1536.821" timestamp="1602784001884" />
+    <state x="433" y="56" width="1103" height="795" key="find.popup/0.43.1536.821@0.43.1536.821" timestamp="1603826922628" />
   </component>
 </project>

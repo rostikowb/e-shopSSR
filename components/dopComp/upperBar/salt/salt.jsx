@@ -1,13 +1,12 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import s from "./salt.module.css";
 import Link from 'next/link'
-import {FETCH_GOODS, STUB_ON} from "../../../../redux/types";
 import {connect} from "react-redux";
 import {fetchGoods, stubOn} from "../../../../redux/goodsArr/actions";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGhost} from "@fortawesome/free-solid-svg-icons";
 import {option} from "../../../../option";
-import {useRouter} from 'next/router'
+import {saltInfoCheck} from "./SaltLib";
 
 export const Sal = (props) => {
     let loc = props.d;
@@ -16,6 +15,7 @@ export const Sal = (props) => {
     let sort = loc.query.sort || props.sort;
     let onegoods = props.onegoods;
     let catalogLabel;
+    let [infoPageCheck, setInfoPageCheck] = useState('');
     console.log(catalog);
     try {
         catalogLabel = catalog
@@ -25,10 +25,6 @@ export const Sal = (props) => {
 
     }
 
-    console.log(prodLab);
-
-    // catalogLabel
-    // console.log(loc);
     const mainPage = () => {
         // if(loc.pathname !== '/'){
         //     props.stubOn({type: STUB_ON});
@@ -57,9 +53,9 @@ export const Sal = (props) => {
         return obj;
     };
 
-    // useEffect(()=>{
-    //
-    // },[]);
+    useEffect(()=>{
+        setInfoPageCheck(saltInfoCheck(loc))
+    },[loc.pathname]);
 
     return (
         <div className={s.saltBox}>
@@ -80,6 +76,7 @@ export const Sal = (props) => {
                     ) : null}
                 </>
             ) : null}
+            {infoPageCheck ? (<span className={s.goodsName}>{infoPageCheck} </span>):null}
         </div>
     );
 };

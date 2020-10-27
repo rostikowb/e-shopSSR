@@ -8,7 +8,7 @@ const contact = () => {
         <>
             <Head>
                 <title>I'am Misix</title>
-                <meta name="theme-color" content={checkoutFormTheme} />
+                {/*<meta name="theme-color" content={checkoutFormTheme} />*/}
             </Head>
 
             <Contact/>

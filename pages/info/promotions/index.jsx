@@ -1,21 +1,22 @@
 import React from "react";
 import Head from 'next/head'
 import {checkoutFormTheme} from "../../../styles/theme";
-import {FAQ} from "../../../components/pages/info/FAQ/FAQ"
+import {Licagr} from "../../../components/pages/info/licagr/licagr";
+import {Promotions} from "../../../components/pages/info/promotions/promotions";
 
-const faq = () => {
+const promotions = () => {
     return (
         <>
             <Head>
                 <title>I'am Misix</title>
                 {/*<meta name="theme-color" content={checkoutFormTheme} />*/}
             </Head>
-            <FAQ/>
+            <Promotions/>
         </>
     )
 };
 
-export default faq;
+export default promotions;
 
 
 export async function getServerSideProps(context) {
@@ -26,7 +27,7 @@ export async function getServerSideProps(context) {
 
     return {props: {
             // initialReduxState: reduxStore.getState()
-            },
+        },
     }
     // } else {
     //     return {props: {}}

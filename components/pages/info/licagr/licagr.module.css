@@ -1,0 +1,14 @@
+.licagrMain{
+
+}
+.licagrMain > h1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.licagrMain > *{
+    margin: 10px 0;
+}
+

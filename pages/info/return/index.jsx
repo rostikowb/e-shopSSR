@@ -3,19 +3,19 @@ import Head from 'next/head'
 import {checkoutFormTheme} from "../../../styles/theme";
 import {Return} from "../../../components/pages/info/return/return";
 
-const Return = () => {
+const ReturN = () => {
     return (
         <>
             <Head>
                 <title>I'am Misix</title>
-                <meta name="theme-color" content={checkoutFormTheme} />
+                {/*<meta name="theme-color" content={checkoutFormTheme} />*/}
             </Head>
             <Return/>
         </>
     )
 };
 
-export default Return;
+export default ReturN;
 
 
 export async function getServerSideProps(context) {

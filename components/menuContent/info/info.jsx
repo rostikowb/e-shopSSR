@@ -4,13 +4,16 @@ import {Acordeon} from '../../dopComp/acardeon/acardeon'
 import {InfoContent} from './infoContent'
 
 
-export const Info = () => {
+export const Info = (props) => {
+    const isInfo = props.defOpen === 'info';
     return (
         <Acordeon
             info={{
-            title: 'Полезная информация',
-            content: <InfoContent/>
-        }}/>
+                title: 'Полезная информация',
+                content: <InfoContent/>,
+                open: isInfo
+            }}
+        />
 
     )
 };

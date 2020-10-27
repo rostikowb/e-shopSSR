@@ -8,14 +8,18 @@ import { connect } from "react-redux";
 import { FeedbackBtn } from "./feedbackBtn/feedbackBtn";
 import { Sort } from "../dopComp/upperBar/sort/sort";
 import { UserCabinet } from "./userCabinet/userCabinet";
+import {useRouter} from "next/router";
 
 export const menuConten = (props) => {
-  return (
+    const loc = useRouter().pathname.split('/')
+
+    console.log(loc);
+    return (
     <div className={s.mainMenuBox}>
       <Logo />
       {!props.token ? <Auth /> : <UserCabinet />}
-      <Info />
-      <FilterBox />
+      <Info defOpen={loc[1]} />
+      <FilterBox defOpen={loc}  />
       <div className={s.sortInMenu}>
         <span>Сортировать по:</span>
         <Sort />

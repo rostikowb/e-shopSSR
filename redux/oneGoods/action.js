@@ -51,7 +51,7 @@ export const addComments = (obj, token, goodsId, boughtId, boughtIndex) => {
     obj.goodsId = goodsId;
     obj.boughtId = boughtId;
 
-    console.log(boughtIndex);
+    // console.log(boughtIndex);
 
     return async (dispatch) => {
         dispatch({
@@ -68,7 +68,7 @@ export const addComments = (obj, token, goodsId, boughtId, boughtIndex) => {
             authorization: token,
         });
 
-        console.log(res);
+        // console.log(res);
 
         if (res["invalid"]) {
             dispatch({

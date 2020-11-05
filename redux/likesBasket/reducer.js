@@ -76,7 +76,6 @@ export const addLikesBasket = (state = initialState, action) => {
 
     case ADD_LIKES:
       if (!state.likesArr) state.likesArr = get("goods/likes");
-      console.log("state.likesArr", state.likesArr);
       state.likesArr = addArr(state.likesArr, action.payload);
       set("goods/likes", state.likesArr);
       return { ...state };

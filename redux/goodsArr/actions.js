@@ -38,7 +38,6 @@ let oldUrl;
 export const fetchGoods = (props) => {
     return async (dispatch) => {
         let cat;
-        console.log(props);
         cat = props.catalog ? "/" + props.catalog : "/";
         let page = props.page;
         let sort = props.sort ? props.sort : null;

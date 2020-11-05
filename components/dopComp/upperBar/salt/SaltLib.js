@@ -1,5 +1,7 @@
 export const saltInfoCheck = (loc) =>{
     switch (loc.pathname) {
+        case '/info/promotions':
+            return 'Акции';
         case '/info/aboutUs':
             return 'О нас';
         case '/info/contact':

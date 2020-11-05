@@ -24,12 +24,12 @@ export default function App({Component, pageProps}) {
     React.useEffect(() => {
         // Remove the server-side injected CSS.
         const jssStyles = document.querySelector('#jss-server-side');
-        console.log('jssStyles',jssStyles);
+
         if (jssStyles) {
             jssStyles.parentElement.removeChild(jssStyles);
         }
     }, []);
-    console.log(useRouter().pathname);
+
     if(useRouter().pathname === "/checkout"){
         return (
             <Provider store={store}>

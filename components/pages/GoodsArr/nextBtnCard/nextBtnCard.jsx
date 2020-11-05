@@ -10,7 +10,7 @@ import {FETCH_GOODS_PAGES, STUB_ON_P} from "../../../../redux/types";
 import {fetchGoods, setWidthCard, stubOn} from "../../../../redux/goodsArr/actions";
 import {useRouter} from 'next/router'
 import {useResizeSwipe} from "../../goods/imgs/useResizeSwiper";
-import useDebounce, {debounce} from "./debounce";
+import useDebounce from "../../../dopComp/lib/debounce";
 
 
 

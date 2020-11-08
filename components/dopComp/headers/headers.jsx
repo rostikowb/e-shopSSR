@@ -40,7 +40,7 @@ export const MetaTag = () => {
         <meta name='twitter:url' content='https://vsivuha.online'/>
         <meta name='twitter:title' content='PWA App'/>
         <meta name='twitter:description' content='Best PWA App in the world'/>
-        <meta name='twitter:image' content='https://yourdomain.com/static/icons/android-chrome-192x192.png'/>
+        <meta name='twitter:image' content='https://vsivuha.online/icons/android-chrome-192x192.png'/>
         <meta name='twitter:creator' content='@rostikowb'/>
 
         <meta property='og:site_name' content='PWA App'/>

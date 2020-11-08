@@ -2,6 +2,7 @@ import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheets } from '@material-ui/core/styles';
 import {theme} from '../styles/theme'
+import {MetaTag} from "../components/dopComp/headers/headers";
 
 export default class MyDocument extends Document {
     render() {
@@ -9,6 +10,7 @@ export default class MyDocument extends Document {
             <Html lang="ru">
                 <Head>
                     {/* PWA primary color */}
+                  <MetaTag/>
                     <meta name="theme-color" content={theme} />
                 </Head>
                 <body>

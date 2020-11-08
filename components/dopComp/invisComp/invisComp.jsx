@@ -6,6 +6,8 @@ import {lsToStore} from "../../../localStorage/initAction";
 import {CatalogModal} from "../../header/bottom/catalog/catalogModal/catalogModal";
 import {LikesModal} from "../../header/bottom/actions/likesModal/likesModal";
 import {BasketModal} from "../../header/bottom/actions/basketModal/basketModal";
+import Head from "next/head";
+import {MetaTag} from "../headers/headers";
 
 export const InvisCom = (props) => {
 
@@ -16,6 +18,7 @@ export const InvisCom = (props) => {
 
     return (
         <>
+
             {props.feedback ? <Feedback/>:null}
             {props.catalog ? <CatalogModal /> : null}
             {props.like ? <LikesModal /> : null}

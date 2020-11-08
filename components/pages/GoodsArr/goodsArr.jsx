@@ -7,6 +7,8 @@ import {StubArr} from "./stubArr/stubArr";
 import {GoodsArrLoad} from "./goodsArrLoad/goodsArrLoad";
 import {useRouter} from 'next/router'
 import {lsToStore} from "../../../localStorage/initAction";
+import Head from "next/head";
+import {option} from "../../../option";
 
 const GoodsAr = (props) => {
     const location = useRouter();
@@ -39,6 +41,21 @@ const GoodsAr = (props) => {
 
     return (
         <div className={s.goodsArr}>
+            {/*<Head>*/}
+            {/*    <title>Meta Tags — Preview, Edit and Generate</title>*/}
+            {/*    <meta name="title" content={`vsivuha.online`}/>*/}
+            {/*    <meta name="description"*/}
+            {/*          content={`тараррарар`}/>*/}
+
+            {/*    <meta property="og:type" content="website"/>*/}
+            {/*    <meta property="og:url" content="https://vsivuha.online/"/>*/}
+            {/*    <meta property="og:title" content={`vsivuha - топ магаз`}/>*/}
+            {/*    <meta property="og:description"*/}
+            {/*          content={`Все для смартфона, наушники, чехлы, зарядки и т.д`}/>*/}
+            {/*    /!*<meta property="og:image"*!/*/}
+            {/*    /!*      content={`${option.STATIC}/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>*!/*/}
+
+            {/*</Head>*/}
             <ul className={s.goodsBox}>
                 {/*Підгружені карточки товару*/}
                 {!props.stub && !props.stub ? <GoodsArrLoad/> : null}

@@ -19,17 +19,17 @@ const promotions = () => {
 export default promotions;
 
 
-export async function getServerSideProps(context) {
-
-    // if (!(option.DOMENREGEX.test(context.req.headers.referer))) {
-
-    // const reduxStore = initializeStore();
-
-    return {props: {
-            // initialReduxState: reduxStore.getState()
-        },
-    }
-    // } else {
-    //     return {props: {}}
-    // }
-}
+// export async function getServerSideProps(context) {
+//
+//     // if (!(option.DOMENREGEX.test(context.req.headers.referer))) {
+//
+//     // const reduxStore = initializeStore();
+//
+//     return {props: {
+//             // initialReduxState: reduxStore.getState()
+//         },
+//     }
+//     // } else {
+//     //     return {props: {}}
+//     // }
+// }

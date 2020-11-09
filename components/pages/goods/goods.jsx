@@ -29,13 +29,14 @@ const Good = (props) => {
 
   const loadOneGoods = () => {
     props.setCatalog(catalog);
-    // props.fetchOneGoods(productId);
+    props.fetchOneGoods(productId);
   };
   useEffect(() => {
     props.lsToStore();
-    // if(!props.product || props.product._id !== productId){
-    //     loadOneGoods();
-    // }
+
+    if(!props.product || (props.product._id !== productId) && loc.pathname === "/[catalog]/[onegoods]"){
+        loadOneGoods();
+    }
   }, [productId]);
 
   return (

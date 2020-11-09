@@ -4,7 +4,7 @@ import React from 'react';
 export const Logo = () => {
     return (
         <div className={s.menuLogoBox}>
-            <img src="/image.png" alt=""/>
+            <img src="/icons/image.png" alt=""/>
         </div>
     )
 };

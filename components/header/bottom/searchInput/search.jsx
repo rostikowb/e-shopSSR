@@ -18,17 +18,16 @@ export const Search = () => {
   // const [value, setValue] = useState(null);
 
 
-
   // const { classes } = styles;
 
-  console.log('searchRes', searchRes);
-
-  console.log("input", input);
+  // console.log('searchRes', searchRes);
+  //
+  // console.log("input", input);
 
   const cooldown = useDebounce(input, 1000);
 
   useEffect(() => {
-    (async()=>{
+    (async () => {
       if (cooldown) {
         console.log(cooldown);
         setSearchRes(await reqSearch(cooldown))
@@ -54,16 +53,16 @@ export const Search = () => {
       setInput(words)
   }
 
-  const pushUrl = (value)=>{
+  const pushUrl = (value) => {
     let link = value._id + "__" + value["nm"].replace(/\s/gi, "_").replace(/\//gi, "-");
     let finalLink = `/${value["ctgrId"]}/${link}`
     console.log('alreadyRedirect', alreadyRedirect);
-    if((link !== loc.query.onegoods) && alreadyRedirect){
+    if ((link !== loc.query.onegoods) && alreadyRedirect) {
       setAlreadyRedirect(false);
       loc.push(
         "/[catalog]/[onegoods]",
         finalLink,
-        {shallow:true}
+        {shallow: true}
       );
     }
 
@@ -77,7 +76,7 @@ export const Search = () => {
             id="asynchronous-demo"
             size={"small"}
             color={'white'}
-            style={{ width: "100%" }}
+            style={{width: "100%"}}
             loading={!load}
             loadingText={"Ищем..."}
             noOptionsText={"Нет совпадений"}
@@ -85,8 +84,9 @@ export const Search = () => {
             filterOptions={(x) => x}
             onInputChange={(event, value) => searchHandler(value)}
             getOptionSelected={(option, value) => {
-              if(option.nm === value.nm){
-                console.log(option.nm === value.nm);
+              // console.log('option.nm === value.nm', option.nm === value.nm);
+              if (option.nm === value.nm) {
+                console.log('option.nm === value.nm', option.nm === value.nm);
                 pushUrl(value)
                 return true;
               }
@@ -102,17 +102,15 @@ export const Search = () => {
                 size={'small'}
                 style={{backgroundColor: 'white'}}
                 InputLabelProps={{
-                  classes: {
-                  },
+                  classes: {},
                 }}
                 InputProps={{
                   ...params.InputProps,
-                  classes: {
-                  },
+                  classes: {},
                   endAdornment: (
                     <React.Fragment>
                       {!load && input ? (
-                        <CircularProgress color="inherit" size={20} />
+                        <CircularProgress color="inherit" size={20}/>
                       ) : null}
                       {params.InputProps.endAdornment}
                     </React.Fragment>

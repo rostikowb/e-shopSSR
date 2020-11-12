@@ -11,13 +11,13 @@ export const Smart = (props) => {
   let opt = option;
 
   const href = ()=>{
-      let obj = {pathname: '/[catalog]'};
+      let obj = {pathname: '/goods/[catalog]'};
       if(loc.query?.sort) obj.query = {sort: loc.query.sort};
       return obj
   };
 
   const as = (value)=>{
-      let obj = {pathname: '/'+value};
+      let obj = {pathname: '/goods/'+value};
       if(loc.query?.sort) obj.query = {sort: loc.query.sort};
       return obj;
   };

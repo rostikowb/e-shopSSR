@@ -1,8 +1,8 @@
 import React from "react";
-import {initializeStore} from "../../../redux/store";
-import {Goods} from "../../../components/pages/goods/goods";
-import {fetchOneGoodsSSR} from "../../../redux/oneGoods/action";
-import {option} from "../../../option";
+import {initializeStore} from "../../../../redux/store";
+import {Goods} from "../../../../components/pages/goods/goods";
+import {fetchOneGoodsSSR} from "../../../../redux/oneGoods/action";
+import {option} from "../../../../option";
 
 
 const onegoods = () => {

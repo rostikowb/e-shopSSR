@@ -21,7 +21,7 @@ const Titl = (props) => {
 
   return (
     <div onClick={() => (dvnld ? loadOneGoods() : null)} className={s.title}>
-      <Link href={"/[catalog]/[onegoods]"} as={`/${d["ctgrId"]}/${link}`} prefetch={false} passHref={true} shallow={true}>
+      <Link href={"/goods/[catalog]/[onegoods]"} as={`/goods/${d["ctgrId"]}/${link}`} prefetch={false} passHref={true} shallow={true}>
           <a href="">
               <h3>{d["nm"]} </h3>
           </a>

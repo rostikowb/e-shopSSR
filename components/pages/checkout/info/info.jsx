@@ -35,8 +35,8 @@ const CheckoutInf = (props) => {
           </div>
           {arr?arr.map((g) => (
             <div key={"checkout" + g._id} className={s.goods}>
-              <Link href={'/[catalog]/[onegoods]'}
-                    as={`/${g["ctgrId"]}/${g._id}`}
+              <Link href={'/goods/[catalog]/[onegoods]'}
+                    as={`/goods/${g["ctgrId"]}/${g._id}`}
                     prefetch={false}
                     passHref={true}
                     shallow={true}>
@@ -44,8 +44,8 @@ const CheckoutInf = (props) => {
               </Link>
               <div className={s.bottom}>
                 <div className={s.left}>
-                  <Link href={'/[catalog]/[onegoods]'}
-                        as={`/${g["ctgrId"]}/${g._id}`}
+                  <Link href={'/goods/[catalog]/[onegoods]'}
+                        as={`/goods/${g["ctgrId"]}/${g._id}`}
                         prefetch={false}
                         passHref={true}
                         shallow={true}>
@@ -70,8 +70,8 @@ const CheckoutInf = (props) => {
                     </a>
                   </Link>
                   <Link
-                      href={'/[catalog]/[onegoods]'}
-                      as={`/${g["ctgrId"]}/${g._id}`}
+                      href={'/goods/[catalog]/[onegoods]'}
+                      as={`/goods/${g["ctgrId"]}/${g._id}`}
                       prefetch={false}
                       passHref={true}
                       shallow={true}

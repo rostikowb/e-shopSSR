@@ -1,12 +1,12 @@
 import {
-    AUTH_USERAGENT,
-    FETCH_GOODS,
-    FETCH_GOODS_PAGES,
-    SET_CATALOG, SET_WIDTH,
-    THIS_URL,
+  AUTH_USERAGENT,
+  FETCH_GOODS,
+  FETCH_GOODS_PAGES,
+  SET_CATALOG, SET_WIDTH,
+  THIS_URL,
 } from "../types";
 import bent from "bent";
-import { option } from "../../option";
+import {option} from "../../option";
 
 export const stubOn = (type) => {
   return {
@@ -28,67 +28,67 @@ export const setCatalog = (catalog) => {
 };
 
 export const setWidthCard = (width) => {
-    return {
-        type: SET_WIDTH,
-        width,
-    };
+  return {
+    type: SET_WIDTH,
+    width,
+  };
 };
 let oldUrl;
 
 export const fetchGoods = (props) => {
-    return async (dispatch) => {
-        let cat;
-        cat = props.catalog ? "/" + props.catalog : "/";
-        let page = props.page;
-        let sort = props.sort ? props.sort : null;
-        let url = option.api + cat + "?page=" + page + "&sort=" + sort;
-        let isFetch;
+  return async (dispatch) => {
+    let cat;
+    cat = props.catalog ? "/" + props.catalog : "/";
+    let page = props.page;
+    let sort = props.sort ? props.sort : null;
+    let url = option.api + cat + "?page=" + page + "&sort=" + sort;
+    let isFetch;
 
-        oldUrl = url;
+    oldUrl = url;
 
-        // dispatch({type: STUB_ON});
-        isFetch = !page ? FETCH_GOODS : FETCH_GOODS_PAGES;
-        const res = await bent(url, "json", "POST", 200)();
+    // dispatch({type: STUB_ON});
+    isFetch = !page ? FETCH_GOODS : FETCH_GOODS_PAGES;
+    const res = await bent(url, "json", "POST", 200)();
 
-        let dispatchObj = {
-            type: isFetch,
-            catalog: props.catalog||null,
-            payload: res,
-        };
+    let dispatchObj = {
+      type: isFetch,
+      catalog: props.catalog || null,
+      payload: res,
+    };
 
-        if (sort) dispatchObj.sort = sort;
-        await dispatch(dispatchObj);
-    }
+    if (sort) dispatchObj.sort = sort;
+    await dispatch(dispatchObj);
+  }
 
 };
 export const fetchGoodsSSR = async (props) => {
-        let cat;
-        let dispatch = props.dispatch;
-        const userAgent = props.userAgent;
+  let cat;
+  let dispatch = props.dispatch;
+  const userAgent = props.userAgent;
 
-        cat = props.catalog ? "/" + props.catalog : "/";
+  cat = props.catalog ? "/" + props.catalog : "/";
 
-        let page = props.page;
-        let sort = props.sort ? props.sort : null;
-        let url = option.api + cat + "?page=" + page + "&sort=" + sort;
-        let isFetch;
+  let page = props.page;
+  let sort = props.sort ? props.sort : null;
+  let url = option.api + cat + "?page=" + page + "&sort=" + sort;
+  let isFetch;
 
-        oldUrl = url;
+  oldUrl = url;
 
-        isFetch = !page ? FETCH_GOODS : FETCH_GOODS_PAGES;
-        const res = await bent(url, "json", "POST", 200)();
+  isFetch = !page ? FETCH_GOODS : FETCH_GOODS_PAGES;
+  const res = await bent(url, "json", "POST", 200)();
 
-    let dispatchObj = {
-            type: isFetch,
-            catalog: props.catalog||null,
-            payload: res,
-        };
+  let dispatchObj = {
+    type: FETCH_GOODS,
+    catalog: props.catalog || null,
+    payload: res,
+  };
 
-    dispatch({
-        type: AUTH_USERAGENT,
-        userAgent,
-    });
+  dispatch({
+    type: AUTH_USERAGENT,
+    userAgent,
+  });
 
-        if (sort) dispatchObj.sort = sort;
-        await dispatch(dispatchObj);
+  if (sort) dispatchObj.sort = sort;
+  await dispatch(dispatchObj);
 };

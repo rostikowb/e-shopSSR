@@ -1,7 +1,7 @@
 {
   "name": "vsivuha.online - все для смартфона!",
   "short_name": "vsivuha.online",
-  "start_url": "https://vsivuha.online",
+  "start_url": "/",
   "icons": [
     {
       "src": "/icons/android-chrome-192x192.png",

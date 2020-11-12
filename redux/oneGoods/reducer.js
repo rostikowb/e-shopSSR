@@ -35,6 +35,7 @@ export const oneGoods = (state = initialState, action) => {
             return {...state};
 
         case PRODUCT:
+            if(!action.payload) return {...state};
             if (typeof window !== 'undefined'){
                 if(!state.visitedArr) state.visitedArr = get("goods/visited");
                 state.visitedArr = addVisitedArr(state.visitedArr, action.payload);

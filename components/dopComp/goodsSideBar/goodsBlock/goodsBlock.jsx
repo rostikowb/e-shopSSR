@@ -23,7 +23,7 @@ export const GoodsBloc = (props) => {
 
   return (
     <div className={s.oneBlockBox}>
-          <Link href={"/[catalog]/[onegoods]"} as={`/${d["ctgrId"]}/${link}`} shallow={true} passHref={true}>
+          <Link href={"/goods/[catalog]/[onegoods]"} as={`/goods/${d["ctgrId"]}/${link}`} shallow={true} passHref={true}>
               <a onClick={() => chaProd()} className={s.imgBox} >
                   <picture style={{ width: "100%" }}>
                       <source
@@ -44,7 +44,7 @@ export const GoodsBloc = (props) => {
                   </picture>
               </a>
           </Link>
-      <Link href={"/[catalog]/[onegoods]"} as={`/${d["ctgrId"]}/${link}`} shallow={true} passHref={true}>
+      <Link href={"/goods/[catalog]/[onegoods]"} as={`/goods/${d["ctgrId"]}/${link}`} shallow={true} passHref={true}>
           <a><span onClick={() => chaProd()}>{d["nm"]}</span></a>
       </Link>
       <RatingBox data={d} link={link} />

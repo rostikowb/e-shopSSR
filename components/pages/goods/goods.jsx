@@ -34,7 +34,15 @@ const Good = (props) => {
   useEffect(() => {
     props.lsToStore();
 
-    if(!props.product || (props.product._id !== productId) && loc.pathname === "/[catalog]/[onegoods]"){
+    if(!props.product?.nm) {
+      loc.push(
+        "/error/404",
+        "/error/404",
+        {shallow: true}
+      );
+    }
+
+    if(!props.product || (props.product._id !== productId) && loc.pathname === "/goods/[catalog]/[onegoods]"){
         loadOneGoods();
     }
   }, [productId]);
@@ -44,7 +52,7 @@ const Good = (props) => {
       {props.product ? (
         <>
           <Head>
-            <title>Meta Tags — Preview, Edit and Generate</title>
+            <title>`VSIVUHA - ${props.product.nm}`</title>
             <meta name="title" content={`VSIVUHA - ${props.product.nm}`}/>
             <meta name="description"
                   content={`${props.product.dscrptn}`}/>

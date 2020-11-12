@@ -1,9 +1,9 @@
 import React from "react";
-import {fetchGoodsSSR} from "../../redux/goodsArr/actions";
-import {FETCH_GOODS} from "../../redux/types";
-import {initializeStore} from "../../redux/store";
-import {GoodsArr} from "../../components/pages/GoodsArr/goodsArr";
-import {option} from "../../option";
+import {fetchGoodsSSR} from "../../../redux/goodsArr/actions";
+import {FETCH_GOODS} from "../../../redux/types";
+import {initializeStore} from "../../../redux/store";
+import {GoodsArr} from "../../../components/pages/GoodsArr/goodsArr";
+import {option} from "../../../option";
 
 const catalog = () => {
     return (<GoodsArr/>)

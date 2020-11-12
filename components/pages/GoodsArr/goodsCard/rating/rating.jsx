@@ -18,7 +18,7 @@ export const RatingBox = (props) => {
         readOnly
       />
       {commArr > 3 ? (
-        <Link href={`/${data["ctgrId"]}/${link}#comments`} as={`/[catalog]/[onegoods]`}>
+        <Link href={`/goods/${data["ctgrId"]}/${link}#comments`} as={`/goods/[catalog]/[onegoods]`}>
           - {commArr} оценивших
         </Link>
       ) : null}

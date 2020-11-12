@@ -56,12 +56,12 @@ export const Search = () => {
   const pushUrl = (value) => {
     let link = value._id + "__" + value["nm"].replace(/\s/gi, "_").replace(/\//gi, "-");
     let finalLink = `/${value["ctgrId"]}/${link}`
-    console.log('alreadyRedirect', alreadyRedirect);
+    // console.log('alreadyRedirect', alreadyRedirect);
     if ((link !== loc.query.onegoods) && alreadyRedirect) {
       setAlreadyRedirect(false);
       loc.push(
-        "/[catalog]/[onegoods]",
-        finalLink,
+        "/goods/[catalog]/[onegoods]",
+        '/goods'+finalLink,
         {shallow: true}
       );
     }

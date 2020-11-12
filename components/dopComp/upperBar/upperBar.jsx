@@ -6,7 +6,7 @@ import {useRouter} from "next/router";
 
 export const UpperBar = (props) => {
     const loc = useRouter();
-    const sortEnable = loc.pathname === '/' || loc.pathname === '/[catalog]'
+    const sortEnable = loc.pathname === '/' || loc.pathname === '/goods/[catalog]'
     let onegoods;
     console.log(loc);
     try {

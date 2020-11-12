@@ -29,11 +29,11 @@ const customStyles = {
 
 const Sor = (props) => {
   let loc = useRouter();
-
+  console.log(loc);
   const loadGoods = (value) => {
     loc.push(
         {pathname: loc.pathname, query: {sort: value.value, page: 0}},
-        {pathname: loc.query?.catalog?'/'+loc.query.catalog:'/', query: {sort: value.value, page: 0}},
+        {pathname: loc.query.catalog, query: {sort: value.value, page: 0}},
         {shallow:true}
       );
     props.stubOn({ type: STUB_ON });

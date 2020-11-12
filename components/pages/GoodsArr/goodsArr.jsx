@@ -11,10 +11,10 @@ import Head from "next/head";
 import {option} from "../../../option";
 
 const GoodsAr = (props) => {
-    const location = useRouter();
-    let page = Number(location.query?.page);
-    let catalog = location.query?.catalog;
-    let sort = location.query?.sort || props?.sort;
+    const loc = useRouter();
+    let page = Number(loc.query?.page);
+    let catalog = loc.query?.catalog;
+    let sort = loc.query?.sort || props?.sort;
 
     const firstLoad = () => {
         props.fetchGoods({
@@ -24,9 +24,15 @@ const GoodsAr = (props) => {
             page,
         });
     };
-    // console.log(location.route);
+    // console.log(loc.route);
     useEffect(() => {
         props.lsToStore();
+        // if(loc.pathname === '/' && (loc.query.page > 0 || loc.query.sort !== 'byRating')){
+        //     props.stubOn({type: STUB_ON});
+        //     props.fetchGoods({
+        //         type: FETCH_GOODS,
+        //     })
+        // }
         // if(!props.currGoods.length){
         //     console.log(props.currGoods);
 
@@ -36,8 +42,8 @@ const GoodsAr = (props) => {
         // }
         // props.stubOn({type: STUB_ON});
         // !props.isFirstL || firstLoad();
-        console.log('location.pathname', location.pathname);
-    }, [location.pathname]);
+        console.log('loc.pathname', loc.pathname);
+    }, [loc.pathname]);
 
     return (
         <div className={s.goodsArr}>

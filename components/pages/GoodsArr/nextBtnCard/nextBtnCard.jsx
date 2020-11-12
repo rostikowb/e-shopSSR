@@ -57,7 +57,7 @@ const NextBtnCar = (props) => {
     return (
         <li ref={nexBtnRef} className={ss.stubElem}>
             <Link href={{pathname: loc.pathname, query: {sort: sort, page: page}}}
-                  as={{pathname: loc.query?.catalog?'/'+loc.query.catalog:'/', query: {sort: sort, page: page}}}
+                  as={{pathname: loc.query.catalog, query: {sort: sort, page: page}}}
                   scroll={false}
                   passHref={true}
                   shallow={true}

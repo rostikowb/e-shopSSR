@@ -42,7 +42,7 @@ export const MetaTag = () => {
         <meta name='twitter:image' content='https://vsivuha.online/icons/android-chrome-192x192.png'/>
         <meta name='twitter:creator' content='@rostikowb'/>
 
-        <meta property='og:site_name' content='PWA App'/>
+        <meta property='og:site_name' content='vsivuha - Мінімальні ціни!'/>
         <meta name="title" content='vsivuha.online'/>
         <meta name="description"
               content={`На vsivuha.online - забудь про оффлайн.`}/>

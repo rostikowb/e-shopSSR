@@ -46,7 +46,7 @@ const Im = (props) => {
 
   return (
     <div onClick={() => (dvnld ? loadOneGoods() : null)}>
-        <Link href={'/[catalog]/[onegoods]'} as={`/${d["ctgrId"]}/${link}`} prefetch={false} shallow={true} passHref={true}>
+        <Link href={'/goods/[catalog]/[onegoods]'} as={`/goods/${d["ctgrId"]}/${link}`} prefetch={false} shallow={true} passHref={true}>
           <a className={s.imgBox}>
               <div className={s.mobileBox}>
                   <Swiper

@@ -7,6 +7,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGhost} from "@fortawesome/free-solid-svg-icons";
 import {option} from "../../../../option";
 import {saltInfoCheck} from "./SaltLib";
+import {FETCH_GOODS, STUB_ON} from "../../../../redux/types";
 
 export const Sal = (props) => {
     let loc = props.d;
@@ -26,10 +27,10 @@ export const Sal = (props) => {
     }
 
     const mainPage = () => {
-        // if(loc.pathname !== '/'){
-        //     props.stubOn({type: STUB_ON});
-        //     props.fetchGoods({type: FETCH_GOODS, catalog: null, sort});
-        // }
+        if(loc.query.page > 0){
+            props.stubOn({type: STUB_ON});
+            props.fetchGoods({type: FETCH_GOODS, catalog: null, sort});
+        }
     };
 
     const catalogPage = () => {
@@ -63,12 +64,12 @@ export const Sal = (props) => {
                 <a onClick={() => mainPage()}>Главная</a>
             </Link>{" "}
             <FontAwesomeIcon className={s.icon} icon={faGhost}/>
-            {prodLab[1] === "[catalog]"? (
+            {prodLab[2] === "[catalog]"? (
                 <>
-                    <Link href={href('/[catalog]')} as={as(`/${catalog}`)} passHref={true} shallow={true}>
+                    <Link href={href('/goods/[catalog]')} as={as(`/goods/${catalog}`)} passHref={true} shallow={true}>
                         <a onClick={() => catalogPage()}> {catalogLabel}</a>
                     </Link>
-                    {prodLab[2] === "[onegoods]" ? (
+                    {prodLab[3] === "[onegoods]" ? (
                         <>
                             <FontAwesomeIcon className={s.icon} icon={faGhost}/>{" "}
                             <span className={s.goodsName}>{onegoods} </span>

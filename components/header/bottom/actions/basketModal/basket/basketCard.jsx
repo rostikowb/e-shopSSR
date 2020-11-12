@@ -54,7 +54,7 @@ const BasketCar = (props) => {
   return (
     <div className={s.cardBox}>
       <div className={s.topPart}>
-        <Link href={"/[catalog]/[onegoods]"} as={`/${d["ctgrId"]}/${link}`}>
+        <Link href={"/goods/[catalog]/[onegoods]"} as={`/goods/${d["ctgrId"]}/${link}`}>
           <a>
           <span onClick={() => loadOneGoods()} className={s.name}>
             {d.nm}
@@ -64,7 +64,7 @@ const BasketCar = (props) => {
       </div>
       <div className={s.bottomPart}>
         <div onClick={() => loadOneGoods()} className={s.imgBox}>
-          <Link href={"/[catalog]/[onegoods]"} as={`/${d["ctgrId"]}/${link}`}>
+          <Link href={"/goods/[catalog]/[onegoods]"} as={`/goods/${d["ctgrId"]}/${link}`}>
             <a>
             <picture style={{ width: "100%" }}>
               <source
@@ -90,7 +90,7 @@ const BasketCar = (props) => {
           <div className={s.leftBox}>
             <div className={s.NamePrice}>
               <span className={s.namePc} >
-                <Link href={"/[catalog]/[onegoods]"} as={`/${d["ctgrId"]}/${link}`}>
+                <Link href={"/goods/[catalog]/[onegoods]"} as={`/goods/${d["ctgrId"]}/${link}`}>
                   <a>
                 <span onClick={() => loadOneGoods()} className={s.name}>
                   {d.nm}

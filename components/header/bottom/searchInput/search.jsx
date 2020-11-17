@@ -7,8 +7,29 @@ import {reqSearch} from "./req";
 import {Autocomplete} from "@material-ui/lab";
 import {CircularProgress, TextField} from "@material-ui/core";
 import {useRouter} from "next/router";
+import {makeStyles} from "@material-ui/core/styles";
+
+const useStyles = makeStyles({
+  // textField: {
+  //   width: '90%',
+  //   marginLeft: 'auto',
+  //   marginRight: 'auto',
+  //   paddingBottom: 0,
+  //   marginTop: 0,
+  //   fontWeight: 500
+  // },
+  root: {
+    color:"#2b2b2b",
+    // backgroundColor: 'white'
+  },
+  input: {
+    color: '#2b2b2b',
+    // backgroundColor: 'white'
+  }
+});
 
 export const Search = () => {
+  const classes = useStyles();
   // const [open, setOpen] = useState(false);
   let loc = useRouter();
   const [searchRes, setSearchRes] = useState([])
@@ -61,7 +82,7 @@ export const Search = () => {
       setAlreadyRedirect(false);
       loc.push(
         "/goods/[catalog]/[onegoods]",
-        '/goods'+finalLink,
+        '/goods' + finalLink,
         {shallow: true}
       );
     }
@@ -98,15 +119,22 @@ export const Search = () => {
               <TextField
                 {...params}
                 variant={'filled'}
+
                 label="Мне повезет!"
                 size={'small'}
-                style={{backgroundColor: 'white'}}
+                style={{backgroundColor: 'white', color: 'black'}}
                 InputLabelProps={{
-                  classes: {},
+                  classes: {
+                    // input: classes.input,
+                    root: classes.root
+                  }
                 }}
                 InputProps={{
                   ...params.InputProps,
-                  classes: {},
+                  classes: {
+                    // input: classes.input,
+                    root: classes.root
+                  },
                   endAdornment: (
                     <React.Fragment>
                       {!load && input ? (

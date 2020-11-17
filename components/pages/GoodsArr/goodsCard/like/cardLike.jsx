@@ -1,7 +1,7 @@
 import s from "./cardLike.module.css";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons/index";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import {
   addProdToCash,
   delProdToCash,
@@ -27,6 +27,7 @@ export const CardLikeBo = (props) => {
       className={s.likeBox}
     >
       <FontAwesomeIcon
+        id={"CardLike"+d.nm}
         style={{ color: isLikes ? "white" : null }}
         className={s.icon}
         title={

@@ -29,7 +29,7 @@ const customStyles = {
 
 const Sor = (props) => {
   let loc = useRouter();
-  console.log(loc);
+  // console.log(loc);
   const loadGoods = (value) => {
     loc.push(
         {pathname: loc.pathname, query: {sort: value.value, page: 0}},
@@ -46,8 +46,10 @@ const Sor = (props) => {
   let defaul = options.find((e) => e.value === props.sort);
   return (
     <div className={s.selects}>
-      <span>Отсортировать по: </span>
+      <span itemID={'sortSelect'}>Отсортировать по: </span>
       <Select
+        id={"sortSelect"}
+        // instanceId={"sortSelect1"}
         defaultValue={defaul}
         options={options}
         onChange={(e) => loadGoods(e)}
@@ -55,6 +57,8 @@ const Sor = (props) => {
         className={s.sortSelect}
         styles={customStyles}
         value={defaul}
+        aria-label={"Отсортировать по"}
+        aria-labelledby={"sortSelect"}
       />
     </div>
   );

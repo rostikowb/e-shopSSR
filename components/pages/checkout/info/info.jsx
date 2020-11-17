@@ -26,6 +26,8 @@ const CheckoutInf = (props) => {
           <div className={s.cuponSelectBox}>
             <span className={s.cuponTitle}>Применить купон: </span>
             <Select
+              id={"cuponSelect"}
+              instanceId={"cuponSelect1"}
               defaultValue={defOpt}
               options={!!UD?[defOpt, ...cupon]:[defOpt]}
               onChange={(e) => !!UD?props.setCupon(e.value):null}

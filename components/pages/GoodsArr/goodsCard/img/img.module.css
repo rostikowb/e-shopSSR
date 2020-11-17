@@ -43,14 +43,15 @@
 .mobileBox {
   max-width: 100%;
   display: none;
-  height: 100%;
+  /*height: 100%;*/
+  height: 100% !important;
 }
 /*.mobileBox img {*/
 /*margin: auto 0;*/
 /*}*/
 .mobileBox > * {
   /*max-width: 100%;*/
-  height: 100% !important;
+
 }
 .mobileBox > .swiper-slide {
   display: flex;

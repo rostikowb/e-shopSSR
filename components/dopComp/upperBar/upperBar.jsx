@@ -4,11 +4,11 @@ import { Sort } from "./sort/sort";
 import { Salt } from "./salt/salt";
 import {useRouter} from "next/router";
 
-export const UpperBar = (props) => {
+export const UpperBar = () => {
     const loc = useRouter();
     const sortEnable = loc.pathname === '/' || loc.pathname === '/goods/[catalog]'
     let onegoods;
-    console.log(loc);
+    // console.log(loc);
     try {
         onegoods = loc.query?.onegoods.split('__')[1].split('_').join(' ');
     }catch (e) {

@@ -12,7 +12,8 @@ import {useRouter} from 'next/router'
 import {Layout} from "../components/layout/Layout";
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css' // Import the CSS
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import Head from "next/head"; // Import the CSS
 config.autoAddCss = false;
 library.add( faSearch );
 
@@ -36,6 +37,10 @@ export default function App({Component, pageProps}) {
                 <MuiThemeProvider muiTheme={muiTheme}>
                     <ThemeProvider theme={theme}>
                         <InvisComp/>
+                        <Head>
+                            <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover' />
+                            <title>vsivuha - Мінімальні ціни!</title>
+                        </Head>
                         <Component {...pageProps} />
                     </ThemeProvider>
                 </MuiThemeProvider>

@@ -1,6 +1,7 @@
 {
   "name": "vsivuha.online - все для смартфона!",
   "short_name": "vsivuha.online",
+  "scope": "/",
   "start_url": "/",
   "icons": [
     {

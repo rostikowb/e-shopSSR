@@ -8,7 +8,7 @@ import { changeStateLikeModal } from "../../../../../redux/modal/actions";
 import SwiperCore, { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { option } from "../../../../../option";
-import {AllGoodsR} from "../../../../../redux/goodsArr/AllGoodsReducer";
+// import {AllGoodsR} from "../../../../../redux/goodsArr/AllGoodsReducer";
 
 const sliderStyle = {
   display: "flex",
@@ -45,11 +45,11 @@ const Im = (props) => {
   };
 
   return (
-    <div onClick={() => (dvnld ? loadOneGoods() : null)}>
         <Link href={'/goods/[catalog]/[onegoods]'} as={`/goods/${d["ctgrId"]}/${link}`} prefetch={false} shallow={true} passHref={true}>
-          <a className={s.imgBox}>
-              <div className={s.mobileBox}>
+          <a aria-label={'Перейти на страницу товара '+d.nm} onClick={() => (dvnld ? loadOneGoods() : null)} className={s.imgBox}>
+              {/*<div >*/}
                   <Swiper
+                    className={s.mobileBox}
                       slidesPerView={1}
                       roundLengths={true}
                       pagination={{ clickable: true }}
@@ -70,7 +70,7 @@ const Im = (props) => {
                               <img
                                   className={s.img}
                                   src={`${option.STATIC}/jpeg/${d._id}/${d.img[0]}-400.jpeg`}
-                                  alt=""
+                                  alt={`Первое фото ${d.nm}`}
                               />
                           </picture>
                       </SwiperSlide>
@@ -90,13 +90,13 @@ const Im = (props) => {
                                   <img
                                       className={s.img}
                                       src={`${option.STATIC}/jpeg/${d._id}/${d.img[1]}-400.jpeg`}
-                                      alt=""
+                                      alt={`Второе фото ${d.nm}`}
                                   />
                               </picture>
                           </SwiperSlide>
                       ) : null}
                   </Swiper>
-              </div>
+              {/*</div>*/}
               <div className={s.deckstopBox}>
                   <picture className={s.imgOne} style={styleImg1}>
                       <source
@@ -109,7 +109,7 @@ const Im = (props) => {
                       />
                       <img
                           src={`${option.STATIC}/jpeg/${d._id}/${d.img[0]}-400.jpeg`}
-                          alt=""
+                          alt={`Первое фото ${d.nm}`}
                       />
                   </picture>
                   {d.img[1] ? (<picture className={s.imgTwo} style={styleImg2}>
@@ -124,14 +124,13 @@ const Im = (props) => {
                       />
                       <img
                           src={`${option.STATIC}/jpeg/${d._id}/${d.img[1]}-400.jpeg`}
-                          alt=""
+                          alt={`Второе фото ${d.nm}`}
                           // https://vsivuha.online/img/webp/5f4268ccac31fda09820d762/0801ccc71a5f750085e8d63da7a14fd5-300.webp
                       />
                   </picture>):null}
               </div>
           </a>
       </Link>
-    </div>
   );
 };
 

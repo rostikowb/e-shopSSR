@@ -1,16 +1,17 @@
-.shortHaractBox {
-  width: 100%;
-  margin: 5px;
-}
+/*.shortHaractBox {*/
+/*  width: 100%;*/
+/*  margin: 5px;*/
+/*}*/
 
-.shortHaractBox > ul {
+.shortHaractBox {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 5px
 }
 
-.shortHaractBox > ul > li {
+.shortHaractBox > li {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -21,11 +22,11 @@
   font-size: 12px;
 }
 
-.shortHaractBox > ul > li > span:first-child {
+.shortHaractBox > li > span:first-child {
   color: #444444;
 }
 
-.shortHaractBox > ul > li > span:last-child {
+.shortHaractBox > li > span:last-child {
   color: #0f0f0f;
   font-weight: bold;
 }

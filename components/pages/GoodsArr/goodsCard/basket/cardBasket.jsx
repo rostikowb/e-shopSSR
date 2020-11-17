@@ -1,7 +1,7 @@
 import s from "./cardBasket.module.css";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faShoppingBasket} from "@fortawesome/free-solid-svg-icons/index";
+import {faShoppingBasket} from "@fortawesome/free-solid-svg-icons";
 import { addProdToCash } from "../../../../../redux/likesBasket/actions";
 import { connect } from "react-redux";
 import { ADD_BASKET } from "../../../../../redux/types";
@@ -22,6 +22,7 @@ export const CardBasketBo = (props) => {
           className={s.cardBox + " " + s.cardBoxAll}
         >
           <FontAwesomeIcon
+            id={"CardBasket"+d.nm}
             className={s.icon}
             icon={faShoppingBasket}
             title="Добавить товар в корзину."

@@ -39,7 +39,7 @@ export const GoodsBloc = (props) => {
                       <img
                           className={s.imgOne}
                           src={`${option.STATIC}/jpeg/${d._id}/${d.img[0]}-400.jpeg`}
-                          alt=""
+                          alt={`Ссылка на просмотренный товар ${d["nm"]}`}
                       />
                   </picture>
               </a>

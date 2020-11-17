@@ -24,7 +24,7 @@ export const Acordeon = (props) => {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
+          id={"panel1a-header"+props.info.title}
         >
           <Typography className={classes.heading}>
             {props.info.title}

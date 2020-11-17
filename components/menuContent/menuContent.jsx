@@ -13,7 +13,7 @@ import {useRouter} from "next/router";
 export const menuConten = (props) => {
     const loc = useRouter().pathname.split('/')
 
-    console.log(loc);
+    // console.log(loc);
     return (
     <div className={s.mainMenuBox}>
       <Logo />

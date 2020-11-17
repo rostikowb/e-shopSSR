@@ -17,7 +17,7 @@ export const Sal = (props) => {
     let onegoods = props.onegoods;
     let catalogLabel;
     let [infoPageCheck, setInfoPageCheck] = useState('');
-    console.log(catalog);
+    // console.log(catalog);
     try {
         catalogLabel = catalog
             ? option.goods.find((e) => e.value === catalog.toString()).label
@@ -51,6 +51,7 @@ export const Sal = (props) => {
     const as = (value)=>{
         let obj = {pathname: value};
         if(sort) obj.query = {sort};
+        // console.log('obj', obj);
         return obj;
     };
 

@@ -19,15 +19,11 @@ export const PrcRang = (props) => {
   const classes = useStyles();
   const loc = useRouter();
   const q = loc.query;
-  // const gte = Number(props.range.gte);
-  // const lte = Number(props.range.lte);
   const [gteLte, setGteLte] = useState([Number(props.range.gte), Number(props.range.lte)]);
   const [urlValue, setUrlValue] = useState();
   const [value, setValue] = useState(urlValue ? urlValue : gteLte);
   const [lastValue, SetLastValue] = useState();
   const stub = props.stub
-
-  console.log('gte, lte', gteLte[0], gteLte[1]);
 
   const fetchGoods = async (range) => {
     const query = {...q};
@@ -49,10 +45,8 @@ export const PrcRang = (props) => {
 
 
   useEffect(() => {
-    // if(!urlValue){
-      setGteLte([Number(props.range.gte), (props.range.lte)])
-      setValue([Number(props.range.gte), (props.range.lte)])
-    // }
+    setGteLte([Number(props.range.gte), (props.range.lte)])
+    setValue([Number(props.range.gte), (props.range.lte)])
   }, [props.range])
 
   useEffect(() => {

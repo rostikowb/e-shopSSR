@@ -12,7 +12,6 @@ export const parsFiltOfUrl = (q, valDel = false) => {
       if (!valueArr.length) continue;
 
       if (valDel) {
-        console.log('valDel', valDel);
         if (valueArr.length > 1) {
           const index = valueArr.indexOf(valDel);
           if (index > -1) {

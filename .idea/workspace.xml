@@ -20,76 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="add and repair some info pages">
-      <change afterPath="$PROJECT_DIR$/components/dopComp/filtersChecked/cancel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/dopComp/filtersChecked/close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/dopComp/filtersChecked/filtersChecked.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/dopComp/filtersChecked/filtersChecked.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/dopComp/lib/filters/parsFiltOfURL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkbox.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkboxStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/filterAcordion/filterAcordion.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/lib/checkFilterInUrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/range/prcRange.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/req.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/menuContent/sortM/sortM.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redux/filters/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redux/filters/fetch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redux/filters/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/acardeon/acardeon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/acardeon/acardeon.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/feedback/feedback.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/feedback/feedback.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/invisComp/invisComp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/invisComp/invisComp.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/sort/sort.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/sort/sort.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basketModal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basketModal.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likes/likes.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likes/likes.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/another.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/another.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/searchInput/req.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/searchInput/req.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/searchInput/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/searchInput/search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/searchInput/search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/searchInput/search.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/lib/filters/parsFiltOfURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/lib/filters/parsFiltOfURL.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/menuContent/auth/auth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/auth/auth.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menuContent/feedbackBtn/feedbackBtn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/feedbackBtn/feedbackBtn.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menuContent/feedbackBtn/feedbackBtn.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/feedbackBtn/feedbackBtn.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filter.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filter.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filterContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/filterContent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menuContent/info/info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/info/info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menuContent/menuContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/menuContent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menuContent/menuContent.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/menuContent.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArr.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArr.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArrLoad/goodsArrLoad.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArrLoad/goodsArrLoad.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/shortHaract/shortHaract.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/shortHaract/shortHaract.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/delivery/delivery.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/delivery/delivery.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/goods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/goods.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/info/contact/contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/info/contact/contact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/info/licagr/licagr.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/info/licagr/licagr.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/option.js" beforeDir="false" afterPath="$PROJECT_DIR$/option.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/error/404.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/error/404.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/goods/[catalog]/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goods/[catalog]/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/FAQ/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/FAQ/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/aboutUs/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/aboutUs/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/contact/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/contact/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/licagr/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/licagr/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/promotions/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/promotions/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/return/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/return/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/auth/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/auth/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/goodsArr/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/goodsArr/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/rootReducer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/redux/rootReducer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/goodsArr.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/goodsArr.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filterContent/filterContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/filterContent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filterContent/range/prcRange.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/range/prcRange.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +210,7 @@
       <workItem from="1607015444405" duration="12070000" />
       <workItem from="1607178402623" duration="63538000" />
       <workItem from="1607616626796" duration="15656000" />
-      <workItem from="1607701811456" duration="12027000" />
+      <workItem from="1607701811456" duration="12591000" />
     </task>
     <task id="LOCAL-00001" summary="dd">
       <created>1601218595170</created>
@@ -381,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605642149043</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="filter and another big update">
+      <created>1607719543513</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1607719543513</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +358,8 @@
     <MESSAGE value="*repair search redirect&#10;*restore manifest.json&#10;*repair sameFoto &#10;*add PWA" />
     <MESSAGE value="*SW - repair&#10;*routes goods fix&#10;*bug fix" />
     <MESSAGE value="*fix lighthose&#10;*fix warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="*fix lighthose&#10;*fix warnings" />
+    <MESSAGE value="filter and another big update" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter and another big update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="215" key="#ESLint" timestamp="1601145461849">
@@ -498,10 +442,10 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1605816015461" />
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1605642153536">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1607719551302">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1605642153536" />
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1607719551302" />
     <state x="429" y="56" width="1107" height="795" key="find.popup" timestamp="1607719005709">
       <screen x="0" y="43" width="1536" height="821" />
     </state>

@@ -1,7 +1,7 @@
 export const option = {
-  api: "http://localhost:5000",
+  // api: "http://localhost:5000",
   // api: "http://192.168.1.104:3001",
-  // api: "https://api.vsivuha.online",
+  api: "https://api.vsivuha.online",
   STATIC: "https://vsivuha.online",
 
   DOMEN: "http://localhost",

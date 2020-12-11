@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="add and repair some info pages">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkbox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkbox.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/option.js" beforeDir="false" afterPath="$PROJECT_DIR$/option.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +207,7 @@
       <workItem from="1607015444405" duration="12070000" />
       <workItem from="1607178402623" duration="63538000" />
       <workItem from="1607616626796" duration="15656000" />
-      <workItem from="1607701811456" duration="12701000" />
+      <workItem from="1607701811456" duration="13746000" />
     </task>
     <task id="LOCAL-00001" summary="dd">
       <created>1601218595170</created>
@@ -327,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607720065830</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="prod enable">
+      <created>1607720114318</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1607720114318</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +371,8 @@
     <MESSAGE value="*fix lighthose&#10;*fix warnings" />
     <MESSAGE value="filter and another big update" />
     <MESSAGE value="console.log deleting" />
-    <option name="LAST_COMMIT_MESSAGE" value="console.log deleting" />
+    <MESSAGE value="prod enable" />
+    <option name="LAST_COMMIT_MESSAGE" value="prod enable" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="215" key="#ESLint" timestamp="1601145461849">
@@ -446,10 +455,10 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1605816015461" />
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1607720068978">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1607720116196">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1607720068978" />
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1607720116196" />
     <state x="429" y="56" width="1107" height="795" key="find.popup" timestamp="1607719005709">
       <screen x="0" y="43" width="1536" height="821" />
     </state>

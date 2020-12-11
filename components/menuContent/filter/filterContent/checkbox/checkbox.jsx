@@ -15,7 +15,6 @@ export const CheckboxFilte = (props) => {
   const loc = useRouter()
   const catalog = loc.query?.catalog;
   const isLabel = loc.query[label]
-  // const selectArr = props.filterSelected;
   const [check, setCheck] = useState(false)
   let isLabelArr = isLabel ? isLabel.split(',') : []
 
@@ -27,14 +26,12 @@ export const CheckboxFilte = (props) => {
     props.fetchGoods({
       type: FETCH_GOODS,
       sort: q?.sort,
-      catalog: q?.catalog,
+      catalog: catalog,
       filter: parsFiltOfUrl(q, del)
     });
   }
 
   useEffect(() => setCheck(!!isInURL()), [isLabel])
-
-  // useEffect(() => {props.filterToStore(isLabelArr)}, [isLabelArr])
 
   const checkHandle = async (bool) => {
     const query = {...loc.query};
@@ -46,7 +43,6 @@ export const CheckboxFilte = (props) => {
       isLabelArr = [...isLabelArr, value]
       query[label] = isLabelArr.join(',');
       goodsFetch(query)
-      // props.filterToStore(isLabelArr);
     } else {
       goodsFetch(query, value)
       if (isLabelArr.length > 1 && isInURL()) {
@@ -54,7 +50,6 @@ export const CheckboxFilte = (props) => {
         if (index > -1) {
           isLabelArr.splice(index, 1);
           query[label] = isLabelArr.join(',');
-          // props.filterToStore(isLabelArr);
         }
       } else {
         delete query[label]
@@ -85,7 +80,6 @@ export const CheckboxFilte = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    // filterSelected: state.filters.filterSelected,
     catalog: state.AllGoodsR.catalog,
     stub: state.AllGoodsR.stub
   };

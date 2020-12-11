@@ -5,14 +5,13 @@ export const Info = () => {
   return (
     <ul className={s.infoBox}>
       <li>
-        {/*<Link aria-label="Контакты" href="/contacts">*/}
-          {/*Контакты*/}
-        {/*</Link>*/}
+        <Link href={'/info/contact'} as={'/info/contact'} passHref shallow><a>Контакты</a></Link>
       </li>
       <li>
-        {/*<Link aria-label="QA" href="/qa">*/}
-          {/*Ответы на частые вопросы*/}
-        {/*</Link>*/}
+        <Link href={'/info/FAQ'} as={'/info/FAQ'} passHref shallow><a>Ответы на вопросы</a></Link>
+      </li>
+      <li>
+        <Link href={'/info/return'} as={'/info/return'} passHref shallow><a>Гарантия и возврат</a></Link>
       </li>
     </ul>
   );

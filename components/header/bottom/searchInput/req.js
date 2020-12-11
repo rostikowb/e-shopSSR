@@ -10,6 +10,6 @@ export const reqSearch = async(words) =>{
         "json",
         200
     )("/goods/search", {words}, {});
-    console.log('res', res.result);
+    // console.log('res', res.result);
     return !res.invalid ? res.result : []
 }

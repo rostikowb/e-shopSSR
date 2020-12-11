@@ -1,21 +1,40 @@
 .btnBox {
   /*padding: 15px 5px;*/
-  border: 1px solid black;
-  /*border-radius: 3px;*/
-  background-color: white;
+
+  border-radius: 100%;
+  /*background-color: white;*/
   font-size: 16px;
   cursor: pointer;
-  width: 70%;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   transition: all 0.2s;
-  margin: 24% auto 0 auto;
+  /*margin: 3% auto 3% auto;*/
+  bottom: 15px;
+  right: 10px;
+  z-index: 5;
+  background: linear-gradient(0deg, rgba(0, 6, 119, 0.7), rgba(90, 0, 32, 0.7));
+  position: fixed;
+  color: rgba(255, 255, 255, 0.7);
 }
 .btnBox:hover {
-  transition: all 0.2s;
-  background: linear-gradient(0deg, #770039, #530b51);
+  /*border: 1px solid #ffffff;*/
+  /*transition: all 0.2s;*/
+  background: linear-gradient(0deg, #000677, #5a0020);
   color: white;
+}
+.icon{
+  width: 1.8em!important;
+  height: auto!important;
+  /*height: 40px;*/
+}
+.btnBox:hover .icon{
+  /*rotation: revert;*/
+
+  transform: rotate(-20deg);
+  /*transform: rotate(20deg);*/
+  transition: transform .2s;
 }

@@ -5,7 +5,8 @@ import {InfoContent} from './infoContent'
 
 
 export const Info = (props) => {
-    const isInfo = props.defOpen === 'info';
+
+    const isInfo = props.defOpen[1] === 'info' || !props.defOpen[1];
     return (
         <Acordeon
             info={{

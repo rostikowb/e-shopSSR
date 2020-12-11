@@ -16,10 +16,10 @@ export const SumInf = (props) => {
       </span>
       <ul className={s.deliv}>
         <span className={s.delivTitle}>Расчетная стоимость доставки</span>
-        <li>
-          <span>При оплате картой: </span>
-          <b>~40 грн.</b>
-        </li>
+        {/*<li>*/}
+        {/*  <span>При оплате картой: </span>*/}
+        {/*  <b>~40 грн.</b>*/}
+        {/*</li>*/}
         <li>
           <span>Наложенным платежем: </span>
           <b>~{deliv} грн.</b>
@@ -38,7 +38,7 @@ export const SumInf = (props) => {
       </div>
       <div className={s.sumaBtnBox}>
         <span className={s.sumaBtn + " " + ss.cardBoxAll}>
-          <Link href={`/checkout`}>Пройти на касу!</Link>
+          <Link href={`/checkout`} as={`/checkout`} passHref><a href="">Пройти на касу!</a></Link>
         </span>
       </div>
     </div>

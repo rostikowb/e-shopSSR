@@ -9,10 +9,10 @@ import {checkoutFormTheme} from "../../styles/theme";
 const checkout = () => {
     return (
         <>
-            <Head>
-                <title>I'am Misix</title>
-                <meta name="theme-color" content={checkoutFormTheme} />
-            </Head>
+            {/*<Head>*/}
+            {/*    /!*<title>I'am Misix</title>*!/*/}
+            {/*    <meta name="theme-color" content={checkoutFormTheme} />*/}
+            {/*</Head>*/}
         <Checkout/>
         </>
     )

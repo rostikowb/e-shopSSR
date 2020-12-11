@@ -27,19 +27,19 @@ export const Another = (props) => {
           <Link href={href()} as={as(opt.goods[9].value)} passHref={true} shallow={true}><a href="">{opt.goods[15].label}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[16].value)}>
-          <Link href={href()} as={as(opt.goods[9].value)} passHref={true} shallow={true}><a href="">{opt.goods[16].label}</a></Link>
+          <Link href={href()} as={as(opt.goods[16].value)} passHref={true} shallow={true}><a href="">{opt.goods[16].label}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[17].value)}>
-          <Link href={href()} as={as(opt.goods[9].value)} passHref={true} shallow={true}><a href="">{opt.goods[17].label}</a></Link>
+          <Link href={href()} as={as(opt.goods[17].value)} passHref={true} shallow={true}><a href="">{opt.goods[17].label}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[18].value)}>
-          <Link href={href()} as={as(opt.goods[9].value)} passHref={true} shallow={true}><a href="">{opt.goods[18].label}</a></Link>
+          <Link href={href()} as={as(opt.goods[18].value)} passHref={true} shallow={true}><a href="">{opt.goods[18].label}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[19].value)}>
-          <Link href={href()} as={as(opt.goods[9].value)} passHref={true} shallow={true}><a href="">{opt.goods[19].label}</a></Link>
+          <Link href={href()} as={as(opt.goods[19].value)} passHref={true} shallow={true}><a href="">{opt.goods[19].label}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[20].value)}>
-          <Link href={href()} as={as(opt.goods[9].value)} passHref={true} shallow={true}><a href="">{opt.goods[20].label}</a></Link>
+          <Link href={href()} as={as(opt.goods[20].value)} passHref={true} shallow={true}><a href="">{opt.goods[20].label}</a></Link>
       </li>
     </ul>
   );

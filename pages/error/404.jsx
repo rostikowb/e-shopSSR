@@ -13,7 +13,7 @@ const Error404 = () => {
   return (
     <>
       <Head>
-        <title>I'am Misix</title>
+        <title>vsivuha.online - 404</title>
         {/*<meta name="theme-color" content={checkoutFormTheme} />*/}
       </Head>
       <div style={style}>

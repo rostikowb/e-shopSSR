@@ -24,11 +24,13 @@
 
 .shortHaractBox > li > span:first-child {
   color: #444444;
+  margin-right: 5px;
 }
 
 .shortHaractBox > li > span:last-child {
   color: #0f0f0f;
-  font-weight: bold;
+  /*font-weight: bold;*/
+
 }
 
 @media (max-width: 1150px) {

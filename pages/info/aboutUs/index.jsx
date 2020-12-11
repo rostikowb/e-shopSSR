@@ -7,7 +7,7 @@ const aboutUs = () => {
     return (
         <>
             <Head>
-                <title>I'am Misix</title>
+                <title>vsivuha.online - О нас</title>
                 {/*<meta name="theme-color" content={checkoutFormTheme} />*/}
             </Head>
             <AboutUs/>

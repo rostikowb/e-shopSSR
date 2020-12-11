@@ -18,24 +18,12 @@ module.exports = withPlugins([
   //   }
   //   // transformManifest: manifest => ['/'].concat(manifest)
   // }]
-  [withPWA, {
-    pwa: {
-      dest: 'public',
-      runtimeCaching,
-      // disable: process.env.NODE_ENV === 'development',
-      // register: true,
-      // scope: '/',
-      // sw: 'service-worker.js',
-      // navigateFallback: '/ss.html',
-      // runtimeCaching: [
-      //   {
-      //     urlPattern: new RegExp("/api/"),
-      //     handler: "networkFirst"
-      //   },
-      // ],
-      // navigateFallbackDenylist: [/api/],
-      // navigationPreload: true,
-    }
-  }]
+
+  // [withPWA, {
+  //   pwa: {
+  //     dest: 'public',
+  //     runtimeCaching,
+  //   }
+  // }]
 
 ]);

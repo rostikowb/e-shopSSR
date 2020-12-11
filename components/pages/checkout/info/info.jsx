@@ -15,6 +15,9 @@ const CheckoutInf = (props) => {
   const cupon = UD?UD.cupon.map((item) => {
     return { value: item, label: item + "% скидки!" };
   }):null;
+
+  // const [one, two, three] = props.data
+
   const allPrice = !!arr?Math.round(
     props.basketSum.sum - (props.basketSum.sum / 100) * dscnt
   ).toLocaleString("ru-RU"):null;

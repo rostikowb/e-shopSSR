@@ -20,29 +20,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="add and repair some info pages">
+      <change afterPath="$PROJECT_DIR$/components/dopComp/filtersChecked/cancel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/dopComp/filtersChecked/close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/dopComp/filtersChecked/filtersChecked.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/dopComp/filtersChecked/filtersChecked.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/dopComp/lib/filters/parsFiltOfURL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkbox.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkboxStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/filterAcordion/filterAcordion.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/lib/checkFilterInUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/range/prcRange.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/req.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/menuContent/sortM/sortM.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redux/filters/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redux/filters/fetch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redux/filters/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/dopComp/acardeon/acardeon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/acardeon/acardeon.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsBlock/goodsBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsBlock/goodsBlock.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/headers/headers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/headers/headers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/feedback/feedback.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/feedback/feedback.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/invisComp/invisComp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/invisComp/invisComp.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/sort/sort.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/sort/sort.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basketModal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basketModal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likes/likes.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likes/likes.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/another.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/podMenu/another.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/searchInput/req.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/searchInput/req.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/header/bottom/searchInput/search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/searchInput/search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/searchInput/search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/searchInput/search.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/auth/auth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/auth/auth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/feedbackBtn/feedbackBtn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/feedbackBtn/feedbackBtn.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/feedbackBtn/feedbackBtn.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/feedbackBtn/feedbackBtn.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filter.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filter.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filterContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/filterContent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/info/info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/info/info.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/menuContent/menuContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/menuContent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/menuContent.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/menuContent.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArr.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArr.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/basket/cardBasket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/basket/cardBasket.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/inStock/inStock.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/inStock/inStock.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/like/cardLike.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/like/cardLike.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/shortHaract/shortHaract.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/shortHaract/shortHaract.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArrLoad/goodsArrLoad.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsArrLoad/goodsArrLoad.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/shortHaract/shortHaract.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/shortHaract/shortHaract.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/price/price.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/price/price.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/delivery/delivery.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/delivery/delivery.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/goods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/goods.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/info/contact/contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/info/contact/contact.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/info/licagr/licagr.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/info/licagr/licagr.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/option.js" beforeDir="false" afterPath="$PROJECT_DIR$/option.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/icons/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/error/404.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/error/404.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/goods/[catalog]/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goods/[catalog]/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/FAQ/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/FAQ/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/aboutUs/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/aboutUs/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/contact/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/contact/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/licagr/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/licagr/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/promotions/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/promotions/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/return/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/return/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/auth/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/auth/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/goodsArr/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/goodsArr/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/rootReducer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/redux/rootReducer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/goodsArr.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/goodsArr.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +101,11 @@
       <list>
         <option value="React" />
         <option value="CSS File" />
-        <option value="module.css" />
-        <option value="JavaScript File" />
         <option value="tsconfig.json" />
-        <option value="JSX File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="module.css" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -85,7 +132,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CRM" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -98,26 +145,26 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="ts.external.directory.path" value="F:\Software\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\nodePro\MyE-Store\client_ssr\components\dopComp\filtersChecked" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\components\dopComp\lib\filters" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\components\dopComp\lib" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\components\menuContent\filter\filterContent" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\public" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\.next\static" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\.next\server" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\public\icons" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\pages\goods" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\nodePro\MyE-Store\client_ssr\redux\filters" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\public" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\components\pages" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\pages\info\return" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\pages\info\licagr" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\pages\info\FAQ" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="init-server.js.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="init-server.js.js" working-dir="$PROJECT_DIR$/.next/server">
       <method v="2" />
     </configuration>
@@ -159,9 +206,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +265,16 @@
       <workItem from="1605285312881" duration="4380000" />
       <workItem from="1605475507016" duration="3954000" />
       <workItem from="1605547156546" duration="13833000" />
-      <workItem from="1605613839791" duration="5496000" />
+      <workItem from="1605613839791" duration="7152000" />
+      <workItem from="1605813926504" duration="5889000" />
+      <workItem from="1605905914872" duration="6262000" />
+      <workItem from="1605978241097" duration="29220000" />
+      <workItem from="1606243867172" duration="4865000" />
+      <workItem from="1606338222099" duration="56539000" />
+      <workItem from="1607015444405" duration="12070000" />
+      <workItem from="1607178402623" duration="63538000" />
+      <workItem from="1607616626796" duration="15656000" />
+      <workItem from="1607701811456" duration="12027000" />
     </task>
     <task id="LOCAL-00001" summary="dd">
       <created>1601218595170</created>
@@ -318,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605209615509</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="*fix lighthose&#10;*fix warnings">
+      <created>1605642149042</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1605642149043</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +414,8 @@
     <MESSAGE value="s" />
     <MESSAGE value="*repair search redirect&#10;*restore manifest.json&#10;*repair sameFoto &#10;*add PWA" />
     <MESSAGE value="*SW - repair&#10;*routes goods fix&#10;*bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="*SW - repair&#10;*routes goods fix&#10;*bug fix" />
+    <MESSAGE value="*fix lighthose&#10;*fix warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="*fix lighthose&#10;*fix warnings" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="215" key="#ESLint" timestamp="1601145461849">
@@ -362,86 +426,90 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="410" y="221" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.43.1536.821@0.43.1536.821" timestamp="1603208915960" />
-    <state x="549" y="209" key="FileChooserDialogImpl" timestamp="1605478046520">
+    <state x="549" y="209" key="FileChooserDialogImpl" timestamp="1607714258691">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1605478046520" />
-    <state width="1515" height="180" key="GridCell.Tab.0.bottom" timestamp="1605641464886">
+    <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1607714258691" />
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom" timestamp="1607715427059">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="180" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1605641464886" />
-    <state width="1515" height="180" key="GridCell.Tab.0.center" timestamp="1605641464885">
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1607715427059" />
+    <state width="1515" height="228" key="GridCell.Tab.0.center" timestamp="1607715427059">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="180" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1605641464885" />
-    <state width="1515" height="180" key="GridCell.Tab.0.left" timestamp="1605641464885">
+    <state width="1515" height="228" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1607715427059" />
+    <state width="1515" height="228" key="GridCell.Tab.0.left" timestamp="1607715427059">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="180" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1605641464885" />
-    <state width="1515" height="180" key="GridCell.Tab.0.right" timestamp="1605641464886">
+    <state width="1515" height="228" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1607715427059" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right" timestamp="1607715427059">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="180" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1605641464886" />
-    <state width="1515" height="260" key="GridCell.Tab.1.bottom" timestamp="1602882952621">
+    <state width="1515" height="228" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1607715427059" />
+    <state width="1515" height="260" key="GridCell.Tab.1.bottom" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="260" key="GridCell.Tab.1.bottom/0.43.1536.821@0.43.1536.821" timestamp="1602882952621" />
-    <state width="1515" height="260" key="GridCell.Tab.1.center" timestamp="1602882952620">
+    <state width="1515" height="260" key="GridCell.Tab.1.bottom/0.43.1536.821@0.43.1536.821" timestamp="1607556709100" />
+    <state width="1515" height="260" key="GridCell.Tab.1.center" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="260" key="GridCell.Tab.1.center/0.43.1536.821@0.43.1536.821" timestamp="1602882952620" />
-    <state width="1515" height="260" key="GridCell.Tab.1.left" timestamp="1602882952620">
+    <state width="1515" height="260" key="GridCell.Tab.1.center/0.43.1536.821@0.43.1536.821" timestamp="1607556709100" />
+    <state width="1515" height="260" key="GridCell.Tab.1.left" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="260" key="GridCell.Tab.1.left/0.43.1536.821@0.43.1536.821" timestamp="1602882952620" />
-    <state width="1515" height="260" key="GridCell.Tab.1.right" timestamp="1602882952620">
+    <state width="1515" height="260" key="GridCell.Tab.1.left/0.43.1536.821@0.43.1536.821" timestamp="1607556709100" />
+    <state width="1515" height="260" key="GridCell.Tab.1.right" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="260" key="GridCell.Tab.1.right/0.43.1536.821@0.43.1536.821" timestamp="1602882952620" />
-    <state width="1515" height="260" key="GridCell.Tab.2.bottom" timestamp="1602882952621">
+    <state width="1515" height="260" key="GridCell.Tab.1.right/0.43.1536.821@0.43.1536.821" timestamp="1607556709100" />
+    <state width="1515" height="260" key="GridCell.Tab.2.bottom" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="260" key="GridCell.Tab.2.bottom/0.43.1536.821@0.43.1536.821" timestamp="1602882952621" />
-    <state width="1515" height="260" key="GridCell.Tab.2.center" timestamp="1602882952621">
+    <state width="1515" height="260" key="GridCell.Tab.2.bottom/0.43.1536.821@0.43.1536.821" timestamp="1607556709100" />
+    <state width="1515" height="260" key="GridCell.Tab.2.center" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="260" key="GridCell.Tab.2.center/0.43.1536.821@0.43.1536.821" timestamp="1602882952621" />
-    <state width="1515" height="260" key="GridCell.Tab.2.left" timestamp="1602882952621">
+    <state width="1515" height="260" key="GridCell.Tab.2.center/0.43.1536.821@0.43.1536.821" timestamp="1607556709100" />
+    <state width="1515" height="260" key="GridCell.Tab.2.left" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="260" key="GridCell.Tab.2.left/0.43.1536.821@0.43.1536.821" timestamp="1602882952621" />
-    <state width="1515" height="260" key="GridCell.Tab.2.right" timestamp="1602882952621">
+    <state width="1515" height="260" key="GridCell.Tab.2.left/0.43.1536.821@0.43.1536.821" timestamp="1607556709100" />
+    <state width="1515" height="260" key="GridCell.Tab.2.right" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="260" key="GridCell.Tab.2.right/0.43.1536.821@0.43.1536.821" timestamp="1602882952621" />
-    <state width="1515" height="260" key="GridCell.Tab.3.bottom" timestamp="1602882952621">
+    <state width="1515" height="260" key="GridCell.Tab.2.right/0.43.1536.821@0.43.1536.821" timestamp="1607556709100" />
+    <state width="1515" height="260" key="GridCell.Tab.3.bottom" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="260" key="GridCell.Tab.3.bottom/0.43.1536.821@0.43.1536.821" timestamp="1602882952621" />
-    <state width="1515" height="260" key="GridCell.Tab.3.center" timestamp="1602882952621">
+    <state width="1515" height="260" key="GridCell.Tab.3.bottom/0.43.1536.821@0.43.1536.821" timestamp="1607556709100" />
+    <state width="1515" height="260" key="GridCell.Tab.3.center" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="260" key="GridCell.Tab.3.center/0.43.1536.821@0.43.1536.821" timestamp="1602882952621" />
-    <state width="1515" height="260" key="GridCell.Tab.3.left" timestamp="1602882952621">
+    <state width="1515" height="260" key="GridCell.Tab.3.center/0.43.1536.821@0.43.1536.821" timestamp="1607556709100" />
+    <state width="1515" height="260" key="GridCell.Tab.3.left" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="260" key="GridCell.Tab.3.left/0.43.1536.821@0.43.1536.821" timestamp="1602882952621" />
-    <state width="1515" height="260" key="GridCell.Tab.3.right" timestamp="1602882952621">
+    <state width="1515" height="260" key="GridCell.Tab.3.left/0.43.1536.821@0.43.1536.821" timestamp="1607556709100" />
+    <state width="1515" height="260" key="GridCell.Tab.3.right" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="260" key="GridCell.Tab.3.right/0.43.1536.821@0.43.1536.821" timestamp="1602882952621" />
-    <state x="142" y="132" key="SettingsEditor" timestamp="1601575148455">
+    <state width="1515" height="260" key="GridCell.Tab.3.right/0.43.1536.821@0.43.1536.821" timestamp="1607556709100" />
+    <state x="142" y="132" key="SettingsEditor" timestamp="1605816015461">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1601575148455" />
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1605209622575">
+    <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1605816015461" />
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1605642153536">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1605209622575" />
-    <state x="433" y="56" width="1103" height="795" key="find.popup" timestamp="1605639471125">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1605642153536" />
+    <state x="429" y="56" width="1107" height="795" key="find.popup" timestamp="1607719005709">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="433" y="56" width="1103" height="795" key="find.popup/0.43.1536.821@0.43.1536.821" timestamp="1605639471125" />
+    <state x="429" y="56" width="1107" height="795" key="find.popup/0.43.1536.821@0.43.1536.821" timestamp="1607719005709" />
+    <state x="425" y="208" key="run.anything.popup" timestamp="1607716411646">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state x="425" y="208" key="run.anything.popup/0.43.1536.821@0.43.1536.821" timestamp="1607716411646" />
     <state x="431" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1604947840477">
       <screen x="0" y="43" width="1536" height="821" />
     </state>

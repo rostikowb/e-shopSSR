@@ -49,6 +49,7 @@ export const OGBt = (props) => {
         onClick={() => (isLikes ? remove(DEL_LIKES) : add(ADD_LIKES))}
         className={s.likeBtn + " " + (isLikes ? s.likeBtnAct : s.likeBtnNoAct)}
       >
+        <span className={s.likeBtnValue}>{!isLikes ? "В закладки": "Убрать из закладок" }</span>
         <FontAwesomeIcon
           className={s.icon}
           title={

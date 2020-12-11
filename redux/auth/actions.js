@@ -55,11 +55,9 @@ export const authSendApi = (type, data) => {
 };
 
 export const rePassSendApi = (data, step) => {
-
     let types = RESTORE_PASS;
     let path = 'restore0'
-    if (step === 1)
-        path = 'restore1'
+    if (step === 1) path = 'restore1'
 
     if (step === 2) {
         types = AUTH_API;
@@ -79,7 +77,6 @@ export const rePassSendApi = (data, step) => {
             pin: data.pin,
         });
 
-        // console.log(res);
         dispatch({
             type: types,
             payload: res,
@@ -98,7 +95,7 @@ export const authUpdateUD = (token) => {
             "json",
             200
         )("/users/read", {}, {authorization: token});
-        // console.log(res);
+
         dispatch({
             type: AUTH_UPDATE,
             payload: res,

@@ -26,8 +26,18 @@ const GoodsAr = (props) => {
     // };
 
     // console.log(loc.route);
+
+    // useEffect(()=>{
+    //     if(loc.pathname === "/goods/[catalog]"){
+    //
+    //     }
+    // }, [loc.query])
+
     useEffect(() => {
         props.lsToStore();
+
+        // console.log('sssssssss');
+
         // if(loc.pathname === '/' && (loc.query.page > 0 || loc.query.sort !== 'byRating')){
         //     props.stubOn({type: STUB_ON});
         //     props.fetchGoods({

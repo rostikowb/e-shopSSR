@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
+  /*height: 40px;*/
   margin-right: 3vw;
 }
 
@@ -17,7 +17,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 95%;
+  margin-right: 3vw;
+  height: 40px;
 }
 
 .btnSearchStart {
@@ -36,19 +38,19 @@
 
 .search {
   width: 100%;
-  /*position: relative;*/
-  /*height: 100%;*/
-  /*display: flex;*/
-  /*flex-direction: row;*/
-  /*align-items: center;*/
-  /*justify-content: center;*/
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .search .searchInput {
   /*position: absolute;*/
   box-shadow: none;
   width: 100%;
-  /*height: 100%;*/
+  height: 100%;
   /*color: white;*/
   background-color: white;
   border-radius: 3px 3px 3px 3px;
@@ -63,20 +65,22 @@
 .search:hover .searchInput {
   outline: none;
   /*border-color: white;*/
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.2);
   transition: all 0.5s;
 }
 
 .search .searchInput:focus {
   outline: none;
   /*border-color: white;*/
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
   transition: all 0.4s;
   width: 100%;
 }
 
 .search .searchInput::placeholder {
   font-style: italic;
+  font-weight: lighter;
+  color: #000000a1;
 }
 
 .MuiFilledInput-underline {
@@ -93,11 +97,12 @@
 
 .searchIcon {
   position: absolute;
-  left: 5px;
-  top: 10px;
-  font-size: 20px !important;
+  left: 9px;
+  top: 12px;
+  font-size: 15px !important;
   z-index: 5;
-  color: #ababab;
+  color: rgba(0, 0, 0, 0.63);
+  font-weight: lighter;
 }
 
 @media (max-width: 650px) {

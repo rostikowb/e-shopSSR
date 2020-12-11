@@ -1,7 +1,60 @@
-.menuFilterBox{
+.menuFilterBox {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
 
+}
+
+.menuFilterBox > div {
+    width: 100%;
+}
+
+.menuFilterBox > div > * {
+    margin: 2px 0;
+}
+
+.filterTitle {
+    width: 100%;
+    font-weight: lighter;
+    color: #2f2f2f;
+    font-size: 25px;
+}
+
+.filterLabel {
+
+}
+
+.filterValue {
+
+}
+
+.filterRange {
+    margin: 10px 0;
+}
+
+.rangeBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rangeValueBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.rangeValueBox > div {
+    margin: 5px;
+    font-size: 15px;
+}
+
+.rangeValueBox > div > span {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 20px;
 }

@@ -7,7 +7,7 @@ const licagr = () => {
     return (
         <>
             <Head>
-                <title>I'am Misix</title>
+                <title>vsivuha.online - Лицензионное соглагение</title>
                 {/*<meta name="theme-color" content={checkoutFormTheme} />*/}
             </Head>
             <Licagr/>

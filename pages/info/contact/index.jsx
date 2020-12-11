@@ -7,7 +7,7 @@ const contact = () => {
     return (
         <>
             <Head>
-                <title>I'am Misix</title>
+                <title>vsivuha.online - Контакты</title>
                 {/*<meta name="theme-color" content={checkoutFormTheme} />*/}
             </Head>
 

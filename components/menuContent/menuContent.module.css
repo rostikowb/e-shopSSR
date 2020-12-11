@@ -15,6 +15,10 @@
   display: none;
 }
 
+.auth{
+  display: none;
+}
+
 @media (max-width: 1150px) {
   .menuLogoBox {
     display: flex;
@@ -27,5 +31,8 @@
   }
   .menu {
     display: inline-block;
+  }
+  .auth{
+    display: block;
   }
 }

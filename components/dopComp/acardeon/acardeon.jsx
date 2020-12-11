@@ -19,7 +19,8 @@ export const Acordeon = (props) => {
     <div className={classes.root}>
       <Accordion
         defaultExpanded={props.info.open}
-        TransitionProps={{ unmountOnExit: !props.info?.render }}
+        // expanded={props.info.open}
+        // TransitionProps={{ unmountOnExit: !props.info?.render }}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

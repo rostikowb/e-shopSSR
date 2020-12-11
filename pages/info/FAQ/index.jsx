@@ -7,7 +7,7 @@ const faq = () => {
     return (
         <>
             <Head>
-                <title>I'am Misix</title>
+                <title>vsivuha.online - Ответы на вопросы</title>
                 {/*<meta name="theme-color" content={checkoutFormTheme} />*/}
             </Head>
             <FAQ/>

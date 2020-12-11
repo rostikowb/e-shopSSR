@@ -76,6 +76,10 @@
   border-radius: 2px;
   cursor: pointer;
   margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .sumaBtn a {
   color: white;

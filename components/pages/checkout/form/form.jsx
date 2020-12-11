@@ -60,7 +60,7 @@ const CheckoutFor = (props) => {
     SN: !!data.SN,
     city: !!data.city,
     branchN: !!data.branchN,
-    iAgree: false,
+    // iAgree: false,
     msg: true,
   }:null);
 
@@ -108,17 +108,23 @@ const CheckoutFor = (props) => {
     }
   };
 
-  const checkboxChange = (value = false) => {
-    if (value === "reg") {
-      setIsReg(!isReg);
-    } else {
-      dataV.iAgree = !dataV.iAgree;
-      setDataV({ ...dataV });
-      setData({ ...data });
-    }
-  };
+  // const checkboxChange = (value = false) => {
+  //   if (value === "reg") {
+  //     setIsReg(!isReg);
+  //   } else {
+  //     dataV.iAgree = !dataV.iAgree;
+  //     setDataV({ ...dataV });
+  //     setData({ ...data });
+  //   }
+  // };
 
   useEffect(() => {
+    if (data?.optCity && data?.optBranchN) {
+      dataV.city = true;
+      dataV.branchN = true;
+      setDataV({ ...dataV });
+    }
+
     !!UD?setDone(
       dataV.city &&
         dataV.branchN &&
@@ -127,15 +133,10 @@ const CheckoutFor = (props) => {
         (!isReg || dataV.pass) &&
         dataV.LN &&
         dataV.SN &&
-        dataV.tel &&
-        dataV.iAgree
+        dataV.tel
+        // dataV.iAgree
     ):null;
 
-    if (data?.optCity && data?.optBranchN) {
-      dataV.city = true;
-      dataV.branchN = true;
-      setDataV({ ...dataV });
-    }
   }, [data, isReg]);
 
   useEffect(() => {
@@ -385,21 +386,21 @@ const CheckoutFor = (props) => {
               />
             </div>
           ) : null}
-          <div className={s.checkBox}>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  checked={dataV?.iAgree}
-                  onChange={() => checkboxChange()}
-                  name="checkediAgree"
-                  color="primary"
-                  size="medium"
-                  inputProps={{ "aria-label": "secondary checkbox" }}
-                />
-              }
-              label="Я согласен продать свою душу в рабство на 666 лет!"
-            />
-          </div>
+          {/*<div className={s.checkBox}>*/}
+            {/*<FormControlLabel*/}
+            {/*  control={*/}
+            {/*    <Checkbox*/}
+            {/*      checked={dataV?.iAgree}*/}
+            {/*      onChange={() => checkboxChange()}*/}
+            {/*      name="checkediAgree"*/}
+            {/*      color="primary"*/}
+            {/*      size="medium"*/}
+            {/*      inputProps={{ "aria-label": "secondary checkbox" }}*/}
+            {/*    />*/}
+            {/*  }*/}
+            {/*  label={`Я согласен c ${условиями использования сайтa}`}*/}
+            {/*/>*/}
+          {/*</div>*/}
         </div>
       </div>
       <Button

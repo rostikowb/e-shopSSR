@@ -9,6 +9,7 @@ import {
 } from "../../../../redux/goodsArr/actions";
 import { FETCH_GOODS, STUB_ON } from "../../../../redux/types";
 import {useRouter} from 'next/router'
+import {parsFiltOfUrl} from "../../lib/filters/parsFiltOfURL";
 
 const options = [
   // { value: "random", label: "Стандарту" },
@@ -28,19 +29,27 @@ const customStyles = {
 };
 
 const Sor = (props) => {
-  let loc = useRouter();
-  // console.log(loc);
+  const loc = useRouter();
+
   const loadGoods = (value) => {
-    loc.push(
-        {pathname: loc.pathname, query: {sort: value.value, page: 0}},
-        {pathname: loc.query.catalog, query: {sort: value.value, page: 0}},
-        {shallow:true}
-      );
+
+    const catalog = loc.query.catalog;
+    const query = {...loc.query};
+    // const range = query['Цена'] ? query['Цена'].split('-') : false;
+
+    if(query.page || query.page === 0) delete query.page;
+    query.sort = value.value;
+    delete query.catalog;
+
+    loc.push({pathname: loc.pathname, query}, {pathname: catalog, query}, {shallow:true});
+
     props.stubOn({ type: STUB_ON });
     props.fetchGoods({
       type: FETCH_GOODS,
       sort: value.value,
       catalog: props.catalog,
+      filter: parsFiltOfUrl(loc.query),
+      // range
     });
   };
   let defaul = options.find((e) => e.value === props.sort);

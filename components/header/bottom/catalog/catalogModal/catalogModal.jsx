@@ -1,16 +1,18 @@
-import React, { useState } from "react";
-import { connect } from "react-redux";
+import React, {useState} from "react";
+import {connect} from "react-redux";
 import s from "./catalogModal.module.css";
-import { fetchGoods, stubOn } from "../../../../../redux/goodsArr/actions";
-import { changeStateCatalogModal } from "../../../../../redux/modal/actions";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
-import { Smart } from "../podMenu/smart";
-import { Electro } from "../podMenu/electro";
-import { Another } from "../podMenu/another";
-import { Acordeon } from "../../../../dopComp/acardeon/acardeon";
+import {fetchGoods, stubOn} from "../../../../../redux/goodsArr/actions";
+import {changeStateCatalogModal} from "../../../../../redux/modal/actions";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faTimesCircle} from "@fortawesome/free-solid-svg-icons";
+import {Smart} from "../podMenu/smart";
+import {Electro} from "../podMenu/electro";
+import {Another} from "../podMenu/another";
+import {Acordeon} from "../../../../dopComp/acardeon/acardeon";
 import {FETCH_GOODS, STUB_ON} from "../../../../../redux/types";
 import {useRouter} from 'next/router'
+import {parsFiltOfUrl} from "../../../../dopComp/lib/filters/parsFiltOfURL";
+import {fetchFilterArr} from "../../../../../redux/filters/actions";
 
 const mapStateToProps = (state) => {
   return {
@@ -23,18 +25,20 @@ export const CatalogModal = connect(mapStateToProps, {
   changeStateCatalogModal,
   fetchGoods,
   stubOn,
+  fetchFilterArr
 })((props) => {
   const [isCatalog, setCatalog] = useState("smart");
   const loc = useRouter();
 
-  const isUnderAttack = (value)=>{
-      props.changeStateCatalogModal();
-      props.stubOn({type: STUB_ON});
-      props.fetchGoods({
-          type: FETCH_GOODS,
-          sort: loc.query?.sort||props.sort,
-          catalog: value,
-      });
+  const isUnderAttack = (value) => {
+    props.changeStateCatalogModal();
+    props.stubOn({type: STUB_ON});
+    props.fetchFilterArr(value)
+    props.fetchGoods({
+      type: FETCH_GOODS,
+      sort: loc.query?.sort || props.sort,
+      catalog: value,
+    });
   };
 
   return props.isActive ? (
@@ -80,17 +84,17 @@ export const CatalogModal = connect(mapStateToProps, {
             <div className={s.menuBox}>
               {isCatalog === "smart" ? (
                 <div className={s.forSmart}>
-                  <Smart modal={isUnderAttack} />
+                  <Smart modal={isUnderAttack}/>
                 </div>
               ) : null}
               {isCatalog === "elec" ? (
                 <div className={s.smallElec}>
-                  <Electro modal={isUnderAttack} />
+                  <Electro modal={isUnderAttack}/>
                 </div>
               ) : null}
               {isCatalog === "another" ? (
                 <div className={s.another}>
-                  <Another modal={isUnderAttack} />
+                  <Another modal={isUnderAttack}/>
                 </div>
               ) : null}
             </div>
@@ -106,7 +110,7 @@ export const CatalogModal = connect(mapStateToProps, {
                   title: "Для смартфона",
                   open: false,
                   render: true,
-                  content: <Smart modal={isUnderAttack} />,
+                  content: <Smart modal={isUnderAttack}/>,
                 }}
               />
               <Acordeon
@@ -114,7 +118,7 @@ export const CatalogModal = connect(mapStateToProps, {
                   title: "Электронное",
                   open: false,
                   render: true,
-                  content: <Electro modal={isUnderAttack} />,
+                  content: <Electro modal={isUnderAttack}/>,
                 }}
               />
               <Acordeon
@@ -122,7 +126,7 @@ export const CatalogModal = connect(mapStateToProps, {
                   title: "Разное",
                   open: false,
                   render: true,
-                  content: <Another modal={isUnderAttack} />,
+                  content: <Another modal={isUnderAttack}/>,
                 }}
               />
             </div>

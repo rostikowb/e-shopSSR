@@ -18,7 +18,6 @@ export const InvisCom = (props) => {
 
     return (
         <>
-
             {props.feedback ? <Feedback/>:null}
             {props.catalog ? <CatalogModal /> : null}
             {props.like ? <LikesModal /> : null}

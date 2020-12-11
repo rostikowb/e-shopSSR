@@ -7,7 +7,7 @@ const ReturN = () => {
     return (
         <>
             <Head>
-                <title>I'am Misix</title>
+                <title>vsivuha.online - Возврат товара</title>
                 {/*<meta name="theme-color" content={checkoutFormTheme} />*/}
             </Head>
             <Return/>

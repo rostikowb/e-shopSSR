@@ -8,7 +8,7 @@ const promotions = () => {
     return (
         <>
             <Head>
-                <title>I'am Misix</title>
+                <title>vsivuha.online - Акции</title>
                 {/*<meta name="theme-color" content={checkoutFormTheme} />*/}
             </Head>
             <Promotions/>

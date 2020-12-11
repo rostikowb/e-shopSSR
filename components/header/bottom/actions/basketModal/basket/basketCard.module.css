@@ -97,6 +97,10 @@
   transition: all 0.2s;
   cursor: pointer;
   user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .delBtn:hover {
   color: rgb(156, 0, 7);

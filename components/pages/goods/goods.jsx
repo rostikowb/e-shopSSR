@@ -52,7 +52,7 @@ const Good = (props) => {
       {props.product ? (
         <>
           <Head>
-            <title>`VSIVUHA - ${props.product.nm}`</title>
+            <title>VSIVUHA - {props.product.nm}</title>
             <meta name="title" content={`VSIVUHA - ${props.product.nm}`}/>
             <meta name="description"
                   content={`${props.product.dscrptn}`}/>
@@ -66,6 +66,10 @@ const Good = (props) => {
                   content={`${option.STATIC}/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
 
           </Head>
+
+
+
+
           <div className={s.goodsInfo}>
             <Imgs data={props.product}/>
             <DopInf data={props.product}/>

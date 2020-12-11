@@ -13,16 +13,16 @@ export const DeliveryGoodsPage = () => {
           <span>Способ оплаты</span>
           <span>Стоимость доставки</span>
         </li>
-        <li>
-          <span>Картой</span>
-          <span>
-            <b>от 40 грн.</b>
-          </span>
-        </li>
+        {/*<li>*/}
+        {/*  <span>Картой</span>*/}
+        {/*  <span>*/}
+        {/*    <b>от 40 грн.</b>*/}
+        {/*  </span>*/}
+        {/*</li>*/}
         <li>
           <span>Наложеным платежом</span>
           <span>
-            <b>от 60 грн.</b>
+            <b>от 40 грн.</b>
           </span>
         </li>
       </ul>

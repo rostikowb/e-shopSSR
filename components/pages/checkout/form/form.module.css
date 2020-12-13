@@ -55,6 +55,18 @@
   justify-content: flex-start;
   margin: 10px 0;
 }
+
+.errMsg{
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #650000;
+  font-size: 16px;
+}
+
 @media (max-width: 1150px) {
   .formBox {
     width: 100%;

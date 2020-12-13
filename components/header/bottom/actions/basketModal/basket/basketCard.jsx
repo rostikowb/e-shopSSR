@@ -16,7 +16,7 @@ import {useRouter} from 'next/router';
 import { option } from "../../../../../../option";
 
 const BasketCar = (props) => {
-    console.log(useRouter());
+    // console.log(useRouter());
     let d = props.data;
   let count = props.basketArr[props.index].countSale;
   let loc;

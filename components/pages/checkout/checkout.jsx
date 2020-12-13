@@ -1,29 +1,26 @@
 import React, {useEffect} from "react";
 import s from "./checkout.module.css";
-import Link from 'next/link';
 import { NoSsr } from '@material-ui/core';
 import { connect } from "react-redux";
 import { changeStateAuthModal } from "../../../redux/modal/actions";
 import { CheckoutForm } from "./form/form";
 import { CheckoutInfo } from "./info/info";
 import {lsToStore} from "../../../localStorage/initAction";
+import {useRouter} from "next/router";
 
 const Checkou = (props) => {
+  // const loc = useRouter()
 
     useEffect(()=>{
         props.lsToStore()
+      // console.log(props.basketArr);
+      // if(!props.basketArr?.length) loc.push('/', '/')
         // const jssStyles = document.querySelector('#jss-server-side');
         // console.log('jssStylespropspropspropsprops',jssStyles);
     },[])
 
   return (
     <>
-      <header className={s.header}>
-        <div className={s.headerWrapper}>
-            <Link href={`/`} as={`/`} passHref><a>Вернутся на главную</a></Link>
-          <Link href={`/`} as={`/`} passHref><a>Контакты</a></Link>
-        </div>
-      </header>
       <div className={`main ${s.wrapper}`}>
         <div className={s.content}>
             <NoSsr><CheckoutForm />
@@ -36,7 +33,12 @@ const Checkou = (props) => {
 
 // Зробить систему купонів на клієнті!!!!
 
-export const Checkout = connect(null, {
+const mapStateToProps = (state) => {
+  return {
+    basketArr: state.addLikesBasket.basketArr
+  }
+}
+export const Checkout = connect(mapStateToProps, {
   changeStateAuthModal,
     lsToStore,
 })(Checkou);

@@ -9,11 +9,12 @@ import {Provider} from 'react-redux'
 import {useStore} from '../redux/store'
 import {InvisComp} from "../components/dopComp/invisComp/invisComp";
 import {useRouter} from 'next/router'
-import {Layout} from "../components/layout/Layout";
+import {GoodsLayout} from "../components/layout/goodsLayout";
 import {faSearch} from '@fortawesome/free-solid-svg-icons'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import Head from "next/head"; // Import the CSS
+import Head from "next/head";
+import {CheckoutLayout} from "../components/layout/checkoutLayout"; // Import the CSS
 config.autoAddCss = false;
 library.add( faSearch );
 
@@ -31,17 +32,15 @@ export default function App({Component, pageProps}) {
         }
     }, []);
 
-    if(useRouter().pathname === "/checkout"){
+    if(useRouter().pathname.split('/')[1] === "checkout"){
         return (
             <Provider store={store}>
                 <MuiThemeProvider muiTheme={muiTheme}>
                     <ThemeProvider theme={theme}>
                         <InvisComp/>
-                        {/*<Head>*/}
-                        {/*    <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover' />*/}
-                        {/*    <title>vsivuha - Мінімальні ціни!</title>*/}
-                        {/*</Head>*/}
-                        <Component {...pageProps} />
+                        <CheckoutLayout>
+                            <Component {...pageProps} />
+                        </CheckoutLayout>
                     </ThemeProvider>
                 </MuiThemeProvider>
             </Provider>
@@ -52,9 +51,9 @@ export default function App({Component, pageProps}) {
             <Provider store={store}>
                 <MuiThemeProvider muiTheme={muiTheme}>
                     <ThemeProvider theme={theme}>
-                        <Layout>
+                        <GoodsLayout>
                             <Component {...pageProps} />
-                        </Layout>
+                        </GoodsLayout>
                     </ThemeProvider>
                 </MuiThemeProvider>
             </Provider>

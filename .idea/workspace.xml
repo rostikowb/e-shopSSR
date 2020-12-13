@@ -20,9 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="add and repair some info pages">
+      <change afterPath="$PROJECT_DIR$/components/layout/checkoutLayout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/checkout/done/done.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/checkout/done/done.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/checkout/done/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkbox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkbox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/goodsLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/checkout/checkout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/checkout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/checkout/form/form.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/form/form.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/checkout/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/checkout/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/likesBasket/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/likesBasket/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/likesBasket/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/likesBasket/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/types.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +52,8 @@
         <option value="tsconfig.json" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="module.css" />
         <option value="JSX File" />
+        <option value="module.css" />
       </list>
     </option>
   </component>
@@ -65,7 +80,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CRM" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -82,19 +97,19 @@
     <property name="ts.external.directory.path" value="F:\Software\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\nodePro\MyE-Store\client_ssr\components\dopComp\filtersChecked" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\components\dopComp\lib\filters" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\components\dopComp\lib" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\components\menuContent\filter\filterContent" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\nodePro\MyE-Store\client_ssr\redux\filters" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\public" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\components\pages" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\pages\info\return" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\pages\info\licagr" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\nodePro\MyE-Store\client_ssr\components\dopComp\filtersChecked" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\components\dopComp\lib\filters" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\components\dopComp\lib" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\components\menuContent\filter\filterContent" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -207,7 +222,8 @@
       <workItem from="1607015444405" duration="12070000" />
       <workItem from="1607178402623" duration="63538000" />
       <workItem from="1607616626796" duration="15656000" />
-      <workItem from="1607701811456" duration="13746000" />
+      <workItem from="1607701811456" duration="14701000" />
+      <workItem from="1607877750285" duration="8976000" />
     </task>
     <task id="LOCAL-00001" summary="dd">
       <created>1601218595170</created>
@@ -335,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607720114318</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="filter hot fix">
+      <created>1607721512305</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1607721512305</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +395,8 @@
     <MESSAGE value="filter and another big update" />
     <MESSAGE value="console.log deleting" />
     <MESSAGE value="prod enable" />
-    <option name="LAST_COMMIT_MESSAGE" value="prod enable" />
+    <MESSAGE value="filter hot fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter hot fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="215" key="#ESLint" timestamp="1601145461849">
@@ -387,22 +411,22 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1607714258691" />
-    <state width="1515" height="228" key="GridCell.Tab.0.bottom" timestamp="1607720042515">
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom" timestamp="1607884527144">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1607720042515" />
-    <state width="1515" height="228" key="GridCell.Tab.0.center" timestamp="1607720042515">
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1607884527144" />
+    <state width="1515" height="228" key="GridCell.Tab.0.center" timestamp="1607884527144">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1607720042515" />
-    <state width="1515" height="228" key="GridCell.Tab.0.left" timestamp="1607720042515">
+    <state width="1515" height="228" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1607884527144" />
+    <state width="1515" height="228" key="GridCell.Tab.0.left" timestamp="1607884527144">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1607720042515" />
-    <state width="1515" height="228" key="GridCell.Tab.0.right" timestamp="1607720042515">
+    <state width="1515" height="228" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1607884527144" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right" timestamp="1607884527144">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1607720042515" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1607884527144" />
     <state width="1515" height="260" key="GridCell.Tab.1.bottom" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
@@ -455,14 +479,14 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1605816015461" />
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1607720116196">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1607721514613">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1607720116196" />
-    <state x="429" y="56" width="1107" height="795" key="find.popup" timestamp="1607719005709">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1607721514613" />
+    <state x="429" y="56" width="1107" height="795" key="find.popup" timestamp="1607881496851">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="429" y="56" width="1107" height="795" key="find.popup/0.43.1536.821@0.43.1536.821" timestamp="1607719005709" />
+    <state x="429" y="56" width="1107" height="795" key="find.popup/0.43.1536.821@0.43.1536.821" timestamp="1607881496851" />
     <state x="425" y="208" key="run.anything.popup" timestamp="1607716411646">
       <screen x="0" y="43" width="1536" height="821" />
     </state>

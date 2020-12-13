@@ -21,7 +21,7 @@ const CheckoutInf = (props) => {
   const allPrice = !!arr?Math.round(
     props.basketSum.sum - (props.basketSum.sum / 100) * dscnt
   ).toLocaleString("ru-RU"):null;
-  console.log(UD);
+  // console.log(UD);
   return (
     <div className={s.mainInfoBox}>
       <div className={s.infoInBox}>

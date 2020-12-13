@@ -8,7 +8,7 @@ import {InvisComp} from "../dopComp/invisComp/invisComp";
 import {FiltersChecked} from "../dopComp/filtersChecked/filtersChecked";
 import {FeedbackBtn} from "../menuContent/feedbackBtn/feedbackBtn";
 
-export const Layout = ({ children }) => {
+export const GoodsLayout = ({ children }) => {
     return (
         <>
             <Header/>

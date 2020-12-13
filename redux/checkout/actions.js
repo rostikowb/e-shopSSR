@@ -70,6 +70,7 @@ export const sendToDB = (obj, token) => {
     });
 
     if (res?.UD) dispatch(auth(res));
+
     dispatch({
       type: OPT_DONE,
       res: res?.result,

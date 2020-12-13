@@ -1,0 +1,33 @@
+.doneWrapper {
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+.doneBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.doneBox > h1 {
+    font-size: 4em;
+    margin-bottom: 40px;
+}
+
+.doneBox > span {
+    font-size: 2em;
+}
+
+.doneBox > span:hover {
+    color: #00cc9d;
+    transition: color 200ms;
+}
+
+@media (max-width: 350px) {
+    .doneBox > h1 {
+        font-size: 3em;
+    }
+}

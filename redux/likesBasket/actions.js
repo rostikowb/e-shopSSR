@@ -1,6 +1,6 @@
 import bent from "bent";
-import { SUM_BASKET } from "../types";
-import { option } from "../../option";
+import {DEL_ALL_BASKET, SUM_BASKET} from "../types";
+import {option} from "../../option";
 
 export const addProdToCash = (urlId, type, isLoad = true, data) => {
   let url = option.api + "/goods/" + urlId;
@@ -35,5 +35,10 @@ export const sumProdToCash = (data, plus) => {
       payload: data,
       plus: plus,
     });
+  };
+};
+export const deleteAllBasket = () => {
+  return {
+    type: DEL_ALL_BASKET
   };
 };

@@ -1,11 +1,11 @@
 import {
-    ADD_LIKES,
-    ADD_BASKET,
-    DEL_LIKES,
-    DEL_BASKET,
-    SUM_BASKET, LB_INIT,
+  ADD_LIKES,
+  ADD_BASKET,
+  DEL_LIKES,
+  DEL_BASKET,
+  SUM_BASKET, LB_INIT, DEL_ALL_BASKET,
 } from "../types";
-import { set, get, contains } from "../../localStorage/localStorFunc";
+import {set, get, contains} from "../../localStorage/localStorFunc";
 
 const addArr = (state, value) => {
   if (!contains(state, value)) {
@@ -50,7 +50,7 @@ const sumArrDo = (state) => {
     sum = 0;
   }
 
-  return { count, sum };
+  return {count, sum};
 };
 
 // let likesArr = get("goods/likes");
@@ -58,9 +58,9 @@ const sumArrDo = (state) => {
 
 const initialState = {
   // visitedArr: visArr?.length ? visArr : set("goods/visited", ""),
-    likesArr: null,
-    basketArr:null,
-    basketSum:null,
+  likesArr: null,
+  basketArr: null,
+  basketSum: null,
   // likesArr: likesArr?.length ? likesArr : set("goods/likes", ""),
   // basketArr: basketArr?.length ? basketArr : set("goods/basket", ""),
   // basketSum: sumArrDo(get("goods/basket")) || 0,
@@ -69,43 +69,49 @@ const initialState = {
 export const addLikesBasket = (state = initialState, action) => {
   switch (action.type) {
     case LB_INIT:
-      if(!state.likesArr) state.likesArr = get("goods/likes");
+      if (!state.likesArr) state.likesArr = get("goods/likes");
       if (!state.basketArr) state.basketArr = get("goods/basket");
       state.basketSum = sumArrDo(get("goods/basket")) || 0;
-      return { ...state };
+      return {...state};
 
     case ADD_LIKES:
       if (!state.likesArr) state.likesArr = get("goods/likes");
       state.likesArr = addArr(state.likesArr, action.payload);
       set("goods/likes", state.likesArr);
-      return { ...state };
+      return {...state};
 
     case ADD_BASKET:
       if (!state.basketArr) state.basketArr = get("goods/basket");
       state.basketArr = addArr(state.basketArr, action.payload);
       state.basketSum = sumArrDo(state.basketArr);
       set("goods/basket", state.basketArr);
-      return { ...state };
+      return {...state};
 
     case DEL_LIKES:
       if (!state.likesArr) state.likesArr = get("goods/likes");
       state.likesArr = delArr(state.likesArr, action.payload);
       set("goods/likes", state.likesArr);
-      return { ...state };
+      return {...state};
 
     case DEL_BASKET:
       if (!state.basketArr) state.basketArr = get("goods/basket");
       state.basketArr = delArr(state.basketArr, action.payload);
       state.basketSum = sumArrDo(state.basketArr);
       set("goods/basket", state.basketArr);
-      return { ...state };
+      return {...state};
+
+    case DEL_ALL_BASKET:
+      state.basketArr = [];
+      state.basketSum = 0;
+      set("goods/basket", []);
+      return {...state};
 
     case SUM_BASKET:
       if (!state.basketArr) state.basketArr = get("goods/basket");
       state.basketArr = sumArr(state.basketArr, action.payload, action.plus);
       state.basketSum = sumArrDo(state.basketArr);
       set("goods/basket", state.basketArr);
-      return { ...state };
+      return {...state};
     default:
       return state;
   }

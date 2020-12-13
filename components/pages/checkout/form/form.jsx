@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import {
   Button,
   Checkbox,
@@ -7,16 +7,18 @@ import {
   // makeStyles,
   TextField,
 } from "@material-ui/core";
-import { Autocomplete } from "@material-ui/lab";
-import { connect } from "react-redux";
+import {Autocomplete} from "@material-ui/lab";
+import {connect} from "react-redux";
 import {
   optStubOn,
   searchCityNP,
   sendToDB,
 } from "../../../../redux/checkout/actions";
 import s from "./form.module.css";
-import { OPT_SEND_STUB, OPT_STUB } from "../../../../redux/types";
+import {OPT_SEND_STUB, OPT_STUB} from "../../../../redux/types";
 import {checkoutFormTheme} from "../../../../styles/theme";
+import {useRouter} from "next/router";
+import {deleteAllBasket} from "../../../../redux/likesBasket/actions";
 
 
 const validateEmail = (email) => {
@@ -27,6 +29,7 @@ const validateEmail = (email) => {
 const useStyles = checkoutFormTheme;
 
 const CheckoutFor = (props) => {
+  const loc = useRouter();
   const arr = props.basketArr;
   const classes = useStyles();
   const stub = props.stub;
@@ -51,7 +54,7 @@ const CheckoutFor = (props) => {
     msg: '',
   })
 
-  const [dataV, setDataV] = useState(data?{
+  const [dataV, setDataV] = useState(data ? {
     email: !!data.email,
     tel: data.tel.length > 3,
     pass: !!token || !isReg || !!data.pass,
@@ -62,7 +65,7 @@ const CheckoutFor = (props) => {
     branchN: !!data.branchN,
     // iAgree: false,
     msg: true,
-  }:null);
+  } : null);
 
   const sendData = () => {
     let obj = {
@@ -88,8 +91,8 @@ const CheckoutFor = (props) => {
     }
     dataV[type] = isValid;
     data[type] = value;
-    setData({ ...data });
-    setDataV({ ...dataV });
+    setData({...data});
+    setDataV({...dataV});
   };
 
   const sityChange = (value) => {
@@ -97,14 +100,14 @@ const CheckoutFor = (props) => {
       props.optStubOn(OPT_STUB);
       props.searchCityNP(value);
       data.optCity = value;
-      setData({ ...data });
+      setData({...data});
     }
   };
 
   const branchNChange = (value) => {
     if (value.length > 3) {
       data.optBranchN = value;
-      setData({ ...data });
+      setData({...data});
     }
   };
 
@@ -122,20 +125,20 @@ const CheckoutFor = (props) => {
     if (data?.optCity && data?.optBranchN) {
       dataV.city = true;
       dataV.branchN = true;
-      setDataV({ ...dataV });
+      setDataV({...dataV});
     }
 
-    !!UD?setDone(
+    !!UD ? setDone(
       dataV.city &&
-        dataV.branchN &&
-        dataV.FN &&
-        dataV.email &&
-        (!isReg || dataV.pass) &&
-        dataV.LN &&
-        dataV.SN &&
-        dataV.tel
-        // dataV.iAgree
-    ):null;
+      dataV.branchN &&
+      dataV.FN &&
+      dataV.email &&
+      (!isReg || dataV.pass) &&
+      dataV.LN &&
+      dataV.SN &&
+      dataV.tel
+      // dataV.iAgree
+    ) : null;
 
   }, [data, isReg]);
 
@@ -147,13 +150,21 @@ const CheckoutFor = (props) => {
     if (UD?.SN) data.SN = UD.SN;
     if (UD?.city) data.optCity = UD.city;
     if (UD?.branchN) data.optBranchN = UD.branchN;
-    setData({ ...data });
+    setData({...data});
   }, [UD]);
 
   useEffect(() => {
     data.cupon = props.cupon;
-    setData({ ...data });
+    setData({...data});
   }, [props.cupon]);
+
+  useEffect(() => {
+    if (props.isDoneSend) {
+      props.deleteAllBasket()
+      loc.push('/checkout/done', '/checkout/done', {shallow:true})
+    }
+  }, [props.isDoneSend]);
+
   return (
     <div className={s.formBox}>
       <div className={s.form}>
@@ -253,7 +264,7 @@ const CheckoutFor = (props) => {
           <div className={s.select}>
             <Autocomplete
               id="asynchronous-demo"
-              style={{ width: "100%" }}
+              style={{width: "100%"}}
               loading={optCity.stub}
               loadingText={"Ищем..."}
               noOptionsText={"Нет совпадений"}
@@ -280,7 +291,7 @@ const CheckoutFor = (props) => {
                     endAdornment: (
                       <React.Fragment>
                         {optCity.stub ? (
-                          <CircularProgress color="inherit" size={20} />
+                          <CircularProgress color="inherit" size={20}/>
                         ) : null}
                         {params.InputProps.endAdornment}
                       </React.Fragment>
@@ -293,7 +304,7 @@ const CheckoutFor = (props) => {
           <div className={s.select}>
             <Autocomplete
               id="asynchronous-dmo"
-              style={{ width: "100%" }}
+              style={{width: "100%"}}
               loading={optCity.stub}
               loadingText={"Ищем..."}
               freeSolo
@@ -318,7 +329,7 @@ const CheckoutFor = (props) => {
                     endAdornment: (
                       <React.Fragment>
                         {optBranchN.stub ? (
-                          <CircularProgress color="inherit" size={20} />
+                          <CircularProgress color="inherit" size={20}/>
                         ) : null}
                         {params.InputProps.endAdornment}
                       </React.Fragment>
@@ -331,8 +342,8 @@ const CheckoutFor = (props) => {
         </div>
         <h2 className={s.title}>Дополнительно</h2>
         <div className={s.select}>
-        <TextField
-            style={{ margin: 0 }}
+          <TextField
+            style={{margin: 0}}
             multiline={true}
             variant="outlined"
             // color={"secondary"}
@@ -349,7 +360,7 @@ const CheckoutFor = (props) => {
             // error={!dataV.msg}
             helperText="Что нам принять к сведению?"
             onChange={(event) => chngInpLn("msg", event.target.value, 4)}
-        />
+          />
         </div>
         <div className={s.namesGroup}>
           {!token ? (
@@ -361,7 +372,7 @@ const CheckoutFor = (props) => {
                     onChange={() => checkboxChange("reg")}
                     name="checkedisReg"
                     color="primary"
-                    inputProps={{ "aria-label": "secondary checkbox" }}
+                    inputProps={{"aria-label": "secondary checkbox"}}
                   />
                 }
                 label="Требую создать собственный аккаунт для хранения купонов!!"
@@ -387,22 +398,25 @@ const CheckoutFor = (props) => {
             </div>
           ) : null}
           {/*<div className={s.checkBox}>*/}
-            {/*<FormControlLabel*/}
-            {/*  control={*/}
-            {/*    <Checkbox*/}
-            {/*      checked={dataV?.iAgree}*/}
-            {/*      onChange={() => checkboxChange()}*/}
-            {/*      name="checkediAgree"*/}
-            {/*      color="primary"*/}
-            {/*      size="medium"*/}
-            {/*      inputProps={{ "aria-label": "secondary checkbox" }}*/}
-            {/*    />*/}
-            {/*  }*/}
-            {/*  label={`Я согласен c ${условиями использования сайтa}`}*/}
-            {/*/>*/}
+          {/*<FormControlLabel*/}
+          {/*  control={*/}
+          {/*    <Checkbox*/}
+          {/*      checked={dataV?.iAgree}*/}
+          {/*      onChange={() => checkboxChange()}*/}
+          {/*      name="checkediAgree"*/}
+          {/*      color="primary"*/}
+          {/*      size="medium"*/}
+          {/*      inputProps={{ "aria-label": "secondary checkbox" }}*/}
+          {/*    />*/}
+          {/*  }*/}
+          {/*  label={`Я согласен c ${условиями использования сайтa}`}*/}
+          {/*/>*/}
           {/*</div>*/}
         </div>
       </div>
+
+      <span className={s.errMsg}>{props.msg ? props.msg : null}</span>
+
       <Button
         type="submit"
         fullWidth
@@ -426,6 +440,9 @@ const mapStateToProps = (state) => {
     optBranchN: state.checkout.branchN,
     cupon: state.checkout.cupon,
     basketArr: state.addLikesBasket.basketArr,
+    isDoneSend: state.checkout.isDoneSend,
+    invalid: state.checkout.invalid,
+    msg: state.checkout.msg
   };
 };
 
@@ -433,4 +450,5 @@ export const CheckoutForm = connect(mapStateToProps, {
   sendToDB,
   optStubOn,
   searchCityNP,
+  deleteAllBasket
 })(CheckoutFor);

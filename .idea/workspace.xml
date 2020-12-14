@@ -19,22 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="add and repair some info pages">
-      <change afterPath="$PROJECT_DIR$/components/pages/info/info.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/info/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/menu/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/menu/menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/menu/menu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkbox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkbox.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkboxStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkboxStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filterContent/filterAcordion/filterAcordion.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/filterAcordion/filterAcordion.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/info/info.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/info/info.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/aboutUs/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/aboutUs/index.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="add and repair some info pages" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -221,7 +206,7 @@
       <workItem from="1607701811456" duration="14701000" />
       <workItem from="1607877750285" duration="9944000" />
       <workItem from="1607891062357" duration="23000" />
-      <workItem from="1607957893074" duration="8528000" />
+      <workItem from="1607957893074" duration="9318000" />
     </task>
     <task id="LOCAL-00001" summary="dd">
       <created>1601218595170</created>
@@ -363,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607887285633</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="bag fix &amp;&amp; add info page">
+      <created>1607971201995</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1607971201995</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +394,8 @@
     <MESSAGE value="prod enable" />
     <MESSAGE value="filter hot fix" />
     <MESSAGE value="checkout.jsx finished v0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkout.jsx finished v0.1" />
+    <MESSAGE value="bag fix &amp;&amp; add info page" />
+    <option name="LAST_COMMIT_MESSAGE" value="bag fix &amp;&amp; add info page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="215" key="#ESLint" timestamp="1601145461849">
@@ -417,22 +410,22 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1607958401631" />
-    <state width="1515" height="228" key="GridCell.Tab.0.bottom" timestamp="1607969917439">
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom" timestamp="1607971122535">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1607969917439" />
-    <state width="1515" height="228" key="GridCell.Tab.0.center" timestamp="1607969917439">
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1607971122535" />
+    <state width="1515" height="228" key="GridCell.Tab.0.center" timestamp="1607971122535">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1607969917439" />
-    <state width="1515" height="228" key="GridCell.Tab.0.left" timestamp="1607969917438">
+    <state width="1515" height="228" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1607971122535" />
+    <state width="1515" height="228" key="GridCell.Tab.0.left" timestamp="1607971122535">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1607969917438" />
-    <state width="1515" height="228" key="GridCell.Tab.0.right" timestamp="1607969917439">
+    <state width="1515" height="228" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1607971122535" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right" timestamp="1607971122535">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1607969917439" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1607971122535" />
     <state width="1515" height="260" key="GridCell.Tab.1.bottom" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
@@ -485,10 +478,10 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1605816015461" />
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1607887300073">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1607971209628">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1607887300073" />
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1607971209628" />
     <state x="429" y="56" width="1107" height="795" key="find.popup" timestamp="1607881496851">
       <screen x="0" y="43" width="1536" height="821" />
     </state>

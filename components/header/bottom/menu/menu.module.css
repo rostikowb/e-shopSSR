@@ -1,8 +1,6 @@
 .menu {
   position: relative;
   height: 40px;
-  /*padding-right: 10px;*/
-  /*padding-left: 10px;*/
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   background-color: rgba(255, 255, 255, 0);
@@ -11,11 +9,9 @@
   font-weight: 700;
   color: #fff;
   cursor: pointer;
-  /*-webkit-transition: .2s ease-in-out;*/
-  /*-o-transition: .2s ease-in-out;*/
-  /*transition: all .2s ease-in-out;*/
   margin-right: 2vw;
   display: none;
+  margin-left: 5px;
 }
 
 .drawer{
@@ -23,20 +19,17 @@
   flex-direction: column;
   background-color: white;
 }
-/*.menu > * {*/
-
-/*}*/
 
 .menu > button {
   position: relative;
   height: 40px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   background-color: rgba(255, 255, 255, 0);
   white-space: nowrap;
-  font-size: 16px;
+  /*font-size: 16px;*/
   font-weight: 700;
   color: #fff;
   cursor: pointer;
@@ -48,6 +41,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-size: 25px;
+
 }
 
 .menu > button:focus {
@@ -55,10 +50,6 @@
 }
 .menu > button:hover {
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.icon {
-  font-size: 25px;
 }
 
 .menuBox {

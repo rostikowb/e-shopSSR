@@ -9,14 +9,14 @@ const useStyles = makeStyles((theme) => ({
     height: "30px",
     "min-height": "30px",
     // height: "25px"
-    padding: "0 16px 0 8px"
+    padding: "0 22px 0 8px"
   },
 
   expanded: {
     "min-height": "30px!important",
   },
 
-  rounded:{
+  rounded: {
     borderRadius: 0
   },
 
@@ -25,6 +25,12 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.typography.pxToRem(16),
     fontWeight: theme.typography.fontWeightRegular,
   },
+  details: {
+    padding: "8px 22px 16px"
+  },
+  title:{
+    fontSize: "15px"
+  }
 }));
 
 export const FilterAcordion = (props) => {
@@ -32,7 +38,7 @@ export const FilterAcordion = (props) => {
   const classes = useStyles();
 
   return (
-    <div key={"filLab"+props.info.title}>
+    <div key={"filLab" + props.info.title}>
       <Accordion
         square={true}
         // className={classes.rounded}
@@ -47,11 +53,11 @@ export const FilterAcordion = (props) => {
           aria-controls="panel1a-content"
           id={"panel1a-header" + props.info.title}
         >
-          <Typography className={classes.heading}>
+          <Typography classes={{root: classes.title}} className={classes.heading}>
             {props.info.title}
           </Typography>
         </AccordionSummary>
-        <AccordionDetails>{props.info.content}</AccordionDetails>
+        <AccordionDetails classes={{root: classes.details}}>{props.info.content}</AccordionDetails>
       </Accordion>
     </div>
   );

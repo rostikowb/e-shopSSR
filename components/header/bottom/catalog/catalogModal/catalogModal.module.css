@@ -177,6 +177,10 @@
   width: 100%;
   z-index: 26;
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 1335px) {
   .menuBox > span {

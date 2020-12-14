@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
 import {
   Button,
-  Checkbox,
+  // Checkbox,
   CircularProgress,
-  FormControlLabel,
+  // FormControlLabel,
   // makeStyles,
   TextField,
 } from "@material-ui/core";
@@ -39,12 +39,12 @@ const CheckoutFor = (props) => {
   const optCity = props.optCity;
   const optBranchN = props.optBranchN;
   const [done, setDone] = useState(false);
-  const [isReg, setIsReg] = useState(!token);
+  // const [isReg, setIsReg] = useState(!token);
   const [data, setData] = useState({
     userId: UD?.userId || "",
     email: UD?.email || "",
     tel: UD?.tel || Number("+380"),
-    pass: "",
+    // pass: "",
     FN: UD?.FN || UD?.FN || "",
     LN: UD?.LN || "",
     SN: UD?.SN || "",
@@ -57,7 +57,7 @@ const CheckoutFor = (props) => {
   const [dataV, setDataV] = useState(data ? {
     email: !!data.email,
     tel: data.tel.length > 3,
-    pass: !!token || !isReg || !!data.pass,
+    // pass: !!token || !isReg || !!data.pass,
     FN: !!data.FN,
     LN: !!data.LN,
     SN: !!data.SN,
@@ -133,14 +133,14 @@ const CheckoutFor = (props) => {
       dataV.branchN &&
       dataV.FN &&
       dataV.email &&
-      (!isReg || dataV.pass) &&
+      // (!isReg || dataV.pass) &&
       dataV.LN &&
       dataV.SN &&
       dataV.tel
       // dataV.iAgree
     ) : null;
 
-  }, [data, isReg]);
+  }, [data]);
 
   useEffect(() => {
     if (UD?.email) data.email = UD.email;
@@ -362,57 +362,57 @@ const CheckoutFor = (props) => {
             onChange={(event) => chngInpLn("msg", event.target.value, 4)}
           />
         </div>
-        <div className={s.namesGroup}>
-          {!token ? (
-            <div className={s.checkBox}>
-              <FormControlLabel
-                control={
-                  <Checkbox
-                    checked={isReg}
-                    onChange={() => checkboxChange("reg")}
-                    name="checkedisReg"
-                    color="primary"
-                    inputProps={{"aria-label": "secondary checkbox"}}
-                  />
-                }
-                label="Требую создать собственный аккаунт для хранения купонов!!"
-              />
-            </div>
-          ) : null}
-          {isReg ? (
-            <div className={s.select}>
-              <TextField
-                variant="outlined"
-                margin="normal"
-                required={true}
-                fullWidth
-                name="password"
-                label="Придумайте пароль"
-                type="password"
-                id="password"
-                autoComplete={"new-password"}
-                onChange={(event) => chngInpLn("pass", event.target.value, 7)}
-                error={!dataV?.pass}
-                helperText={!dataV?.pass ? "Минимум 8 знаков" : null}
-              />
-            </div>
-          ) : null}
-          {/*<div className={s.checkBox}>*/}
-          {/*<FormControlLabel*/}
-          {/*  control={*/}
-          {/*    <Checkbox*/}
-          {/*      checked={dataV?.iAgree}*/}
-          {/*      onChange={() => checkboxChange()}*/}
-          {/*      name="checkediAgree"*/}
-          {/*      color="primary"*/}
-          {/*      size="medium"*/}
-          {/*      inputProps={{ "aria-label": "secondary checkbox" }}*/}
-          {/*    />*/}
-          {/*  }*/}
-          {/*  label={`Я согласен c ${условиями использования сайтa}`}*/}
-          {/*/>*/}
-          {/*</div>*/}
-        </div>
+        {/*<div className={s.namesGroup}>*/}
+        {/*  {!token ? (*/}
+        {/*    <div className={s.checkBox}>*/}
+        {/*      <FormControlLabel*/}
+        {/*        control={*/}
+        {/*          <Checkbox*/}
+        {/*            checked={isReg}*/}
+        {/*            onChange={() => checkboxChange("reg")}*/}
+        {/*            name="checkedisReg"*/}
+        {/*            color="primary"*/}
+        {/*            inputProps={{"aria-label": "secondary checkbox"}}*/}
+        {/*          />*/}
+        {/*        }*/}
+        {/*        label="Требую создать собственный аккаунт для хранения купонов!!"*/}
+        {/*      />*/}
+        {/*    </div>*/}
+        {/*  ) : null}*/}
+        {/*  {isReg ? (*/}
+        {/*    <div className={s.select}>*/}
+        {/*      <TextField*/}
+        {/*        variant="outlined"*/}
+        {/*        margin="normal"*/}
+        {/*        required={true}*/}
+        {/*        fullWidth*/}
+        {/*        name="password"*/}
+        {/*        label="Придумайте пароль"*/}
+        {/*        type="password"*/}
+        {/*        id="password"*/}
+        {/*        autoComplete={"new-password"}*/}
+        {/*        onChange={(event) => chngInpLn("pass", event.target.value, 7)}*/}
+        {/*        error={!dataV?.pass}*/}
+        {/*        helperText={!dataV?.pass ? "Минимум 8 знаков" : null}*/}
+        {/*      />*/}
+        {/*    </div>*/}
+        {/*  ) : null}*/}
+        {/*  <div className={s.checkBox}>*/}
+        {/*  <FormControlLabel*/}
+        {/*    control={*/}
+        {/*      <Checkbox*/}
+        {/*        checked={dataV?.iAgree}*/}
+        {/*        onChange={() => checkboxChange()}*/}
+        {/*        name="checkediAgree"*/}
+        {/*        color="primary"*/}
+        {/*        size="medium"*/}
+        {/*        inputProps={{ "aria-label": "secondary checkbox" }}*/}
+        {/*      />*/}
+        {/*    }*/}
+        {/*    label={`Я согласен c ${условиями использования сайтa}`}*/}
+        {/*  />*/}
+        {/*  </div>*/}
+        {/*</div>*/}
       </div>
 
       <span className={s.errMsg}>{props.msg ? props.msg : null}</span>

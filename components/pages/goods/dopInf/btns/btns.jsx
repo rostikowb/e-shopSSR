@@ -33,7 +33,7 @@ export const OGBt = (props) => {
           className={s.saleBtn + " " + ss.cardBoxAll}
           title="Добавить товар в корзину."
         >
-          Купить
+          Заказать
         </div>
       ) : (
         <div

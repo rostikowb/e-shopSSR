@@ -9,7 +9,7 @@ import {parsFiltOfUrl} from "../../../../dopComp/lib/filters/parsFiltOfURL";
 import {fetchGoods, stubOn} from "../../../../../redux/goodsArr/actions";
 
 export const CheckboxFilte = (props) => {
-  const {root, checked} = useStyles();
+  const {root, checked, body1} = useStyles();
   const value = props.value;
   const label = props.label;
   const loc = useRouter()
@@ -72,6 +72,9 @@ export const CheckboxFilte = (props) => {
                   }}
         />
       }
+      classes={{
+        label:body1
+      }}
       label={props.value}
       labelPlacement={"end"}
     />

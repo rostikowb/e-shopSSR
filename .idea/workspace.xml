@@ -20,24 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="add and repair some info pages">
-      <change afterPath="$PROJECT_DIR$/components/layout/checkoutLayout.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/checkout/done/done.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/checkout/done/done.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/checkout/done/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/info/info.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/info/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/goodsLayout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/checkout/checkout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/checkout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/menu/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/menu/menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/menu/menu.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkbox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkbox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkboxStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/checkbox/checkboxStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/menuContent/filter/filterContent/filterAcordion/filterAcordion.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/menuContent/filter/filterContent/filterAcordion/filterAcordion.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/checkout/form/form.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/form/form.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/info/info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/checkout/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/checkout/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/likesBasket/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/likesBasket/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/likesBasket/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/likesBasket/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/info/info.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/info/info.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/aboutUs/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/aboutUs/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +48,8 @@
         <option value="tsconfig.json" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="JSX File" />
         <option value="module.css" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -80,7 +76,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -112,7 +108,7 @@
       <recent name="C:\nodePro\MyE-Store\client_ssr\public" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.build">
     <configuration name="init-server.js.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="init-server.js.js" working-dir="$PROJECT_DIR$/.next/server">
       <method v="2" />
     </configuration>
@@ -154,8 +150,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -223,7 +219,9 @@
       <workItem from="1607178402623" duration="63538000" />
       <workItem from="1607616626796" duration="15656000" />
       <workItem from="1607701811456" duration="14701000" />
-      <workItem from="1607877750285" duration="8976000" />
+      <workItem from="1607877750285" duration="9944000" />
+      <workItem from="1607891062357" duration="23000" />
+      <workItem from="1607957893074" duration="8528000" />
     </task>
     <task id="LOCAL-00001" summary="dd">
       <created>1601218595170</created>
@@ -358,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607721512305</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="checkout.jsx finished v0.1">
+      <created>1607887285633</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607887285633</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +401,8 @@
     <MESSAGE value="console.log deleting" />
     <MESSAGE value="prod enable" />
     <MESSAGE value="filter hot fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="filter hot fix" />
+    <MESSAGE value="checkout.jsx finished v0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkout.jsx finished v0.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="215" key="#ESLint" timestamp="1601145461849">
@@ -407,26 +413,26 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="410" y="221" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.43.1536.821@0.43.1536.821" timestamp="1603208915960" />
-    <state x="549" y="209" key="FileChooserDialogImpl" timestamp="1607714258691">
+    <state x="549" y="209" key="FileChooserDialogImpl" timestamp="1607958401631">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1607714258691" />
-    <state width="1515" height="228" key="GridCell.Tab.0.bottom" timestamp="1607884527144">
+    <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1607958401631" />
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom" timestamp="1607969917439">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1607884527144" />
-    <state width="1515" height="228" key="GridCell.Tab.0.center" timestamp="1607884527144">
+    <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1607969917439" />
+    <state width="1515" height="228" key="GridCell.Tab.0.center" timestamp="1607969917439">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1607884527144" />
-    <state width="1515" height="228" key="GridCell.Tab.0.left" timestamp="1607884527144">
+    <state width="1515" height="228" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1607969917439" />
+    <state width="1515" height="228" key="GridCell.Tab.0.left" timestamp="1607969917438">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1607884527144" />
-    <state width="1515" height="228" key="GridCell.Tab.0.right" timestamp="1607884527144">
+    <state width="1515" height="228" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1607969917438" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right" timestamp="1607969917439">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="228" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1607884527144" />
+    <state width="1515" height="228" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1607969917439" />
     <state width="1515" height="260" key="GridCell.Tab.1.bottom" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
@@ -479,10 +485,10 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1605816015461" />
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1607721514613">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1607887300073">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1607721514613" />
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1607887300073" />
     <state x="429" y="56" width="1107" height="795" key="find.popup" timestamp="1607881496851">
       <screen x="0" y="43" width="1536" height="821" />
     </state>

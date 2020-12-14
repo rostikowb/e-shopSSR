@@ -8,8 +8,8 @@
 }
 .saleBtn {
   /*position: relative;*/
-  background-color: #ffffff;
-  color: black;
+  /*background-color: #ffffff;*/
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,13 +21,14 @@
   border-radius: 2px;
   /*padding: 0 5px;*/
   font-size: 170%;
-  transition: all 0.15s;
+  /*transition: all 0.15s;*/
   user-select: none;
+  background-color: #a70000;
 }
 .saleBtn:hover {
   /*transition: background-color, color 0.2s;*/
   /*background-color: #6b0d68;*/
-  transition: all 0.15s;
+  /*transition: all 0.15s;*/
   color: white;
 }
 .likeBtn {
@@ -77,8 +78,9 @@
     margin: 0 -5px;
     font-size: 180%;
     padding: 5px 0;
-    border-radius: 5px;
-    background-color: white;
+    border-radius: 0;
+    /*background-color: white;*/
+    /*border: none;*/
   }
   .likeBtn {
     display: flex;
@@ -87,31 +89,42 @@
     width: 100%;
     height: 45px;
     cursor: pointer;
-    border: 1px solid #dc0400;
-    border-radius: 5px;
+
+    border-radius: 0;
     margin: 5px 0;
     font-size: 180%;
     padding: 5px 0;
-    color: rgb(0, 0, 0);
-    background-color: #ffffff;
+    /*color: rgb(0, 0, 0);*/
+    /*background-color: white;*/
+    /*background-color: #6b0d68;*/
     transition: none;
   }
 
   .likeBtnAct {
-    background-color: #980000;
+    /*background-color: #980000;*/
     /*width: 100%;*/
     /*height: 100%;*/
-    color: white !important;
-  }
-  .likeBtn:hover {
+
+      background-color: #5a0957;
+    /*color: white !important;*/
     transition: none;
   }
   .likeBtnAct > * {
     color: white !important;
   }
-  .likeBtnNoAct > * {
-    color: #919191;
+  /*.likeBtn:hover {*/
+  /*  background-color: #5a0957;*/
+  /*  transition: none;*/
+  /*}*/
+  .likeBtnAct > * {
+    /*color: white !important;*/
+  }
+  .likeBtnNoAct {
+    border: 1px solid #dc0400;
+    color: #000000;
     background-color: white;
+    transition: none;
+    /*background-color: white;*/
   }
   .btnBox {
     flex-direction: column;

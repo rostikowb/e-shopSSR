@@ -128,7 +128,7 @@ const CheckoutFor = (props) => {
       setDataV({...dataV});
     }
 
-    !!UD ? setDone(
+    setDone(
       dataV.city &&
       dataV.branchN &&
       dataV.FN &&
@@ -138,7 +138,7 @@ const CheckoutFor = (props) => {
       dataV.SN &&
       dataV.tel
       // dataV.iAgree
-    ) : null;
+    );
 
   }, [data]);
 

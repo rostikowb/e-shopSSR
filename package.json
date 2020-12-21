@@ -50,6 +50,7 @@
     "redux-lazy-scroll": "^0.1.1",
     "redux-thunk": "^2.3.0",
     "sass": "^1.26.10",
+    "sitemap": "^6.3.3",
     "styled-components": "^5.1.1",
     "swiper": "^6.1.2",
     "webp-loader": "^0.6.0"

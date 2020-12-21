@@ -14,7 +14,7 @@ export const Sal = (props) => {
     let prodLab = loc.pathname.split("/");
     let catalog = loc.query?.catalog;
     let sort = loc.query.sort || props.sort;
-    let onegoods = props.onegoods;
+    let onegoods = props.oneGoods?.nm;
     let catalogLabel;
     let [infoPageCheck, setInfoPageCheck] = useState('');
     // console.log(catalog);
@@ -89,6 +89,7 @@ const mapStateToProps = (state) => {
         stub: state.AllGoodsR.stub,
         catalog: state.AllGoodsR.catalog,
         sort: state.AllGoodsR.sort,
+        oneGoods: state.oneGoods.product,
     };
 };
 

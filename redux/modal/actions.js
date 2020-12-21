@@ -4,7 +4,7 @@ import {
   CHANGE_CATALOG_MODAL,
   CHANGE_COMMENTS_MODAL,
   CHANGE_FEEDBACK_MODAL,
-  CHANGE_LIKE_MODAL, FORM_CHANGE,
+  CHANGE_LIKE_MODAL, CHANGE_MENU_DRAWER, FORM_CHANGE,
   TICKET_DONE,
 } from "../types";
 
@@ -44,4 +44,7 @@ export const changeStateFeedbackModal = () => {
     dispatch({ type: TICKET_DONE });
     dispatch({ type: CHANGE_FEEDBACK_MODAL });
   };
+};
+export const changeStateMenuDrawer = (bool) => {
+  return { type: CHANGE_MENU_DRAWER, payload: bool}
 };

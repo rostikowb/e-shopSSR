@@ -1,28 +1,50 @@
 import React from "react";
 import {initializeStore} from "../../../../redux/store";
 import {Goods} from "../../../../components/pages/goods/goods";
-import {fetchOneGoodsSSR} from "../../../../redux/oneGoods/action";
+import {fetchAllGoodsId, fetchOneGoodsSSR} from "../../../../redux/oneGoods/action";
+import cyrillicToTranslit from "cyrillic-to-translit-js";
 import {option} from "../../../../option";
+import {SitemapStream, streamToPromise} from "sitemap";
+import {Readable} from "stream";
+import * as fs from 'fs'
+
 
 
 const onegoods = () => {
-    return (<Goods/>)
+  return (<Goods/>)
 };
 
 export default onegoods;
 
-export async function getServerSideProps(context) {
-        // if (!(option.DOMENREGEX.test(context.req.headers.referer))) {
-        // console.log(context.req.url);
-        const reduxStore = initializeStore();
-        const {dispatch} = reduxStore;
-        const userAgent = context.req.headers["user-agent"];
-        const url = context.req.url;
-        const productId = context.query.onegoods.split("__")[0];
-        await fetchOneGoodsSSR(productId, userAgent, dispatch, url);
+export const getStaticPaths = async () => {
 
-        return {props: {initialReduxState: reduxStore.getState()}}
-    // }else {
-    //     return{props:{}}
-    // }
+  const goodsId = await fetchAllGoodsId()
+  const links = [];
+
+  const paths = goodsId.map((post) => {
+    const translit = new cyrillicToTranslit()
+    const name = translit.transform(post["nm"].replace(/[^a-zа-яё\d]/ig, '_'));
+    const url = `/goods/${post.ctgrId}/${post._id}__${name}`;
+
+    links.push({url, changefreq: 'weekly'});
+
+    return url
+  })
+
+  const stream = new SitemapStream({hostname: option.STATIC})
+  const data = await streamToPromise(Readable.from(links).pipe(stream))
+  await fs.promises.writeFile('./public/sitemap.xml', data.toString())
+
+  return {paths, fallback: false}
+
+}
+export const getStaticProps = async ({params}) => {
+
+  const reduxStore = initializeStore();
+  const {dispatch} = reduxStore;
+  const productId = params.onegoods.split("__")[0];
+  await fetchOneGoodsSSR(productId, dispatch, `/goods/${params.catalog}/${params.onegoods}`);
+
+  return {props: {initialReduxState: reduxStore.getState()}}
+
 }

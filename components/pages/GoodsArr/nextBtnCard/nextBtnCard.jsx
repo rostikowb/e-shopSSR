@@ -22,7 +22,7 @@ const NextBtnCar = (props) => {
   const query = {...loc.query};
   // const range = query['Цена'] ? query['Цена'].split('-') : false;
 
-  useEffect(()=>{
+  useEffect(() => {
     query.page = page;
     delete query.catalog;
   }, [loc.query])
@@ -65,6 +65,7 @@ const NextBtnCar = (props) => {
 
   const href = () => {
     delete query.catalog;
+    query.page = page;
     return {
       pathname: loc.pathname,
       query
@@ -72,16 +73,16 @@ const NextBtnCar = (props) => {
   }
 
   const as = () => {
-    let pathname = '/goods/'+catalog;
-    if(loc.pathname === '/') pathname = loc.pathname;
+    let pathname = '/goods/' + catalog;
+    if (loc.pathname === '/') pathname = loc.pathname;
     delete query.catalog;
+    query.page = page;
     return {
-      pathname: pathname,
+      pathname,
       query
     }
   }
 
-  // console.log(width);
   return (
     <li ref={nexBtnRef} className={ss.stubElem}>
       <Link href={href()}

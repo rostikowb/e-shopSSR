@@ -415,7 +415,7 @@ const CheckoutFor = (props) => {
         {/*</div>*/}
       </div>
 
-      <span className={s.errMsg}>{props.msg ? props.msg : null}</span>
+      <span className={s.errMsg}>{props.msg ? props.msg.toString() : null}</span>
 
       <Button
         type="submit"

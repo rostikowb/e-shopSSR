@@ -34,6 +34,7 @@ const checkIsValid = (name) => {
     case 'sort':
     case 'page':
     case 'search':
+    case 'menu':
     case 'onegoods':
       return true
     default:

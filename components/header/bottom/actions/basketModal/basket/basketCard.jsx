@@ -14,13 +14,15 @@ import { fetchOneGoods } from "../../../../../../redux/oneGoods/action";
 import { setCatalog } from "../../../../../../redux/goodsArr/actions";
 import {useRouter} from 'next/router';
 import { option } from "../../../../../../option";
+import cyrillicToTranslit from "cyrillic-to-translit-js";
 
 const BasketCar = (props) => {
     // console.log(useRouter());
     let d = props.data;
   let count = props.basketArr[props.index].countSale;
   let loc;
-  let link = d._id + "__" + d["nm"].replace(/\s/gi, "_").replace(/\//gi, "-");
+  const translit = new cyrillicToTranslit()
+  const link = d._id + "__" + translit.transform(d["nm"].replace(/[^a-zа-яё\d]/uig, '_'));
 
   try {
       loc = useRouter().query['onegoods'].split("__")[0].split("/")[2];

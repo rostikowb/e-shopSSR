@@ -4,7 +4,7 @@ import {
   CHANGE_CATALOG_MODAL,
   CHANGE_COMMENTS_MODAL,
   CHANGE_FEEDBACK_MODAL,
-  CHANGE_LIKE_MODAL,
+  CHANGE_LIKE_MODAL, CHANGE_MENU_DRAWER,
 } from "../types";
 
 const initialState = {
@@ -14,6 +14,7 @@ const initialState = {
   basket: false,
   comments: false,
   feedback: false,
+  menu: false,
 };
 
 export const modal = (state = initialState, action) => {
@@ -30,6 +31,8 @@ export const modal = (state = initialState, action) => {
       return { ...state, comments: !state.comments };
     case CHANGE_FEEDBACK_MODAL:
       return { ...state, feedback: !state.feedback };
+    case CHANGE_MENU_DRAWER:
+      return { ...state, menu: action.payload };
     default:
       return state;
   }

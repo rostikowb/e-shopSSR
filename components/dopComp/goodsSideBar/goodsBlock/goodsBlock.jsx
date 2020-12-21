@@ -6,11 +6,13 @@ import Link from 'next/link';
 import { connect } from "react-redux";
 import { fetchOneGoods } from "../../../../redux/oneGoods/action";
 import { option } from "../../../../option";
+import cyrillicToTranslit from "cyrillic-to-translit-js";
 
 export const GoodsBloc = (props) => {
-  let productId = props.loc;
-  let d = props.data;
-  let link = d._id + "__" + d["nm"].replace(/\s/gi, "_").replace(/\//gi, "-");
+  const productId = props.loc;
+  const d = props.data;
+  const translit = new cyrillicToTranslit()
+  const link = d._id + "__" + translit.transform(d["nm"].replace(/[^a-zа-яё\d]/ig, '_'));
 
   const chaProd = () => {
     if (d._id === productId) {

@@ -6,7 +6,7 @@ const info = () => {
   return (
     <>
       <Head>
-        <title>vsivuha.online - О нас</title>
+        <title>vsivuha.online - Информация</title>
         {/*<meta name="theme-color" content={checkoutFormTheme} />*/}
       </Head>
       <Info/>

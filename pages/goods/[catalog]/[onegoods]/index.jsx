@@ -45,6 +45,7 @@ export const getStaticPaths = async () => {
   await fs.promises.writeFile('./public/sitemap.xml', data.toString())
   // await fs.promises.writeFile('./public/sitemap.txt', links.toString())
 
+
   return {paths, fallback: false}
 
 }

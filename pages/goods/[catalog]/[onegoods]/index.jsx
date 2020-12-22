@@ -21,19 +21,29 @@ export const getStaticPaths = async () => {
   const goodsId = await fetchAllGoodsId()
   const links = [];
 
+  console.log('goodsId: ', goodsId.length);
+
   const paths = goodsId.map((post) => {
-    const translit = new cyrillicToTranslit()
-    const name = translit.transform(post["nm"].replace(/[^a-zа-яё\d]/ig, '_'));
-    const url = `/goods/${post.ctgrId}/${post._id}__${name}`;
 
-    links.push({url, changefreq: 'weekly'});
+    if(post["nm"]) {
+      const translit = new cyrillicToTranslit()
+      const name = translit.transform(post["nm"].replace(/[^a-zа-яё\d]/ig, '_'));
+      const url = `/goods/${post.ctgrId}/${post._id}__${name}`;
 
-    return url
+      links.push({url, changefreq: 'weekly'});
+
+      return url
+    }else {
+      console.log('error id: ' + post['_id']);
+    }
+
+    console.log('linksParseFinish');
   })
 
   const stream = new SitemapStream({hostname: option.STATIC})
   const data = await streamToPromise(Readable.from(links).pipe(stream))
   await fs.promises.writeFile('./public/sitemap.xml', data.toString())
+  // await fs.promises.writeFile('./public/sitemap.txt', links.toString())
 
   return {paths, fallback: false}
 

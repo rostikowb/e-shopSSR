@@ -33,8 +33,8 @@ export const fetchOneGoodsSSR = async (urlId, dispatch, productUrl = null) => {
 };
 
 export const addComments = (body, token, goodsId, boughtId, boughtIndex) => {
-    body.goodsId = goodsId;
-    body.boughtId = boughtId;
+  body.goodsId = goodsId;
+  body.boughtId = boughtId;
 
   const header = {authorization: token}
 
@@ -48,19 +48,18 @@ export const addComments = (body, token, goodsId, boughtId, boughtIndex) => {
     let res = await req("/goods/addComment", {body, header});
 
 
-    if (res["invalid"]) {
+    if (res["invalid"])
       dispatch({
         type: COMMENTS_ERROR,
         msg: res["msg"],
       });
-    } else {
+    else {
       dispatch({
         type: PRODUCT,
         payload: res["oneGoods"],
       });
       dispatch({
         type: UD_COMMENT,
-        // id: res["oneGoods"]["_id"],
         gIndex: res["gIndex"],
         bIndex: boughtIndex,
       });

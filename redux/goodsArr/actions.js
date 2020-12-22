@@ -1,12 +1,11 @@
 import {
   AUTH_USERAGENT,
   FETCH_GOODS,
-  FETCH_GOODS_PAGES, FILTER_ARR_TO_STORE,
+  FETCH_GOODS_PAGES,
   SET_CATALOG, SET_WIDTH,
   THIS_URL,
 } from "../types";
-import bent from "bent";
-import {option} from "../../option";
+import {req} from "../req";
 
 export const stubOn = (type) => {
   return {
@@ -42,14 +41,14 @@ export const fetchGoods = (props) => {
     const filter = props.filter;
     const range = props.range;
     const sort = props.sort ? props.sort : null;
-    const url = option.api + cat + "?page=" + page + "&sort=" + sort;
+    const url = cat + "?page=" + page + "&sort=" + sort;
     const isFetch = !page ? FETCH_GOODS : FETCH_GOODS_PAGES;
     const body = {}
 
     if (filter) body.filter = filter;
     if (range) body.prcrange = range;
 
-    const res = await bent(url, "json", "POST", 200)('', body);
+    const res = await req(url, {body});
 
     let dispatchObj = {
       type: isFetch,
@@ -70,15 +69,13 @@ export const fetchGoodsSSR = async (props) => {
   const filter = props.filters;
   const range = props.range;
   const sort = props.sort ? props.sort : null;
-  const url = option.api + cat + "?page=" + page + "&sort=" + sort;
+  const url = cat + "?page=" + page + "&sort=" + sort;
   const body = {}
-
-  // oldUrl = url;
 
   if (filter) body.filter = filter;
   if (range) body.prcrange = range;
-
-  const res = await bent(url, "json", "POST", 200)('', body);
+  console.log(url);
+  const res = await req(url, {body});
 
   let dispatchObj = {
     type: FETCH_GOODS,
@@ -97,7 +94,7 @@ export const fetchGoodsSSR = async (props) => {
 
 export const fetchGoodsSearch = (words, catalog = false) => {
   return async (dispatch) => {
-    const res = await bent(option.api, "json", "POST", 200)('/goods/search', {words, catalog});
+    const res = await req('/goods/search', {body: {words, catalog}});
 
     dispatch({
       type: FETCH_GOODS,
@@ -107,8 +104,7 @@ export const fetchGoodsSearch = (words, catalog = false) => {
 }
 
 export const fetchGoodsSearchSSR = async (words, dispatch, catalog = false) => {
-  const res = await bent(option.api, "json", "POST", 200)('/goods/search', {words, catalog});
-
+  const res = await req('/goods/search', {body: {words, catalog}});
   dispatch({
     type: FETCH_GOODS,
     catalog: catalog || null,

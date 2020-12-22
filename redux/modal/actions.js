@@ -1,4 +1,5 @@
 import {
+  AUTH_CLEAR_MSG,
   CHANGE_AUTH_MODAL,
   CHANGE_BASKET_MODAL,
   CHANGE_CATALOG_MODAL,
@@ -11,6 +12,7 @@ import {
 export const changeStateAuthModal = () => {
   return (dispatch)=>{
     dispatch({type: FORM_CHANGE, form: 'L'});
+    dispatch({type: AUTH_CLEAR_MSG})
     dispatch({type: CHANGE_AUTH_MODAL})
   };
 };

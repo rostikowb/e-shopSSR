@@ -1,5 +1,5 @@
 import {
-    AUTH_API,
+    AUTH_API, AUTH_CLEAR_MSG,
     AUTH_EXIT,
     AUTH_INIT,
     AUTH_STUB,
@@ -54,6 +54,7 @@ export const auth = (state = initialState, action) => {
             if (action.payload?.invalid) {
                 state.invalid = action.payload?.message ||action.payload?.msg;
             } else {
+                state.invalid = false;
                 if (action.payload?.token) {
                     state.token = action.payload.token;
                     set("auth/token", action.payload.token);
@@ -86,6 +87,10 @@ export const auth = (state = initialState, action) => {
 
         case AUTH_STUB:
             state.auth = !state.auth;
+            return {...state};
+
+        case AUTH_CLEAR_MSG:
+            state.invalid = false;
             return {...state};
 
         case UD_COMMENT:

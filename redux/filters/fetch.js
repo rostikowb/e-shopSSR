@@ -3,7 +3,6 @@ import {option} from "../../option";
 
 export const fetchFilter = async (ctgrId) => {
   let result = {}
-
   const res = await bent(
     option.api,
     "string",

@@ -1,15 +1,12 @@
-import bent from "bent";
 import {DEL_ALL_BASKET, SUM_BASKET} from "../types";
-import {option} from "../../option";
+import {req} from "../req";
 
 export const addProdToCash = (urlId, type, isLoad = true, data) => {
-  let url = option.api + "/goods/" + urlId;
+  let url = `/goods/${urlId}`;
   let res;
   return async (dispatch) => {
     try {
-      res = isLoad
-        ? JSON.parse(await bent(url, "string", "POST", 200)())
-        : data;
+      res = isLoad ? JSON.parse(await req(url)) : data;
     } catch (e) {
       res = data;
     }

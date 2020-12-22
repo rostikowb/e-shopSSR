@@ -4,7 +4,6 @@ import {faBars} from "@fortawesome/free-solid-svg-icons";
 import {menuContent as Menu} from "../../../menuContent/menuContent";
 import {TovZnk} from "../../../dopComp/tovZnk/tovZnk";
 import React, {useEffect, useState} from "react";
-// import {Drawer} from "../../../dopComp/drawer/drawer";
 import { Drawer } from '@material-ui/core';
 import {NoSsr} from "@material-ui/core";
 import {useRouter} from "next/router";
@@ -61,12 +60,6 @@ const MenuBt = ({menuIsOpen, changeStateMenuDrawer}) => {
   return (
     <div className={s.menu}>
       <NoSsr>
-        {/*<Drawer*/}
-        {/*  width={"auto"}*/}
-        {/*  visible={menuIsOpen}*/}
-        {/*  onClose={() => closeDrawer()}*/}
-        {/*  height={"auto"}*/}
-        {/*>*/}
         <Drawer
           width={"auto"}
           open={menuIsOpen}

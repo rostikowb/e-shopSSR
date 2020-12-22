@@ -1,6 +1,7 @@
 import bent from "bent";
-import { option } from "../../option";
-import { AUTH_API, CHE_OPT, CUPON_SET, OPT_DONE } from "../types";
+import {option} from "../../option";
+import {AUTH_API, CHE_OPT, CUPON_SET, OPT_DONE} from "../types";
+import {req} from "../req";
 
 export const optStubOn = (type) => {
   return (dispatch) => {
@@ -58,19 +59,15 @@ export const searchCityNP = (str) => {
   };
 };
 export const sendToDB = (obj, token) => {
-  return async (dispatch) => {
-    const res = await bent(
-      option.api,
-      "string",
-      "POST",
-      "json",
-      200
-    )("/bought/create/", obj, {
+  const props = {
+    body: obj,
+    header: {
       authorization: token,
-    });
-
+    }
+  }
+  return async (dispatch) => {
+    const res = await req("/bought/create/", props);
     if (res?.UD) dispatch(auth(res));
-
     dispatch({
       type: OPT_DONE,
       res: res?.result,

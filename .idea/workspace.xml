@@ -20,30 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="add and repair some info pages">
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redux/req.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/client_ssr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/client_ssr.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redux/auth/lib/switchRepassStep.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsBlock/goodsBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/goodsSideBar/goodsBlock/goodsBlock.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/headers/headers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/headers/headers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/lib/filters/parsFiltOfURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/lib/filters/parsFiltOfURL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/salt/salt.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/upperBar/upperBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/header/bottom/menu/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/menu/menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/goodsCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/nextBtnCard/nextBtnCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/goods/[catalog]/[onegoods]/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goods/[catalog]/[onegoods]/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/checkout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/auth/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/auth/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/auth/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/auth/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/checkout/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/checkout/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/filters/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/filters/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/filters/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/filters/fetch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/goodsArr/AllGoodsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/goodsArr/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/goodsArr/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/goodsArr/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/likesBasket/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/likesBasket/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redux/modal/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/modal/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/modal/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/modal/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redux/oneGoods/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/oneGoods/action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/rootReducer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/redux/rootReducer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redux/tickets/action.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/tickets/action.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redux/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/types.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +115,7 @@
       <recent name="C:\nodePro\MyE-Store\client_ssr\public" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="init-server.js.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="init-server.js.js" working-dir="$PROJECT_DIR$/.next/server">
       <method v="2" />
     </configuration>
@@ -166,9 +160,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +239,8 @@
       <workItem from="1608493772924" duration="1113000" />
       <workItem from="1608494978269" duration="8822000" />
       <workItem from="1608574988902" duration="14549000" />
-      <workItem from="1608592810864" duration="271000" />
+      <workItem from="1608592810864" duration="5397000" />
+      <workItem from="1608662431670" duration="4886000" />
     </task>
     <task id="LOCAL-00001" summary="dd">
       <created>1601218595170</created>
@@ -415,7 +410,28 @@
       <option name="project" value="LOCAL" />
       <updated>1607974421270</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="drawer fix &amp;&amp; update &amp;&amp; more">
+      <created>1608593112779</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1608593112779</updated>
+    </task>
+    <task id="LOCAL-00026" summary="drawer fix &amp;&amp; update &amp;&amp; more">
+      <created>1608596094559</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1608596094559</updated>
+    </task>
+    <task id="LOCAL-00027" summary="build fix">
+      <created>1608596224053</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1608596224053</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +450,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dd" />
     <MESSAGE value="big update" />
     <MESSAGE value="link clearing" />
     <MESSAGE value="checkout fix price&amp;cupon&amp;arrGoods" />
@@ -459,7 +474,8 @@
     <MESSAGE value="checkout fix 2" />
     <MESSAGE value=".gitignore add .idea/workspace.xml" />
     <MESSAGE value="drawer fix &amp;&amp; update &amp;&amp; more" />
-    <option name="LAST_COMMIT_MESSAGE" value="drawer fix &amp;&amp; update &amp;&amp; more" />
+    <MESSAGE value="build fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="build fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="215" key="#ESLint" timestamp="1601145461849">
@@ -486,26 +502,30 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="484" y="139" key="#start/0.43.1536.821@0.43.1536.821" timestamp="1608500398507" />
-    <state x="549" y="209" key="FileChooserDialogImpl" timestamp="1608575002216">
+    <state x="93" y="136" width="1350" height="635" key="DiffContextDialog" timestamp="1608664428840">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1608575002216" />
-    <state width="1515" height="343" key="GridCell.Tab.0.bottom" timestamp="1608592794379">
+    <state x="93" y="136" width="1350" height="635" key="DiffContextDialog/0.43.1536.821@0.43.1536.821" timestamp="1608664428840" />
+    <state x="549" y="209" key="FileChooserDialogImpl" timestamp="1608593361882">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="343" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1608592794379" />
-    <state width="1515" height="343" key="GridCell.Tab.0.center" timestamp="1608592794379">
+    <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1608593361882" />
+    <state width="1515" height="201" key="GridCell.Tab.0.bottom" timestamp="1608665839331">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="343" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1608592794379" />
-    <state width="1515" height="343" key="GridCell.Tab.0.left" timestamp="1608592794379">
+    <state width="1515" height="201" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1608665839331" />
+    <state width="1515" height="201" key="GridCell.Tab.0.center" timestamp="1608665839331">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="343" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1608592794379" />
-    <state width="1515" height="343" key="GridCell.Tab.0.right" timestamp="1608592794379">
+    <state width="1515" height="201" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1608665839331" />
+    <state width="1515" height="201" key="GridCell.Tab.0.left" timestamp="1608665839330">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="343" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1608592794379" />
+    <state width="1515" height="201" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1608665839330" />
+    <state width="1515" height="201" key="GridCell.Tab.0.right" timestamp="1608665839331">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state width="1515" height="201" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1608665839331" />
     <state width="1515" height="260" key="GridCell.Tab.1.bottom" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
@@ -554,14 +574,18 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state width="1515" height="260" key="GridCell.Tab.3.right/0.43.1536.821@0.43.1536.821" timestamp="1607556709100" />
+    <state x="581" y="156" key="RollbackChangesDialog" timestamp="1608596084963">
+      <screen x="0" y="43" width="1536" height="821" />
+    </state>
+    <state x="581" y="156" key="RollbackChangesDialog/0.43.1536.821@0.43.1536.821" timestamp="1608596084963" />
     <state x="142" y="132" key="SettingsEditor" timestamp="1608499515083">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1608499515083" />
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1607974438466">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1608596227131">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1607974438466" />
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1608596227131" />
     <state x="429" y="56" width="1107" height="795" key="find.popup" timestamp="1608586285141">
       <screen x="0" y="43" width="1536" height="821" />
     </state>

@@ -24,9 +24,9 @@ export const modal = (state = initialState, action) => {
     case CHANGE_CATALOG_MODAL:
       return { ...state, catalog: !state.catalog };
     case CHANGE_LIKE_MODAL:
-      return { ...state, like: !state.like };
+      return { ...state, like: action.do };
     case CHANGE_BASKET_MODAL:
-      return { ...state, basket: !state.basket };
+      return { ...state, basket: action.do };
     case CHANGE_COMMENTS_MODAL:
       return { ...state, comments: !state.comments };
     case CHANGE_FEEDBACK_MODAL:

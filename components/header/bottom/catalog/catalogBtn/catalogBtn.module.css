@@ -42,6 +42,13 @@
   /*display: inline-block;*/
   vertical-align: middle;
 }
+.catalogBtn .catalogBtnIcon{
+  transition: transform 300ms;
+}
+.catalogBtn:hover .catalogBtnIcon{
+  transform: rotate(180deg);
+  transition: transform 300ms;
+}
 .catalogBtn1 {
   display: inline-block;
   user-select: none;

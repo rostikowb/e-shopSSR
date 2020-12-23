@@ -23,15 +23,17 @@ export const changeStateCatalogModal = () => {
   };
 };
 
-export const changeStateLikeModal = () => {
+export const changeStateLikeModal = (bool) => {
   return {
     type: CHANGE_LIKE_MODAL,
+    do: bool
   };
 };
 
-export const changeStateBasketModal = () => {
+export const changeStateBasketModal = (bool) => {
   return {
     type: CHANGE_BASKET_MODAL,
+    do: bool
   };
 };
 

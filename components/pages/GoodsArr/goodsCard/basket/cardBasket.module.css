@@ -40,6 +40,7 @@
   right: 3px;
   cursor: pointer;
   color: rgb(152, 0, 155);
+  user-select: none;
 }
 
 .cardBoxAll:hover {

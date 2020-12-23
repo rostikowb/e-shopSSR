@@ -8,7 +8,7 @@ export const LikesModa = (props) => {
   return props.like ? (
     <div>
       <div
-        onClick={() => props.changeStateLikeModal()}
+        onClick={() => props.changeStateLikeModal(false)}
         className={s.modal_liked_box}
       />
       <div className={s.modal_liked}>

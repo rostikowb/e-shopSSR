@@ -6,30 +6,31 @@ import { BasketCart } from "./basket/basketCard";
 import { SumInf } from "./dopInf/dopInf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
+import {useModal} from "../../../../dopComp/lib/useModal";
 
 export const BasketModa = (props) => {
-  let mdl = props.basket;
-  let arr = props.basketArr;
+  const {basket, basketArr, basketSum, changeStateBasketModal} = props;
+  // const {close} = useModal(basket, changeStateBasketModal, 'basket')
 
-  return mdl ? (
+  return basket ? (
     <div>
       <div
-        onClick={() => props.changeStateBasketModal()}
+        onClick={() => changeStateBasketModal(false)}
         className={s.modal_basked_box}
       />
       <div className={s.modal_basked}>
         <div className={s.topModal}>
           <span className={s.title}>Корзина</span>
           <FontAwesomeIcon
-            onClick={() => props.changeStateBasketModal()}
+            onClick={() => changeStateBasketModal(false)}
             className='clsModalBtn'
             icon={faTimesCircle}
           />
         </div>
 
         <ul className={s.baskedBoxIn}>
-          {arr?.length ? (
-            arr.map((item, index) => (
+          {basketArr?.length ? (
+            basketArr.map((item, index) => (
               <li key={item._id + "basketCard"}>
                 <BasketCart data={item} index={index} />
               </li>
@@ -40,8 +41,8 @@ export const BasketModa = (props) => {
             </span>
           )}
         </ul>
-        {arr?.length ? (
-          <SumInf data={[props.basketSum.count, props.basketSum.sum]} />
+        {basketArr?.length ? (
+          <SumInf data={[basketSum.count, basketSum.sum]} />
         ) : null}
       </div>
     </div>

@@ -122,7 +122,7 @@ const CheckoutFor = (props) => {
   // };
 
   useEffect(() => {
-    if (data?.optCity && data?.optBranchN) {
+    if (!!data?.optCity && !!data?.optBranchN) {
       dataV.city = true;
       dataV.branchN = true;
       setDataV({...dataV});

@@ -3,7 +3,7 @@ import {
   AUTH_EXIT,
   AUTH_STUB,
   AUTH_UPDATE,
-  FORM_CHANGE, RESTORE_PASS,
+  FORM_CHANGE,
 } from "../types";
 import {req} from "../req";
 import {switchRepassStep} from "./lib/switchRepassStep";

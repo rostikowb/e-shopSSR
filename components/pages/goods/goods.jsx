@@ -55,7 +55,7 @@ const Good = (props) => {
             <meta name='twitter:description'
                   content={`${desc}`}/>
             <meta name='twitter:image'
-                  content={`${option.STATIC}/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
+                  content={`https://vsivuha.online/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
             <meta key='og:title'
                   property="og:title"
                   content={`VSIVUHA - ${props.product.nm}`}/>
@@ -64,10 +64,10 @@ const Good = (props) => {
                   content={`${desc}`}/>
             <meta key="og:url"
                   property="og:url"
-                  content={option.STATIC+loc.asPath}/>
+                  content={'https://vsivuha.online'+loc.asPath}/>
             <meta key="og:image"
                   property="og:image"
-                  content={`${option.STATIC}/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
+                  content={`https://vsivuha.online/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
           </Head>
 
 

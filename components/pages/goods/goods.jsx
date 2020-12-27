@@ -54,6 +54,8 @@ const Good = (props) => {
                   content={`VSIVUHA - ${props.product.nm}`}/>
             <meta name='twitter:description'
                   content={`${desc}`}/>
+            <meta name='twitter:url'
+                  content={'https://vsivuha.online'+loc.asPath}/>
             <meta name='twitter:image'
                   content={`https://vsivuha.online/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
             <meta key='ogtitle'

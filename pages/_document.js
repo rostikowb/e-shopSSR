@@ -7,7 +7,7 @@ import {MetaTag} from "../components/dopComp/headers/headers";
 export default class MyDocument extends Document {
     render() {
         return (
-            <Html lang="ru">
+            <Html prefix="og: http://ogp.me/ns#" lang="ru">
                 <Head>
                     {/* PWA primary color */}
                   <MetaTag/>

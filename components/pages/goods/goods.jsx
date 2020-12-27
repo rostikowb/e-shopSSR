@@ -56,16 +56,16 @@ const Good = (props) => {
                   content={`${desc}`}/>
             <meta name='twitter:image'
                   content={`https://vsivuha.online/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
-            <meta key='og:title'
+            <meta key='ogtitle'
                   property="og:title"
                   content={`VSIVUHA - ${props.product.nm}`}/>
-            <meta key="og:description"
+            <meta key="ogdescription"
                   property="og:description"
                   content={`${desc}`}/>
-            <meta key="og:url"
+            <meta key="ogurl"
                   property="og:url"
                   content={'https://vsivuha.online'+loc.asPath}/>
-            <meta key="og:image"
+            <meta key="ogimage"
                   property="og:image"
                   content={`https://vsivuha.online/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
           </Head>

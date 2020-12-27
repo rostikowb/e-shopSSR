@@ -132,7 +132,7 @@ const CheckoutFor = (props) => {
       dataV.city &&
       dataV.branchN &&
       dataV.FN &&
-      dataV.email &&
+      // dataV.email &&
       // (!isReg || dataV.pass) &&
       dataV.LN &&
       dataV.SN &&
@@ -173,18 +173,15 @@ const CheckoutFor = (props) => {
           <TextField
             variant="outlined"
             margin="normal"
-            required={true}
             fullWidth
             id="email"
-            label="Емейл Адрес"
+            label="Емейл Адрес (необязательно)"
             name="email"
             autoComplete="email"
-            error={!dataV?.email}
+            // error={!dataV?.email}
             type="email"
             value={data?.email}
-            helperText={
-              !dataV?.email ? "Пример email'a - example@gmail.com" : null
-            }
+            helperText={"Пример email'a - example@gmail.com"}
             onChange={(event) => chngInpLn("email", event.target.value)}
           />
           <TextField

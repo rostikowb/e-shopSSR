@@ -4,12 +4,12 @@ export const MetaTag = () => {
 
   return (
     <>
-      <title>Навуха на vsivuha.online!</title>
+      <title key={'title'}>Навуха на vsivuha.online!</title>
 
       <meta name='application-name' content='vsivuha-online - app'/>
       <meta name='apple-mobile-web-app-capable' content='yes'/>
       <meta name='apple-mobile-web-app-status-bar-style' content='default'/>
-      <meta name='apple-mobile-web-app-title' content='vsivuha - Навуха на vsivuha.online!'/>
+      <meta name='apple-mobile-web-app-title' content='vsivuha.online - Аксесуари для телефона на любой ценовой вкус 😉'/>
       <meta name='description' content='На vsivuha.online - забудь про оффлайн. Здесь ты можешь не выходя из дома дешево купить наушники, повербанки, зарядки, чехлы, защитные стекла, моноподы, автодержатели, переходники, карты памяти, блютуз колонки.'/>
       <meta name='format-detection' content='telephone=no'/>
       <meta name='mobile-web-app-capable' content='yes'/>
@@ -38,23 +38,27 @@ export const MetaTag = () => {
 
       <meta name='twitter:card' content='summary'/>
       <meta name='twitter:url' content='https://vsivuha.online'/>
-      <meta name='twitter:title' content='Навуха на vsivuha.online!'/>
+      <meta name='twitter:title' content='vsivuha.online - Аксесуари для телефона на любой ценовой вкус 😉'/>
       <meta name='twitter:description' content='На vsivuha.online - забудь про оффлайн. Здесь ты можешь не выходя из дома дешево купить наушники, повербанки, зарядки, чехлы, защитные стекла, моноподы, автодержатели, переходники, карты памяти, блютуз колонки'/>
       <meta name='twitter:image' content='https://vsivuha.online/icons/android-chrome-192x192.png'/>
       <meta name='twitter:creator' content='@rostikowb'/>
 
-      <meta property='og:site_name' content='Навуха на vsivuha.online!'/>
-      <meta name="title" content='vsivuha.online'/>
-      <meta name="description"
-            content={`На vsivuha.online - забудь про оффлайн. Здесь ты можешь не выходя из дома дешево купить наушники, повербанки, зарядки, чехлы, защитные стекла, моноподы, автодержатели, переходники, карты памяти, блютуз колонки`}/>
+      <meta property='og:site_name' content='vsivuha.online - Аксесуари для телефона на любой ценовой вкус 😉'/>
+      <meta name="title" content='vsivuha.online! - Аксесуари для телефона на любой ценовой вкус 😉'/>
+      {/*<meta name="description"*/}
+      {/*      content={`На vsivuha.online - забудь про оффлайн. Здесь ты можешь не выходя из дома дешево купить наушники, повербанки, зарядки, чехлы, защитные стекла, моноподы, автодержатели, переходники, карты памяти, блютуз колонки`}/>*/}
 
       <meta property="og:type" content="website"/>
       <meta property="og:url" content="https://vsivuha.online/"/>
-      <meta property="og:title" content={`Навуха на vsivuha.online!`}/>
-      <meta property="og:description"
+      <meta name={'og:title'}
+            property="og:title"
+            content={`vsivuha.online - Аксесуари для телефона на любой ценовой вкус 😉`}/>
+      <meta name={"og:description"}
+            property="og:description"
             content={`На vsivuha.online - забудь про оффлайн. Здесь ты можешь не выходя из дома дешево купить наушники, повербанки, зарядки, чехлы, защитные стекла, моноподы, автодержатели, переходники, карты памяти, блютуз колонки`}/>
-      <meta property="og:image" content="/icons/ogImage.png"/>
+      <meta name={"og:image"}
+            property="og:image"
+            content="/icons/ogImage.png"/>
     </>
   )
-
 }

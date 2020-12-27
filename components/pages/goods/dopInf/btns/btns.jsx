@@ -1,7 +1,7 @@
 import s from "./btns.module.css";
 import React from "react";
 import ss from "../../../GoodsArr/goodsCard/basket/cardBasket.module.css";
-import { faHeart } from "@fortawesome/free-solid-svg-icons/index";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome/index.es";
 import { connect } from "react-redux";
 import {
@@ -37,7 +37,7 @@ export const OGBt = (props) => {
         </div>
       ) : (
         <div
-          onClick={() => add(props.changeStateBasketModal())}
+          onClick={() => add(props.changeStateBasketModal(true))}
           className={s.saleBtn + " " + ss.cardBoxAll}
           title="Показать содержимое корзины."
         >

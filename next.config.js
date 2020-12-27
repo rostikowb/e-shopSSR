@@ -19,11 +19,11 @@ module.exports = withPlugins([
   //   // transformManifest: manifest => ['/'].concat(manifest)
   // }]
 
-  // [withPWA, {
-  //   pwa: {
-  //     dest: 'public',
-  //     runtimeCaching,
-  //   }
-  // }]
+  [withPWA, {
+    pwa: {
+      dest: 'public',
+      runtimeCaching,
+    }
+  }]
 
 ]);

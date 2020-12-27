@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import s from "./feedback.module.css";
-import { connect } from "react-redux";
-import { changeStateFeedbackModal } from "../../../redux/modal/actions";
-import { TextField, Button } from "@material-ui/core";
+import {connect} from "react-redux";
+import {changeStateFeedbackModal} from "../../../redux/modal/actions";
+import {TextField, Button} from "@material-ui/core";
 import Select from "react-select";
-import { sendTicket } from "../../../redux/tickets/action";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
+import {sendTicket} from "../../../redux/tickets/action";
+import {Modal} from "../modal/modal";
+import ss from "../modal/modal.module.css"
+import closedIcon from "../filtersChecked/cancel.svg";
 
 const optionsTema = [
   {
@@ -76,7 +77,6 @@ export const Feedbac = (props) => {
   });
 
   const sendData = () => {
-    // props.optStubOn(OPT_SEND_STUB);
     props.sendTicket(data, props.token);
   };
 
@@ -86,8 +86,8 @@ export const Feedbac = (props) => {
     dataV["telegram"] = false;
     dataV[type] = true;
     data[type] = value;
-    setData({ ...data });
-    setDataV({ ...dataV });
+    setData({...data});
+    setDataV({...dataV});
   };
 
   const chngInpLn = (type, value, lng) => {
@@ -99,8 +99,8 @@ export const Feedbac = (props) => {
     }
     dataV[type] = isValid;
     data[type] = value;
-    setData({ ...data });
-    setDataV({ ...dataV });
+    setData({...data});
+    setDataV({...dataV});
   };
 
   useEffect(() => {
@@ -117,35 +117,53 @@ export const Feedbac = (props) => {
       dataV["tel"] = true;
     }
 
-    setDataV({ ...dataV });
+    setDataV({...dataV});
     setDone(
       dataV.question &&
-        dataV.comm &&
-        dataV.msg &&
-        dataV.email &&
-        dataV.tel &&
-        dataV.telegram
+      dataV.comm &&
+      dataV.msg &&
+      dataV.email &&
+      dataV.tel &&
+      dataV.telegram
     );
   }, [data]);
 
-  return(
+  const option = {
+    changeState: props.changeStateFeedbackModal,
+    title: "Обратная связь"
+  }
+
+  const style = {
+    wrapper: {
+      width: "50vw",
+      top: '9%',
+      left: '25%',
+      height: '61vh'
+    },
+    top: {
+      margin: '0 15px'
+    }
+  }
+
+  if (props.doneMsg) return <Modal options={option} style={style}><span className={s.doneMsg}>Тикет успешно создан. С вами скоро свяжутся! 😉</span></Modal>
+
+  return (
     <>
       <div
         onClick={() => props.changeStateFeedbackModal()}
-        className={s.modal_feedback_box}
+        className={ss.modalShadow}
       />
-      <div className={s.modal_feedback}>
-        {!props.doneMsg ? (
+      <div className={s.modalWrapper}>
+        <div className={s.modal_feedback}>
+          <div className={`${ss.topPc} ${s.title}`}>
+            <span>Обратная связь</span>
+            <img className={ss.clsIconBtn} onClick={() => props.changeStateFeedbackModal(false)} src={closedIcon}
+                 alt=""/>
+          </div>
+          <div className={ss.topMobi}>
+            <span className={ss.title}>Обратная связь</span>
+          </div>
           <div className={s.feedbackBox}>
-            <div className={s.topModal}>
-              <span className={s.title}>Обратная связь</span>
-              <FontAwesomeIcon
-                onClick={() => props.changeStateFeedbackModal()}
-                className={s.clsModalBtn}
-                icon={faTimesCircle}
-              />
-            </div>
-            <h2 className={s.titlePc}>Обратная связь</h2>
             <div className={s.feedbackBlock}>
               <span className={s.feedbackTitle}>Тема моего сообщения: </span>{" "}
               <Select
@@ -168,33 +186,34 @@ export const Feedbac = (props) => {
                 className={s.cuponSelect}
               />
             </div>
-            <TextField
-              style={{ margin: 0 }}
-              multiline={true}
-              variant="outlined"
-              // color={"secondary"}
-              margin="normal"
-              required={true}
-              fullWidth
-              id="msg"
-              label="Изложите сюда суть обращения"
-              autoComplete="msg"
-              name="msg"
-              type="text"
-              rows={5}
-              rowsMax={14}
-              error={!dataV.msg}
-              helperText="Если заказываете звонок, можете указать тут время, но не раньше чем через час"
-              onChange={(event) => chngInpLn("msg", event.target.value, 4)}
-            />
+            <div className={`${s.feedbackBlock} ${s.TextField}`}>
+              <TextField
+                style={{margin: 0}}
+                multiline={true}
+                variant="outlined"
+                // color={"secondary"}
+                margin="normal"
+                required={true}
+                fullWidth
+                id="msg"
+                label="Изложите сюда суть обращения"
+                autoComplete="msg"
+                name="msg"
+                type="text"
+                rows={5}
+                rowsMax={8}
+                error={!dataV.msg}
+                helperText="Если заказываете звонок, можете указать тут время, но не раньше чем через час"
+                onChange={(event) => chngInpLn("msg", event.target.value, 4)}
+              />
+            </div>
             {props.errMsg ? (
               <span className={s.errMsg}>{props.errMsg}</span>
             ) : null}
-            <div className={s.feedbackBlock}>
+            <div className={`${s.feedbackBlock} ${s.feedbackBlockBtn}`}>
               <TextField
-                style={{ width: "40%", margin: 0 }}
+                style={{width: "40%", margin: 0}}
                 variant="outlined"
-                // color={"secondary"}
                 margin="normal"
                 required={true}
                 fullWidth
@@ -226,24 +245,38 @@ export const Feedbac = (props) => {
                 }
                 helperText={!dataV[data.comm] ? "Проверьте введенное" : null}
               />
+              <div className={s.sendBtn}>
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  color="primary"
+                  disabled={!done || props.stub}
+                  onClick={() => sendData()}
+                >
+                  Отправить
+                </Button>
+              </div>
+
+            </div>
+          </div>
+          <div className={`${ss.bottom} ${ss.bottomIsDopChild} ${s.bottom}`}>
+            <div className={s.sendBtnM}>
               <Button
                 type="submit"
                 fullWidth
                 variant="contained"
                 color="primary"
-                // className={classes.submit}
                 disabled={!done || props.stub}
                 onClick={() => sendData()}
               >
                 Отправить
               </Button>
             </div>
+            <div className={ss.closeBtn} onClick={() => props.changeStateFeedbackModal(false)}>ЗАКРЫТЬ</div>
           </div>
-        ) : (
-          <span className={s.doneMsg}>
-            Тикет успешно создан. С вами скоро свяжутся! 😉
-          </span>
-        )}
+
+        </div>
       </div>
     </>)
 };

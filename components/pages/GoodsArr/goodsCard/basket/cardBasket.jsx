@@ -30,7 +30,7 @@ export const CardBasketBo = (props) => {
         </div>
       ) : (
         <span
-          onClick={() => props.changeStateBasketModal()}
+          onClick={() => props.changeStateBasketModal(true)}
           className={s.inBasket}
         >
           Откр. Корзину

@@ -8,8 +8,6 @@ import {SitemapStream, streamToPromise} from "sitemap";
 import {Readable} from "stream";
 import * as fs from 'fs'
 
-
-
 const onegoods = () => {
   return (<Goods/>)
 };
@@ -43,8 +41,6 @@ export const getStaticPaths = async () => {
   const stream = new SitemapStream({hostname: option.STATIC})
   const data = await streamToPromise(Readable.from(links).pipe(stream))
   await fs.promises.writeFile('./public/sitemap.xml', data.toString())
-  // await fs.promises.writeFile('./public/sitemap.txt', links.toString())
-
 
   return {paths, fallback: false}
 

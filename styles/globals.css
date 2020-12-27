@@ -10,6 +10,7 @@ body {
   font: inherit;
   font: 88.5%/1.4 BlinkMacSystemFont, -apple-system, Arial, "Segoe UI", Roboto,
   Helvetica, sans-serif;
+  overscroll-behavior-y: contain;
 }
 
 body {
@@ -49,8 +50,6 @@ h2{
   align-items: flex-start;
   padding: 48px 0 0 0;
   max-width: 1980px;
-  /*max-width: 30%;*/
-  /*margin-top: 80px;*/
   margin: 0 auto 0 auto;
 }
 
@@ -58,6 +57,5 @@ h2{
   .main {
     margin-top: 0;
     padding: 0;
-    /*padding: 0 25px;*/
   }
 }

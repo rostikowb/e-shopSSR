@@ -46,7 +46,7 @@ const BasketCar = (props) => {
       props.setCatalog(d["ctgrId"]);
       props.fetchOneGoods(d["_id"], false, d);
     }
-    props.changeStateBasketModal();
+    props.changeStateBasketModal(false);
   };
 
   const remove = (type) => {

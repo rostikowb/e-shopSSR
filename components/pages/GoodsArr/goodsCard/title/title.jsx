@@ -16,7 +16,7 @@ const Titl = (props) => {
       props.setCatalog(d["ctgrId"]);
       props.fetchOneGoods(d["_id"], false, d);
     }
-    props.changeStateLikeModal();
+    props.changeStateLikeModal(false);
   };
 
   return (

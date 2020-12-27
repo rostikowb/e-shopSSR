@@ -6,8 +6,6 @@ import {
 } from "../../../../../../redux/likesBasket/actions";
 import { connect } from "react-redux";
 import { GoodsCard } from "../../../../../pages/GoodsArr/goodsCard/goodsCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import { changeStateLikeModal } from "../../../../../../redux/modal/actions";
 
 export const Like = (props) => {
@@ -15,14 +13,6 @@ export const Like = (props) => {
 
   return (
     <>
-      <div className={s.topModal}>
-        <span className={s.title}>Избранное</span>
-        <FontAwesomeIcon
-          onClick={() => props.changeStateLikeModal(false)}
-          className='clsModalBtn'
-          icon={faTimesCircle}
-        />
-      </div>
 
       <ul className={s.likeBoxIn}>
         {lr?.length ? (
@@ -32,7 +22,6 @@ export const Like = (props) => {
             </li>
           ))
         ) : (
-          // lr.map((item) => <LikesCard key={item._id + "likeCard"} data={item} />)
           <span className={s.empLikMsg}>
             Добавьте понравившейся товар в <b>&nbsp;избранное&nbsp;</b> что бы
             не потерять!

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import {Feedback} from "../feedback/feedback";
 import {initLocalStorage} from "../../../localStorage/localStorFunc";
 import {connect} from "react-redux";
@@ -8,6 +8,7 @@ import {LikesModal} from "../../header/bottom/actions/likesModal/likesModal";
 import {BasketModal} from "../../header/bottom/actions/basketModal/basketModal";
 
 export const InvisCom = (props) => {
+  const {feedback, catalog, like, basket} = props
 
   useEffect(() => {
     initLocalStorage();
@@ -16,10 +17,10 @@ export const InvisCom = (props) => {
 
   return (
     <>
-      {props.feedback ? <Feedback/> : null}
-      {props.catalog ? <CatalogModal/> : null}
-      {props.like ? <LikesModal/> : null}
-      {props.basket ? <BasketModal/> : null}
+      {feedback ? <Feedback/> : null}
+      {catalog ? <CatalogModal/> : null}
+      {like ? <LikesModal/> : null}
+      {basket ? <BasketModal/> : null}
     </>
   )
 };

@@ -20,24 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c818323-7f23-4e8c-b1e9-f3937bbd0573" name="Default" comment="add and repair some info pages">
-      <change afterPath="$PROJECT_DIR$/components/dopComp/lib/useModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/dopComp/modal/modal.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/dopComp/modal/modal.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/feedback/feedback.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/feedback/feedback.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/feedback/feedback.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/feedback/feedback.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dopComp/headers/headers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/headers/headers.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/dopComp/invisComp/invisComp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/invisComp/invisComp.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/dopComp/lib/filters/parsFiltOfURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/dopComp/lib/filters/parsFiltOfURL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/actions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/actions.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/actions.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/actions.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basket/basketCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basketModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basketModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basketModal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/basketModal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/basketModal/dopInf/dopInf.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likes/likes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likes/likes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likes/likes.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likes/likes.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likesModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/actions/likesModal/likesModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/catalogBtn/catalogBtn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/catalogBtn/catalogBtn.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/catalogBtn/catalogBtn.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/catalogBtn/catalogBtn.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/bottom/menu/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/menu/menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/basket/cardBasket.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/basket/cardBasket.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/bottom/catalog/catalogModal/catalogModal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/basket/cardBasket.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/basket/cardBasket.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/img/img.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/GoodsArr/goodsCard/title/title.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/checkout/form/form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/dopInf/btns/btns.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/goods/goods.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/goods/goods.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/goods/[catalog]/[onegoods]/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/goods/[catalog]/[onegoods]/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/auth/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/auth/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/modal/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/modal/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redux/modal/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/redux/modal/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +58,9 @@
         <option value="CSS File" />
         <option value="tsconfig.json" />
         <option value="HTML File" />
-        <option value="module.css" />
-        <option value="JSX File" />
         <option value="JavaScript File" />
+        <option value="JSX File" />
+        <option value="module.css" />
       </list>
     </option>
   </component>
@@ -99,19 +106,19 @@
     <property name="ts.external.directory.path" value="F:\Software\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\nodePro\MyE-Store\client_ssr\redux\filters" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\public" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\components\pages" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\pages\info\return" />
-      <recent name="C:\nodePro\MyE-Store\client_ssr\pages\info\licagr" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\nodePro\MyE-Store\client_ssr\components\dopComp\filtersChecked" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\components\dopComp\lib\filters" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\components\dopComp\lib" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\components\menuContent\filter\filterContent" />
       <recent name="C:\nodePro\MyE-Store\client_ssr\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\nodePro\MyE-Store\client_ssr\components\header\bottom\catalog" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\redux\filters" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\public" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\components\pages" />
+      <recent name="C:\nodePro\MyE-Store\client_ssr\pages\info\return" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -240,7 +247,11 @@
       <workItem from="1608574988902" duration="14549000" />
       <workItem from="1608592810864" duration="5397000" />
       <workItem from="1608662431670" duration="14845000" />
-      <workItem from="1608745194414" duration="7818000" />
+      <workItem from="1608745194414" duration="15029000" />
+      <workItem from="1608832954153" duration="11696000" />
+      <workItem from="1608922091304" duration="12184000" />
+      <workItem from="1608985932767" duration="7913000" />
+      <workItem from="1609020371093" duration="9668000" />
     </task>
     <task id="LOCAL-00001" summary="dd">
       <created>1601218595170</created>
@@ -438,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608668675985</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="bug fix and clear code and cosmetic">
+      <created>1608756968849</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1608756968849</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,8 +475,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="link clearing" />
-    <MESSAGE value="checkout fix price&amp;cupon&amp;arrGoods" />
     <MESSAGE value="restorePassword and also thinks" />
     <MESSAGE value="add msg inputs to checkout and add invalid info page" />
     <MESSAGE value="add and repair some info pages" />
@@ -482,7 +498,9 @@
     <MESSAGE value="drawer fix &amp;&amp; update &amp;&amp; more" />
     <MESSAGE value="build fix" />
     <MESSAGE value="actions optimization" />
-    <option name="LAST_COMMIT_MESSAGE" value="actions optimization" />
+    <MESSAGE value="bug fix and clear code and cosmetic" />
+    <MESSAGE value="modal refix" />
+    <option name="LAST_COMMIT_MESSAGE" value="modal refix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="215" key="#ESLint" timestamp="1601145461849">
@@ -513,26 +531,26 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="93" y="136" width="1350" height="635" key="DiffContextDialog/0.43.1536.821@0.43.1536.821" timestamp="1608664428840" />
-    <state x="549" y="209" key="FileChooserDialogImpl" timestamp="1608593361882">
+    <state x="549" y="209" key="FileChooserDialogImpl" timestamp="1609015725721">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1608593361882" />
-    <state width="1515" height="201" key="GridCell.Tab.0.bottom" timestamp="1608678350571">
+    <state x="549" y="209" key="FileChooserDialogImpl/0.43.1536.821@0.43.1536.821" timestamp="1609015725721" />
+    <state width="1515" height="151" key="GridCell.Tab.0.bottom" timestamp="1609072765860">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="201" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1608678350571" />
-    <state width="1515" height="201" key="GridCell.Tab.0.center" timestamp="1608678350570">
+    <state width="1515" height="151" key="GridCell.Tab.0.bottom/0.43.1536.821@0.43.1536.821" timestamp="1609072765860" />
+    <state width="1515" height="151" key="GridCell.Tab.0.center" timestamp="1609072765859">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="201" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1608678350570" />
-    <state width="1515" height="201" key="GridCell.Tab.0.left" timestamp="1608678350570">
+    <state width="1515" height="151" key="GridCell.Tab.0.center/0.43.1536.821@0.43.1536.821" timestamp="1609072765859" />
+    <state width="1515" height="151" key="GridCell.Tab.0.left" timestamp="1609072765859">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="201" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1608678350570" />
-    <state width="1515" height="201" key="GridCell.Tab.0.right" timestamp="1608678350570">
+    <state width="1515" height="151" key="GridCell.Tab.0.left/0.43.1536.821@0.43.1536.821" timestamp="1609072765859" />
+    <state width="1515" height="151" key="GridCell.Tab.0.right" timestamp="1609072765859">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state width="1515" height="201" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1608678350570" />
+    <state width="1515" height="151" key="GridCell.Tab.0.right/0.43.1536.821@0.43.1536.821" timestamp="1609072765859" />
     <state width="1515" height="260" key="GridCell.Tab.1.bottom" timestamp="1607556709100">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
@@ -589,14 +607,14 @@
       <screen x="0" y="43" width="1536" height="821" />
     </state>
     <state x="142" y="132" key="SettingsEditor/0.43.1536.821@0.43.1536.821" timestamp="1608499515083" />
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1608668678911">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2" timestamp="1608756971325">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1608668678911" />
-    <state x="429" y="56" width="1107" height="795" key="find.popup" timestamp="1608586285141">
+    <state x="578" y="181" key="Vcs.Push.Dialog.v2/0.43.1536.821@0.43.1536.821" timestamp="1608756971325" />
+    <state x="429" y="56" width="1107" height="795" key="find.popup" timestamp="1609087419237">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="429" y="56" width="1107" height="795" key="find.popup/0.43.1536.821@0.43.1536.821" timestamp="1608586285141" />
+    <state x="429" y="56" width="1107" height="795" key="find.popup/0.43.1536.821@0.43.1536.821" timestamp="1609087419237" />
     <state x="425" y="208" key="run.anything.popup" timestamp="1608586907478">
       <screen x="0" y="43" width="1536" height="821" />
     </state>

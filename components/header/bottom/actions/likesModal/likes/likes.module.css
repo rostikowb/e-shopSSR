@@ -1,6 +1,6 @@
 .likeBoxIn {
   min-height: 15vh;
-  height: auto;
+  height: 100%;
   /*height: 10vw;*/
   min-width: 8vw;
   display: flex;

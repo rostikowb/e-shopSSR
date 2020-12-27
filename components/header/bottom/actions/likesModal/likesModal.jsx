@@ -1,21 +1,18 @@
 import React from "react";
-import s from "./likesModal.module.css";
-import { connect } from "react-redux";
-import { changeStateLikeModal } from "../../../../../redux/modal/actions";
-import { Likes } from "./likes/likes";
+import {connect} from "react-redux";
+import {changeStateLikeModal} from "../../../../../redux/modal/actions";
+import {Likes} from "./likes/likes";
+import {Modal} from "../../../../dopComp/modal/modal";
 
 export const LikesModa = (props) => {
-  return props.like ? (
-    <div>
-      <div
-        onClick={() => props.changeStateLikeModal(false)}
-        className={s.modal_liked_box}
-      />
-      <div className={s.modal_liked}>
-        <Likes />
-      </div>
-    </div>
-  ) : null;
+  const options = {
+    changeState: props.changeStateLikeModal,
+    title: 'Избранное',
+    open: props.like
+  }
+
+  return <Modal options={options}><Likes/></Modal>
+
 };
 
 const mapStateToProps = (state) => {

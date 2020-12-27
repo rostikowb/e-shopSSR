@@ -8,19 +8,9 @@ import {Imgs} from "./imgs/imgs";
 import {DopInf} from "./dopInf/dopInf";
 import {DescChar} from "./descChar/descChar";
 import {CommentBox} from "./commentBox/commentBox";
-import {set} from "../../../localStorage/localStorFunc";
 import {lsToStore} from "../../../localStorage/initAction";
 import Head from "next/head";
 import {option} from "../../../option";
-// import cyrillicToTranslit from "cyrillic-to-translit-js";
-// console.log(cyrillicToTranslit().transform("Привет Мир!"));
-
-// function useLoc() {
-//   return {
-//     query: new URLSearchParams(useLocation().search),
-//     path: useParams(),
-//   };
-// }
 
 const Good = (props) => {
   let loc = useRouter();
@@ -34,7 +24,7 @@ const Good = (props) => {
   useEffect(() => {
     props.lsToStore();
 
-    if(!props.product?.nm) {
+    if (!props.product?.nm) {
       loc.push(
         "/error/404",
         "/error/404",
@@ -42,8 +32,8 @@ const Good = (props) => {
       );
     }
 
-    if(!props.product || (props.product._id !== productId) && loc.pathname === "/goods/[catalog]/[onegoods]"){
-        loadOneGoods();
+    if (!props.product || (props.product._id !== productId) && loc.pathname === "/goods/[catalog]/[onegoods]") {
+      loadOneGoods();
     }
   }, [productId]);
 
@@ -52,23 +42,29 @@ const Good = (props) => {
       {props.product ? (
         <>
           <Head>
-            <title>VSIVUHA - {props.product.nm}</title>
-            <meta name="title" content={`VSIVUHA - ${props.product.nm}`}/>
+            <title key={'title'}>VSIVUHA - {props.product.nm}</title>
+            <meta name="title"
+                  content={`VSIVUHA - ${props.product.nm}`}/>
             <meta name="description"
                   content={`${props.product.dscrptn}`}/>
 
-            <meta property="og:type" content="website"/>
-            <meta property="og:url" content="https://vsivuha.online/"/>
-            <meta property="og:title" content={`${props.product.nm}`}/>
-            <meta property="og:description"
+            <meta name='twitter:title'
+                  content='vsivuha.online! - Техника для телефона на любой ценовой вкус 😉'/>
+            <meta name='twitter:description'
                   content={`${props.product.dscrptn}`}/>
-            <meta property="og:image"
+            <meta name='twitter:image'
                   content={`${option.STATIC}/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
 
+            <meta name={'og:title'}
+                  property="og:title"
+                  content={`VSIVUHA - ${props.product.nm}`}/>
+            <meta name={"og:description"}
+                  property="og:description"
+                  content={`${props.product.dscrptn}`}/>
+            <meta name={"og:image"}
+                  property="og:image"
+                  content={`${option.STATIC}/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
           </Head>
-
-
-
 
           <div className={s.goodsInfo}>
             <Imgs data={props.product}/>

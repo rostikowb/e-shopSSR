@@ -42,26 +42,32 @@ const Good = (props) => {
       {props.product ? (
         <>
           <Head>
-            <title key={'title'}>VSIVUHA - {props.product.nm}</title>
+            <title key='title'>VSIVUHA - {props.product.nm}</title>
             <meta name="title"
+                  key="title"
                   content={`VSIVUHA - ${props.product.nm}`}/>
             <meta name="description"
+                  key="description"
                   content={`${props.product.dscrptn}`}/>
-
             <meta name='twitter:title'
+                  key='twitter:title'
                   content='vsivuha.online! - Техника для телефона на любой ценовой вкус 😉'/>
             <meta name='twitter:description'
+                  key='twitter:description'
                   content={`${props.product.dscrptn}`}/>
             <meta name='twitter:image'
+                  key='twitter:image'
                   content={`${option.STATIC}/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
-
-            <meta name={'og:title'}
+            <meta name='og:title'
+                  key='og:title'
                   property="og:title"
                   content={`VSIVUHA - ${props.product.nm}`}/>
-            <meta name={"og:description"}
+            <meta name="og:description"
+                  key="og:description"
                   property="og:description"
                   content={`${props.product.dscrptn}`}/>
-            <meta name={"og:image"}
+            <meta name="og:image"
+                  key="og:image"
                   property="og:image"
                   content={`${option.STATIC}/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
           </Head>

@@ -11,7 +11,6 @@ import {CommentBox} from "./commentBox/commentBox";
 import {lsToStore} from "../../../localStorage/initAction";
 import Head from "next/head";
 import {option} from "../../../option";
-import { strict as assert } from "assert";
 import stripHtml from "string-strip-html";
 
 const Good = (props) => {
@@ -63,6 +62,9 @@ const Good = (props) => {
             <meta key="og:description"
                   property="og:description"
                   content={`${desc}`}/>
+            <meta key="og:url"
+                  property="og:url"
+                  content={option.STATIC+loc.asPath}/>
             <meta key="og:image"
                   property="og:image"
                   content={`${option.STATIC}/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>

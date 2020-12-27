@@ -50,7 +50,7 @@ export const getStaticProps = async ({params}) => {
   const reduxStore = initializeStore();
   const {dispatch} = reduxStore;
   const productId = params.onegoods.split("__")[0];
-  await fetchOneGoodsSSR(productId, dispatch, `/goods/${params.catalog}/${params.onegoods}`);
+  // await fetchOneGoodsSSR(productId, dispatch, `/goods/${params.catalog}/${params.onegoods}`);
 
   return {props: {initialReduxState: reduxStore.getState()}}
 

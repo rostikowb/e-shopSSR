@@ -69,7 +69,7 @@ const Good = (props) => {
                   content={'https://vsivuha.online'+loc.asPath}/>
             <meta key="ogimage"
                   property="og:image"
-                  content={`https://vsivuha.online/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
+                  content={`https://vsivuha.online/jpeg/${props.product._id}/${props.product.img[0]}-1024.jpeg`}/>
           </Head>
 
 

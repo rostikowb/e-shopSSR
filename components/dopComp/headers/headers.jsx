@@ -4,7 +4,7 @@ export const MetaTag = () => {
 
   return (
     <>
-      <title key={'title'}>Навуха на vsivuha.online!</title>
+      <title>Навуха на vsivuha.online!</title>
 
       <meta name='application-name' content='vsivuha-online - app'/>
       <meta name='apple-mobile-web-app-capable' content='yes'/>
@@ -50,13 +50,13 @@ export const MetaTag = () => {
 
       <meta property="og:type" content="website"/>
       <meta property="og:url" content="https://vsivuha.online/"/>
-      <meta name={'og:title'}
+      <meta key="og:title"
             property="og:title"
             content={`vsivuha.online - Аксесуари для телефона на любой ценовой вкус 😉`}/>
-      <meta name={"og:description"}
+      <meta key="og:description"
             property="og:description"
             content={`На vsivuha.online - забудь про оффлайн. Здесь ты можешь не выходя из дома дешево купить наушники, повербанки, зарядки, чехлы, защитные стекла, моноподы, автодержатели, переходники, карты памяти, блютуз колонки`}/>
-      <meta name={"og:image"}
+      <meta key="og:image"
             property="og:image"
             content="/icons/ogImage.png"/>
     </>

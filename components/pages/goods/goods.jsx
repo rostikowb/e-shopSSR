@@ -11,11 +11,14 @@ import {CommentBox} from "./commentBox/commentBox";
 import {lsToStore} from "../../../localStorage/initAction";
 import Head from "next/head";
 import {option} from "../../../option";
+import { strict as assert } from "assert";
+import stripHtml from "string-strip-html";
 
 const Good = (props) => {
   let loc = useRouter();
   let catalog = loc.query.catalog;
   let productId = loc.query.onegoods.split("__")[0];
+  const desc = stripHtml(props.product.dscrptn).result
 
   const loadOneGoods = () => {
     props.setCatalog(catalog);
@@ -42,35 +45,32 @@ const Good = (props) => {
       {props.product ? (
         <>
           <Head>
-            <title key='title'>VSIVUHA - {props.product.nm}</title>
+            <title>VSIVUHA - {props.product.nm}</title>
             <meta name="title"
-                  key="title"
                   content={`VSIVUHA - ${props.product.nm}`}/>
             <meta name="description"
-                  key="description"
-                  content={`${props.product.dscrptn}`}/>
+                  content={`${desc}`}/>
+            <meta name='apple-mobile-web-app-title' content={`VSIVUHA - ${props.product.nm}`}/>
             <meta name='twitter:title'
-                  key='twitter:title'
-                  content='vsivuha.online! - Техника для телефона на любой ценовой вкус 😉'/>
+                  content={`VSIVUHA - ${props.product.nm}`}/>
             <meta name='twitter:description'
-                  key='twitter:description'
-                  content={`${props.product.dscrptn}`}/>
+                  content={`${desc}`}/>
             <meta name='twitter:image'
-                  key='twitter:image'
                   content={`${option.STATIC}/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
-            <meta name='og:title'
-                  key='og:title'
+            <meta key='og:title'
                   property="og:title"
                   content={`VSIVUHA - ${props.product.nm}`}/>
-            <meta name="og:description"
-                  key="og:description"
+            <meta key="og:description"
                   property="og:description"
-                  content={`${props.product.dscrptn}`}/>
-            <meta name="og:image"
-                  key="og:image"
+                  content={`${desc}`}/>
+            <meta key="og:image"
                   property="og:image"
                   content={`${option.STATIC}/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
           </Head>
+
+
+
+
 
           <div className={s.goodsInfo}>
             <Imgs data={props.product}/>

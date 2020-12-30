@@ -7,6 +7,7 @@ import {GoodsArrLoad} from "./goodsArrLoad/goodsArrLoad";
 import {useRouter} from 'next/router'
 import {lsToStore} from "../../../localStorage/initAction";
 import {CatalogHeads} from "./catalogHeads";
+import {CatalogHeaders} from "./catalogHeaders/catalogHeaders";
 // import Head from "next/head";
 
 const GoodsAr = (props) => {
@@ -19,7 +20,11 @@ const GoodsAr = (props) => {
 
   return (
     <div className={s.goodsArr}>
-      {catalog ? <CatalogHeads catalog={catalog}/> : null}
+
+      {catalog ? <>
+          <CatalogHeaders catalog={catalog}/>
+          <CatalogHeads catalog={catalog}/></>
+        : null}
       <ul className={s.goodsBox}>
         {/*Підгружені карточки товару*/}
         {!props.stub && !props.stub ? <GoodsArrLoad/> : null}

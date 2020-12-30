@@ -7,6 +7,7 @@ import {option} from "../../../../option";
 import {SitemapStream, streamToPromise} from "sitemap";
 import {Readable} from "stream";
 import * as fs from 'fs'
+import {addMorePageToSitemap} from "../../../../components/dopComp/lib/addMorePageToSitemap";
 
 const onegoods = () => {
   return (<Goods/>)
@@ -17,7 +18,7 @@ export default onegoods;
 export const getStaticPaths = async () => {
 
   const goodsId = await fetchAllGoodsId()
-  const links = [];
+  let links = [];
 
   console.log('goodsId: ', goodsId.length);
 
@@ -38,6 +39,7 @@ export const getStaticPaths = async () => {
     console.log('linksParseFinish');
   })
 
+  links  = addMorePageToSitemap(links)
   const stream = new SitemapStream({hostname: option.STATIC})
   const data = await streamToPromise(Readable.from(links).pipe(stream))
   await fs.promises.writeFile('./public/sitemap.xml', data.toString())

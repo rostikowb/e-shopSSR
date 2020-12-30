@@ -55,7 +55,7 @@ const Good = (props) => {
             <meta name='twitter:description'
                   content={`${desc}`}/>
             <meta name='twitter:url'
-                  content={'https://vsivuha.online'+loc.asPath}/>
+                  content={'https://vsivuha.online' + loc.asPath}/>
             <meta name='twitter:image'
                   content={`https://vsivuha.online/webp/${props.product._id}/${props.product.img[0]}-1024.webp`}/>
             <meta key='ogtitle'
@@ -66,14 +66,14 @@ const Good = (props) => {
                   content={`${desc}`}/>
             <meta key="ogurl"
                   property="og:url"
-                  content={'https://vsivuha.online'+loc.asPath}/>
+                  content={'https://vsivuha.online' + loc.asPath}/>
             <meta key="ogimage"
                   property="og:image"
                   content={`https://vsivuha.online/jpeg/${props.product._id}/${props.product.img[0]}-1024.jpeg`}/>
+                  {/*content='https://lazy-cheetah-46.loca.lt/icons/2006a0b17088079d426bea6417fdce03-1024.webp'/>*/}
+            {/*<meta property="og:image:width" content="1200" />*/}
+            {/*<meta property="og:image:height" content="630" />*/}
           </Head>
-
-
-
 
 
           <div className={s.goodsInfo}>

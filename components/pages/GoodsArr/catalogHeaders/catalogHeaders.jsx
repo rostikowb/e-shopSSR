@@ -11,7 +11,7 @@ export const CatalogHeaders = (props) => {
   const title = headerGetTitle(catalog)
   const desc = headerGetDesc(catalog)
   // const img = `${option}/img/catalog${catalog}.jpeg`
-
+  console.log(title);
   return<Head>
     <title>{title}</title>
     <meta name="title" content={title}/>

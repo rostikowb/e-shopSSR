@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "8px 22px 16px"
   },
   title:{
-    fontSize: "15px"
+    fontSize: "14px"
   }
 }));
 

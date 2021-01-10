@@ -25,11 +25,11 @@ const Im = (props) => {
 
   let styleImg1 = {
     display: "",
-      width: "100%"
+      width: "100%!important;"
   };
   let styleImg2 = {
     display: "",
-      width: "100%"
+      width: "100%!important;"
   };
   if (d?.img.length < 2) {
     styleImg1.display = "block";
@@ -56,7 +56,7 @@ const Im = (props) => {
                       width={props.width}
                   >
                       <SwiperSlide style={sliderStyle}>
-                          <picture style={{ width: "100%" }}>
+                          <picture style={{ width: "100%!important;" }}>
                               <source
                                   className={s.img}
                                   type="image/webp"
@@ -76,7 +76,7 @@ const Im = (props) => {
                       </SwiperSlide>
                       {d.img[1] ? (
                           <SwiperSlide style={sliderStyle}>
-                              <picture style={{ width: "100%" }}>
+                              <picture style={{ width: "100%!important;" }}>
                                   <source
                                       className={s.img}
                                       type="image/webp"

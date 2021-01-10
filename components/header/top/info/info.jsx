@@ -11,7 +11,7 @@ export const Info = () => {
         <Link href={'/info/FAQ'} as={'/info/FAQ'} passHref shallow><a>Ответы на вопросы</a></Link>
       </li>
       <li>
-        <Link href={'/info/return'} as={'/info/return'} passHref shallow><a>Гарантия и возврат</a></Link>
+        <Link href={'/info'} as={'/info'} passHref shallow><a>Полезная информация</a></Link>
       </li>
     </ul>
   );

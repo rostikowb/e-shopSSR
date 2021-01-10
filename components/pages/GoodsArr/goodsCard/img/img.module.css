@@ -65,11 +65,11 @@
 .deckstopBox img {
   max-width: 100%;
 }
-@media (max-width: 1150px) {
-  .mobileBox {
-    display: block;
-  }
-  .deckstopBox {
-    display: none;
-  }
-}
+/*@media (max-width: 1150px) {*/
+/*  .mobileBox {*/
+/*    display: block;*/
+/*  }*/
+/*  .deckstopBox {*/
+/*    display: none;*/
+/*  }*/
+/*}*/

@@ -14,6 +14,7 @@ export default catalog;
 
 export async function getServerSideProps(context) {
   const query = context.query;
+  const locale = context.req.cookies['NEXT_LOCALE']
   const reduxStore = initializeStore();
   const {dispatch} = reduxStore;
   const userAgent = context.req.headers["user-agent"];

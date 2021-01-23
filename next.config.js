@@ -4,6 +4,7 @@ const withPWA = require('next-pwa')
 // const withOffline = require('next-offline')
 const runtimeCaching = require('next-pwa/cache')
 const optimizedImages = require('next-optimized-images');
+// const i18n = require('i18n')
 
 module.exports = withPlugins([
   [optimizedImages, {
@@ -18,6 +19,14 @@ module.exports = withPlugins([
   //   }
   //   // transformManifest: manifest => ['/'].concat(manifest)
   // }]
+
+  {
+    i18n: {
+      locales: ['ua', 'ru'],
+      defaultLocale: 'ua',
+      localeDetection: false,
+    }
+  },
 
   [withPWA, {
     pwa: {

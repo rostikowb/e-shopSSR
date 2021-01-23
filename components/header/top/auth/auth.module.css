@@ -1,3 +1,8 @@
+.authBox{
+  display: flex;
+  flex-direction: row;
+}
+
 .authBtn {
   cursor: pointer;
   padding: 1px;

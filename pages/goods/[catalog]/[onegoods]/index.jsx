@@ -22,24 +22,47 @@ export const getStaticPaths = async () => {
 
   console.log('goodsId: ', goodsId.length);
 
-  const paths = goodsId.map((post) => {
+  // const translit = new cyrillicToTranslit()
+  // const name = translit.transform(goodsId[0]["nm"].replace(/[^a-zа-яё\d]/ig, '_'));
+  // console.log(goodsId[0].ctgrId);
+  // const paths = [
+  //   {params: {catalog: goodsId[0].ctgrId.toString(), onegoods: `${goodsId[0]._id}__${name}`}, locale: 'ua'},
+  //   {params: {catalog: goodsId[0].ctgrId.toString(), onegoods: `${goodsId[0]._id}__${name}`}, locale: 'ru'}
+  // ]
+  const pathsUA = goodsId.map((post) => {
 
-    if(post["nm"]) {
+    if (post["nm"]) {
       const translit = new cyrillicToTranslit()
       const name = translit.transform(post["nm"].replace(/[^a-zа-яё\d]/ig, '_'));
       const url = `/goods/${post.ctgrId}/${post._id}__${name}`;
-
       links.push({url, changefreq: 'weekly'});
 
-      return url
-    }else {
+      return {params: {catalog: post.ctgrId, onegoods: `${post._id}__${name}`}, locale: 'ua'}
+    } else {
+      console.log('error id: ' + post['_id']);
+    }
+
+    console.log('linksParseFinish');
+    })
+
+  const pathsRU = goodsId.map((post) => {
+
+    if (post["nm"]) {
+      const translit = new cyrillicToTranslit()
+      const name = translit.transform(post["nm"].replace(/[^a-zа-яё\d]/ig, '_'));
+      // const url = `/goods/${post.ctgrId}/${post._id}__${name}`;
+      // links.push({url, changefreq: 'weekly'});
+      return {params: {catalog: post.ctgrId, onegoods: `${post._id}__${name}`}, locale: 'ru'}
+    } else {
       console.log('error id: ' + post['_id']);
     }
 
     console.log('linksParseFinish');
   })
 
-  links  = addMorePageToSitemap(links)
+  const paths = [...pathsUA, ...pathsRU]
+
+  links = addMorePageToSitemap(links)
   const stream = new SitemapStream({hostname: option.STATIC})
   const data = await streamToPromise(Readable.from(links).pipe(stream))
   await fs.promises.writeFile('./public/sitemap.xml', data.toString())
@@ -47,12 +70,12 @@ export const getStaticPaths = async () => {
   return {paths, fallback: false}
 
 }
-export const getStaticProps = async ({params}) => {
+export const getStaticProps = async ({params, locale}) => {
 
   const reduxStore = initializeStore();
   const {dispatch} = reduxStore;
   const productId = params.onegoods.split("__")[0];
-  await fetchOneGoodsSSR(productId, dispatch, `/goods/${params.catalog}/${params.onegoods}`);
+  await fetchOneGoodsSSR(productId, dispatch, `/goods/${params.catalog}/${params.onegoods}`, locale);
 
   return {props: {initialReduxState: reduxStore.getState()}}
 

@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/core": "^7.12.10",
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/free-brands-svg-icons": "^5.13.1",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
@@ -28,7 +29,7 @@
     "form-data": "latest",
     "imagemin-mozjpeg": "^9.0.0",
     "material-ui": "^0.20.2",
-    "next": "9.5.2",
+    "next": "^10.0.5",
     "next-compose-plugins": "^2.2.0",
     "next-images": "^1.4.1",
     "next-offline": "^5.0.3",

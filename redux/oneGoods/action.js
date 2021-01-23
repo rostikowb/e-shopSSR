@@ -17,8 +17,8 @@ export const fetchOneGoods = (urlId, isLoad = true, data) => {
   };
 };
 
-export const fetchOneGoodsSSR = async (urlId, dispatch, productUrl = null) => {
-  let res = await req("/goods/" + urlId);
+export const fetchOneGoodsSSR = async (urlId, dispatch, productUrl = null, locale) => {
+  let res = await req("/goods/" + urlId, {body: {locale}});
 
   dispatch({
     type: AUTH_USERAGENT,

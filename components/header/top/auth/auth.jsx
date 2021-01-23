@@ -4,6 +4,7 @@ import { ModalAuth } from "./loginModal/modal.jsx";
 import s from "./auth.module.css";
 import { changeStateAuthModal } from "../../../../redux/modal/actions";
 import { authExit } from "../../../../redux/auth/actions";
+import {Locales} from "./locales/locales";
 
 const mapStateToProps = (state) => {
   return {
@@ -16,7 +17,8 @@ export default connect(mapStateToProps, { changeStateAuthModal, authExit })(
   (props) => {
     let FN = props?.user?.FN;
     return (
-      <div>
+      <div className={s.authBox}>
+        <Locales/>
         {!props.token ? (
           <>
             <span

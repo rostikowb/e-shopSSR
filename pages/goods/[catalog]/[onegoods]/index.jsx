@@ -37,7 +37,7 @@ export const getStaticPaths = async () => {
       const url = `/goods/${post.ctgrId}/${post._id}__${name}`;
       links.push({url, changefreq: 'weekly'});
 
-      return {params: {catalog: post.ctgrId, onegoods: `${post._id}__${name}`}, locale: 'ua'}
+      return {params: {catalog: post.ctgrId.toString(), onegoods: `${post._id}__${name}`}, locale: 'ua'}
     } else {
       console.log('error id: ' + post['_id']);
     }
@@ -52,7 +52,7 @@ export const getStaticPaths = async () => {
       const name = translit.transform(post["nm"].replace(/[^a-zа-яё\d]/ig, '_'));
       // const url = `/goods/${post.ctgrId}/${post._id}__${name}`;
       // links.push({url, changefreq: 'weekly'});
-      return {params: {catalog: post.ctgrId, onegoods: `${post._id}__${name}`}, locale: 'ru'}
+      return {params: {catalog: post.ctgrId.toString(), onegoods: `${post._id}__${name}`}, locale: 'ru'}
     } else {
       console.log('error id: ' + post['_id']);
     }

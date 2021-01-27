@@ -8,8 +8,9 @@ import {sendTicket} from "../../../redux/tickets/action";
 import {Modal} from "../modal/modal";
 import ss from "../modal/modal.module.css"
 import closedIcon from "../filtersChecked/cancel.svg";
+import {useRouter} from "next/router";
 
-const optionsTema = [
+const optionsTemaRU = [
   {
     value: "simple",
     label: "Я просто спросить ©",
@@ -35,8 +36,34 @@ const optionsTema = [
     label: "Другое",
   },
 ];
+const optionsTemaUA = [
+  {
+    value: "simple",
+    label: "Я просто спитати ©",
+  },
+  {
+    value: "products",
+    label: "Проблеми с товаром(-ами)",
+  },
+  {
+    value: "bug",
+    label: "Техничні питання",
+  },
+  {
+    value: "coop",
+    label: "Пропозиції співпраці",
+  },
+  {
+    value: "wishes",
+    label: "Побажання",
+  },
+  {
+    value: "another",
+    label: "Інше",
+  },
+];
 
-const optionsSreds = [
+const optionsSredsRU = [
   {
     value: "email",
     label: "Електронной почты",
@@ -51,6 +78,20 @@ const optionsSreds = [
   },
 ];
 
+const optionsSredsUA = [
+  {
+    value: "email",
+    label: "Електронної пошти",
+  },
+  {
+    value: "tel",
+    label: "Моб. Телефона",
+  },
+  {
+    value: "telegram",
+    label: "Телеграма",
+  },
+];
 const validateEmail = (email) => {
   let pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return pattern.test(email);
@@ -58,6 +99,7 @@ const validateEmail = (email) => {
 
 export const Feedbac = (props) => {
   const UD = props.UD;
+  const locale = useRouter().locale;
   const [done, setDone] = useState(false);
   const [data, setData] = useState({
     question: "simple",
@@ -130,7 +172,7 @@ export const Feedbac = (props) => {
 
   const option = {
     changeState: props.changeStateFeedbackModal,
-    title: "Обратная связь"
+    title: locale === 'ru' ? "Обратная связь" : "Зворотній звязок"
   }
 
   const style = {
@@ -145,7 +187,8 @@ export const Feedbac = (props) => {
     }
   }
 
-  if (props.doneMsg) return <Modal options={option} style={style}><span className={s.doneMsg}>Тикет успешно создан. С вами скоро свяжутся! 😉</span></Modal>
+  if (props.doneMsg && locale === "ru") return <Modal options={option} style={style}><span className={s.doneMsg}>Тикет успешно создан. С вами скоро свяжутся! 😉</span></Modal>
+  if (props.doneMsg && locale === "ua") return <Modal options={option} style={style}><span className={s.doneMsg}>Тікет успішно створено. З вами скоро звяжуться! 😉</span></Modal>
 
   return (
     <>
@@ -161,14 +204,15 @@ export const Feedbac = (props) => {
                  alt=""/>
           </div>
           <div className={ss.topMobi}>
-            <span className={ss.title}>Обратная связь</span>
+            <span className={ss.title}>{locale === 'ru' ? "Обратная связь" : "Зворотній звязок"}</span>
           </div>
           <div className={s.feedbackBox}>
             <div className={s.feedbackBlock}>
-              <span className={s.feedbackTitle}>Тема моего сообщения: </span>{" "}
+              <span
+                className={s.feedbackTitle}>{locale === 'ru' ? "Тема моего сообщения" : "Тема мого повідомлення"}: </span>{" "}
               <Select
-                defaultValue={optionsTema[0]}
-                options={optionsTema}
+                defaultValue={locale === "ru" ? optionsTemaRU[0] : optionsTemaUA[0]}
+                options={locale === "ru" ? optionsTemaRU : optionsTemaUA}
                 onChange={(e) => chengSel("question", e.value)}
                 name="tema"
                 className={s.cuponSelect}
@@ -176,11 +220,11 @@ export const Feedbac = (props) => {
             </div>
             <div className={s.feedbackBlock}>
               <span className={s.feedbackTitle}>
-                Свяжитесь со мной посредством:
+                {locale === 'ru' ? "Свяжитесь со мной посредством" : "Звяжіться зі мної за допомогою"}:
               </span>
               <Select
-                defaultValue={optionsSreds[0]}
-                options={optionsSreds}
+                defaultValue={locale === "ru" ? optionsSredsRU[0] : optionsSredsUA[0]}
+                options={locale === "ru" ? optionsSredsRU : optionsSredsUA}
                 onChange={(e) => chengSel("comm", e.value)}
                 name="sreds"
                 className={s.cuponSelect}
@@ -196,14 +240,14 @@ export const Feedbac = (props) => {
                 required={true}
                 fullWidth
                 id="msg"
-                label="Изложите сюда суть обращения"
+                label={locale === 'ru' ? 'Изложите сюда суть обращения' : 'Викладіть сюди суть звернення'}
                 autoComplete="msg"
                 name="msg"
                 type="text"
                 rows={5}
                 rowsMax={8}
                 error={!dataV.msg}
-                helperText="Если заказываете звонок, можете указать тут время, но не раньше чем через час"
+                helperText={locale === 'ru' ? "Если заказываете звонок, можете указать тут время, но не раньше чем через час" : "Якщо замовляєте дзвінок, можете вказати тут час, але не раніше ніж через годину"}
                 onChange={(event) => chngInpLn("msg", event.target.value, 4)}
               />
             </div>
@@ -221,9 +265,8 @@ export const Feedbac = (props) => {
                 label={
                   data.comm === "tel"
                     ? "Номер телефона"
-                    : data.comm === "Логин в телеграмме"
-                    ? "text"
-                    : data.comm
+                    : data.comm === "telegram" ? locale === 'ru' ? "Логин в телеграмме" : "Логін в телеграммі"
+                    : "email"
                 }
                 name={data.comm}
                 autoComplete={data.comm}
@@ -243,7 +286,7 @@ export const Feedbac = (props) => {
                     data.comm === "tel" ? 10 : 3
                   )
                 }
-                helperText={!dataV[data.comm] ? "Проверьте введенное" : null}
+                helperText={!dataV[data.comm] ? locale === 'ru' ? "Проверьте введенное" : "Перевірте введене" : null}
               />
               <div className={s.sendBtn}>
                 <Button
@@ -254,7 +297,7 @@ export const Feedbac = (props) => {
                   disabled={!done || props.stub}
                   onClick={() => sendData()}
                 >
-                  Отправить
+                  {locale === "ru" ? "Отправить" : "Відправити"}
                 </Button>
               </div>
 
@@ -270,7 +313,7 @@ export const Feedbac = (props) => {
                 disabled={!done || props.stub}
                 onClick={() => sendData()}
               >
-                Отправить
+                {locale === "ru" ? "Отправить" : "Відправити"}
               </Button>
             </div>
             <div className={ss.closeBtn} onClick={() => props.changeStateFeedbackModal(false)}>ЗАКРЫТЬ</div>

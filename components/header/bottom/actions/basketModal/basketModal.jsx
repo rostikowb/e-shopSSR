@@ -5,13 +5,15 @@ import {changeStateBasketModal} from "../../../../../redux/modal/actions";
 import {BasketCart} from "./basket/basketCard";
 import {SumInf} from "./dopInf/dopInf";
 import {Modal} from "../../../../dopComp/modal/modal";
+import {useRouter} from "next/router";
 
 export const BasketModa = (props) => {
   const {basketArr, basketSum} = props;
+  const locale = useRouter().locale;
   const options = {
     changeState: props.changeStateBasketModal,
     bottomChild: basketArr?.length ? (<SumInf data={[basketSum.count, basketSum.sum]}/>) : null,
-    title: 'Корзина'
+    title: locale === "ru" ? 'Корзина': "Кошик"
   }
 
   return <Modal options={options}>
@@ -24,7 +26,7 @@ export const BasketModa = (props) => {
         ))
       ) : (
         <span className={s.emptyMsg}>
-              Ваша корзина покупок <b>&nbsp;пустая!&nbsp;</b>
+          {locale === "ru" ? "Ваша корзина пустая!" : "Ваш кошик порожній!"}
             </span>
       )}
     </ul>

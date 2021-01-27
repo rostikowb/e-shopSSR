@@ -8,6 +8,7 @@ import {faGhost} from "@fortawesome/free-solid-svg-icons";
 import {option} from "../../../../option";
 import {saltInfoCheck} from "./SaltLib";
 import {FETCH_GOODS, STUB_ON} from "../../../../redux/types";
+import {useRouter} from "next/router";
 
 export const Sal = (props) => {
     let loc = props.d;
@@ -17,10 +18,11 @@ export const Sal = (props) => {
     let onegoods = props.oneGoods?.nm;
     let catalogLabel;
     let [infoPageCheck, setInfoPageCheck] = useState('');
+    const locale = useRouter().locale
     // console.log(catalog);
     try {
         catalogLabel = catalog
-            ? option.goods.find((e) => e.value === catalog.toString()).label
+            ? option.goods.find((e) => e.value === catalog.toString()).label[locale]
             : null;
     }catch (e) {
 
@@ -56,13 +58,14 @@ export const Sal = (props) => {
     };
 
     useEffect(()=>{
-        setInfoPageCheck(saltInfoCheck(loc))
+        const info = saltInfoCheck(loc);
+        if(info) setInfoPageCheck(info[locale])
     },[loc.pathname]);
 
     return (
         <div className={s.saltBox}>
             <Link href={href('/')} as={as('/')} passHref={true} shallow={true}>
-                <a onClick={() => mainPage()}>Главная</a>
+                <a onClick={() => mainPage()}>{locale === "ru"?"Главная":"Головна"}</a>
             </Link>{" "}
             <FontAwesomeIcon className={s.icon} icon={faGhost}/>
             {prodLab[2] === "[catalog]"? (

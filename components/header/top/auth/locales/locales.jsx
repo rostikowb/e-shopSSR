@@ -1,7 +1,6 @@
 import React from "react";
-import s from './locales.module.css'
+import s from './locales.module.css';
 import {useRouter} from "next/router";
-import {initLocalStorage} from "../../../../../localStorage/localStorFunc";
 import {lsToStore} from "../../../../../localStorage/initAction";
 import {connect} from "react-redux";
 
@@ -9,14 +8,17 @@ const Locale = (props) => {
   const loc = useRouter()
   const {locale, locales, pathname, asPath} = loc
 
-  // console.log(loc);
+  console.log(loc);
   const handleLocaleChange = (locIndex) => {
-    loc.push(pathname, asPath, {locale: locales[locIndex]}).then(()=>{
-      console.log('loc.push');
-      // initLocalStorage();
-      props.lsToStore();
-    })
-    document.cookie = `NEXT_LOCALE=${locales[locIndex]}; path=/`
+    const newLocale = locales[locIndex];
+    console.log(newLocale);
+    if(newLocale !== locale){
+      loc.push(pathname, asPath, {locale: locales[locIndex]}).then(()=>{
+        console.log('loc.push');
+        document.cookie = `NEXT_LOCALE=${locales[locIndex]}; path=/`
+      })
+
+    }
   }
 
   return <div className={s.localeBox}>

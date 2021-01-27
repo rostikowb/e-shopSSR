@@ -3,11 +3,13 @@ import {connect} from "react-redux";
 import {changeStateLikeModal} from "../../../../../redux/modal/actions";
 import {Likes} from "./likes/likes";
 import {Modal} from "../../../../dopComp/modal/modal";
+import {useRouter} from "next/router";
 
 export const LikesModa = (props) => {
+  const locale = useRouter().locale;
   const options = {
     changeState: props.changeStateLikeModal,
-    title: 'Избранное',
+    title: locale === 'ru' ? 'Избранное' : 'Список бажань',
     open: props.like
   }
 

@@ -7,6 +7,7 @@ export const EmailInput = (props)=>{
     const dataV = props.data[1];
     const setData = props.data[2];
     const setDataV = props.data[3];
+    const locale = props.locale;
 
     const validateEmail = (email) => {
         let pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -38,7 +39,7 @@ export const EmailInput = (props)=>{
             error={!dataV.email}
             type="email"
             helperText={
-                !dataV.email ? "Пример email'a - example@gmail.com" : null
+                !dataV.email ? locale === 'ru' ? 'Пример email\'a - example@gmail.com' : 'Приклад email\'a - example@gmail.com' : null
             }
             onChange={(event) => changeEmail(event)}
             autoFocus

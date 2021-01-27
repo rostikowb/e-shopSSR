@@ -8,8 +8,9 @@ import {CatItemBlock} from "../catItemBlock/catItemBlock";
 
 export const Another = (props) => {
   const loadGoods = props.modal;
-  let loc = useRouter();
-  let opt = option;
+  const loc = useRouter();
+  const opt = option;
+  const locale = useRouter().locale
 
   const href = () => {
     let obj = {pathname: '/goods/[catalog]'};
@@ -26,27 +27,27 @@ export const Another = (props) => {
     <ul>
       <li onClick={() => loadGoods(opt.goods[15].value)}>
         <Link href={href()} as={as(opt.goods[9].value)} passHref={true} shallow={true}><a
-          href="">{CatItemBlock(opt.goods[15].label, 'vr.jpg', "79%")}</a></Link>
+          href="">{CatItemBlock(opt.goods[15].label[locale], 'vr.jpg', "79%")}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[16].value)}>
         <Link href={href()} as={as(opt.goods[16].value)} passHref={true} shallow={true}><a
-          href="">{CatItemBlock(opt.goods[16].label, 'udlin.jpg', "79%")}</a></Link>
+          href="">{CatItemBlock(opt.goods[16].label[locale], 'udlin.jpg', "79%")}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[17].value)}>
         <Link href={href()} as={as(opt.goods[17].value)} passHref={true} shallow={true}><a
-          href="">{CatItemBlock(opt.goods[17].label, 'remeshki.jpg', "60%")}</a></Link>
+          href="">{CatItemBlock(opt.goods[17].label[locale], 'remeshki.jpg', "60%")}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[18].value)}>
         <Link href={href()} as={as(opt.goods[18].value)} passHref={true} shallow={true}><a
-          href="">{CatItemBlock(opt.goods[18].label, 'gamepad.jpg', "79%")}</a></Link>
+          href="">{CatItemBlock(opt.goods[18].label[locale], 'gamepad.jpg', "79%")}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[19].value)}>
         <Link href={href()} as={as(opt.goods[19].value)} passHref={true} shallow={true}><a
-          href="">{CatItemBlock(opt.goods[19].label, 'uvlaj.jpg', "79%")}</a></Link>
+          href="">{CatItemBlock(opt.goods[19].label[locale], 'uvlaj.jpg', "79%")}</a></Link>
       </li>
       <li onClick={() => loadGoods(opt.goods[20].value)}>
         <Link href={href()} as={as(opt.goods[20].value)} passHref={true} shallow={true}><a
-          href="">{CatItemBlock(opt.goods[20].label, 'lampa.jpg', "79%")}</a></Link>
+          href="">{CatItemBlock(opt.goods[20].label[locale], 'lampa.jpg', "79%")}</a></Link>
       </li>
     </ul>
   );

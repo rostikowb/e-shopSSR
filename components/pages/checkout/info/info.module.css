@@ -10,15 +10,18 @@
 }
 
 .cuponSelectBox {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: 16px;
   /*height: 25px;*/
+  margin: 0 0 20px 0;
 }
 .cuponTitle {
   margin-right: 8px;
+  display: contents;
+  text-wrap: none;
 }
 .cuponSelectBox > select {
   margin: 0 5px;
@@ -36,6 +39,7 @@
 
 .cuponSelect {
   width: 50%;
+  margin: 0 0 0 5px;
 }
 
 .goodsBox {
@@ -132,7 +136,7 @@
 }
 @media (max-width: 1438px) {
   .cuponSelectBox {
-    width: 70%;
+    width: 75%;
   }
 }
 @media (max-width: 1150px) {

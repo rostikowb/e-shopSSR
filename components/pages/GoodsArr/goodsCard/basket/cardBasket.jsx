@@ -6,8 +6,10 @@ import { addProdToCash } from "../../../../../redux/likesBasket/actions";
 import { connect } from "react-redux";
 import { ADD_BASKET } from "../../../../../redux/types";
 import { changeStateBasketModal } from "../../../../../redux/modal/actions";
+import {useRouter} from "next/router";
 
 export const CardBasketBo = (props) => {
+  const locale = useRouter().locale;
   let d = props.data;
   let br = props.basketArr;
   let isBasket = br ? br.find((item) => item._id == d._id) : null;
@@ -33,7 +35,7 @@ export const CardBasketBo = (props) => {
           onClick={() => props.changeStateBasketModal(true)}
           className={s.inBasket}
         >
-          Откр. Корзину
+          {locale === 'ru'? 'Откр. Корзину' :'Відкр. Корзину'}
         </span>
       )}
     </>

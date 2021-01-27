@@ -4,8 +4,10 @@ import { faThLarge } from "@fortawesome/free-solid-svg-icons";
 import s from "./catalogBtn.module.css";
 import { connect } from "react-redux";
 import { changeStateCatalogModal } from "../../../../../redux/modal/actions";
+import {useRouter} from "next/router";
 
 export default connect(null, { changeStateCatalogModal })((isModal) => {
+  const locale = useRouter().locale
   return (
     <div
       onClick={() => isModal.changeStateCatalogModal()}
@@ -14,7 +16,7 @@ export default connect(null, { changeStateCatalogModal })((isModal) => {
       <button>
         <span className={`${s.catalogBtn1} ${s.catalogBtnAll}`}>
           <FontAwesomeIcon className={s.catalogBtnIcon} icon={faThLarge} />{" "}
-          КАТАЛОГ ТОВАРОВ
+          {locale === 'ru'? "КАТАЛОГ ТОВАРОВ":"КАТАЛОГ ТОВАРІВ"}
         </span>
 
         <span className={`${s.catalogBtn2} ${s.catalogBtnAll}`}>

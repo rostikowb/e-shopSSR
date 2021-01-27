@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import s from "./commentModal.module.css";
-import { connect } from "react-redux";
-import { changeStateCommentsModal } from "../../../../../redux/modal/actions";
-import { TextField, Button, makeStyles } from "@material-ui/core";
+import {connect} from "react-redux";
+import {changeStateCommentsModal} from "../../../../../redux/modal/actions";
+import {TextField, Button, makeStyles} from "@material-ui/core";
 import {Rating} from "@material-ui/lab";
-import { addComments } from "../../../../../redux/oneGoods/action";
+import {addComments} from "../../../../../redux/oneGoods/action";
+import {useRouter} from "next/router";
 
 const useStyles = makeStyles((theme) => ({
   submit: {
@@ -16,6 +17,7 @@ export const CommentModa = (props) => {
   const classes = useStyles();
   const boughtId = props.data.boughtId;
   const boughtIndex = props.data.boughtIndex;
+  const locale = useRouter().locale;
 
   const [data, setData] = useState({
     name: "",
@@ -39,8 +41,8 @@ export const CommentModa = (props) => {
       dataV[type] = value.length > lng;
     }
     data[type] = value;
-    setData({ ...data });
-    setDataV({ ...dataV });
+    setData({...data});
+    setDataV({...dataV});
   };
 
   const send = () => {
@@ -61,7 +63,7 @@ export const CommentModa = (props) => {
       />
       <div className={s.modal_comment}>
         <div className={s.formBox}>
-          <h2 className={s.title}>Оставить отзыв</h2>
+          <h2 className={s.title}>{locale === "ru" ? "Оставить отзыв" : "Залишити відгук"}</h2>
           <TextField
             variant="outlined"
             // color={"secondary"}
@@ -77,7 +79,7 @@ export const CommentModa = (props) => {
             onChange={(event) => changeText("name", event.target.value, 2)}
           />
           <div className={s.ratingBox}>
-            <span className={s.ratingSpan}>Ваша оценка:</span>
+            <span className={s.ratingSpan}>{locale === "ru" ? "Ваша оценка:" : "Ваша оцінка"}:</span>
             <Rating
               className={s.rating}
               name="voice"
@@ -95,7 +97,7 @@ export const CommentModa = (props) => {
             required={true}
             fullWidth
             id="msg"
-            label="Опишите свой опыт!"
+            label={locale === "ru" ? "Опишите свой опыт!" : "Опишіть свій досвід!"}
             autoComplete="msg"
             name="msg"
             type="text"
@@ -111,7 +113,7 @@ export const CommentModa = (props) => {
             required={true}
             fullWidth
             id="plus"
-            label="Плюсы"
+            label={locale === "ru" ? "Плюсы" : "Плюси"}
             name="plus"
             type="text"
             error={!dataV.plus}
@@ -124,7 +126,7 @@ export const CommentModa = (props) => {
             required={true}
             fullWidth
             id="minus"
-            label="Минусы"
+            label={locale === "ru" ? "Минусы" : "Мінуси"}
             name="minus"
             type="text"
             error={!dataV.minus}
@@ -149,7 +151,7 @@ export const CommentModa = (props) => {
             }
             onClick={() => send()}
           >
-            Отправить
+            {locale === "ru" ? "Отправить" : "Відправити"}
           </Button>
           <Button
             type="submit"
@@ -159,7 +161,7 @@ export const CommentModa = (props) => {
             className={classes.submit}
             onClick={() => props.changeStateCommentsModal()}
           >
-            Закрыть
+            {locale === "ru" ? "Закрыть": "Закрити"}
           </Button>
         </div>
       </div>

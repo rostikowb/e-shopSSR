@@ -1,15 +1,16 @@
 import s from "./btns.module.css";
 import React from "react";
 import ss from "../../../GoodsArr/goodsCard/basket/cardBasket.module.css";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome/index.es";
-import { connect } from "react-redux";
+import {faHeart} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome/index.es";
+import {connect} from "react-redux";
 import {
   addProdToCash,
   delProdToCash,
 } from "../../../../../redux/likesBasket/actions";
-import { ADD_BASKET, ADD_LIKES, DEL_LIKES } from "../../../../../redux/types";
-import { changeStateBasketModal } from "../../../../../redux/modal/actions";
+import {ADD_BASKET, ADD_LIKES, DEL_LIKES} from "../../../../../redux/types";
+import {changeStateBasketModal} from "../../../../../redux/modal/actions";
+import {useRouter} from "next/router";
 
 export const OGBt = (props) => {
   let d = props.data;
@@ -17,6 +18,7 @@ export const OGBt = (props) => {
   let isLikes = lr ? lr.find((item) => item._id == d._id) : null;
   let br = props.basketArr;
   let isBasket = br ? br.find((item) => item._id == d._id) : null;
+  const locale = useRouter().locale;
 
   const add = (type) => {
     props.addProdToCash(d["_id"], type, true, d);
@@ -31,17 +33,17 @@ export const OGBt = (props) => {
         <div
           onClick={() => add(ADD_BASKET)}
           className={s.saleBtn + " " + ss.cardBoxAll}
-          title="Добавить товар в корзину."
+          title={locale === "ru" ? "Добавить товар в корзину." : "Додати товар в корзину"}
         >
-          Купить
+          {locale === "ru" ? "Купить" : "Купити"}
         </div>
       ) : (
         <div
           onClick={() => add(props.changeStateBasketModal(true))}
           className={s.saleBtn + " " + ss.cardBoxAll}
-          title="Показать содержимое корзины."
+          title={locale === "ru" ? "Показать содержимое корзины." : "Показати вміст кошика."}
         >
-          Откр. Корзину
+          {locale === "ru" ? "Откр. Корзину" : "Відкр. Кошик"}
         </div>
       )}
 
@@ -49,13 +51,14 @@ export const OGBt = (props) => {
         onClick={() => (isLikes ? remove(DEL_LIKES) : add(ADD_LIKES))}
         className={s.likeBtn + " " + (isLikes ? s.likeBtnAct : s.likeBtnNoAct)}
       >
-        <span className={s.likeBtnValue}>{!isLikes ? "В закладки": "Убрать из закладок" }</span>
+        <span
+          className={s.likeBtnValue}>{!isLikes ? "В закладки" : locale === "ru" ? "Убрать из закладок" : "Убрать із закладок"}</span>
         <FontAwesomeIcon
           className={s.icon}
           title={
             !isLikes
-              ? "Добавить товар в избранное/понравившееся."
-              : "Убрать товар из избранного/понравившегося."
+              ? locale === "ru" ? "Добавить товар в избранное/понравившееся." : "Додати товар в список бажань."
+              : locale === "ru" ? "Убрать товар из избранного/понравившегося." : "Прибрати товар зі списку бажань."
           }
           icon={faHeart}
         />

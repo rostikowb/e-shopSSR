@@ -3,13 +3,15 @@ import React from "react";
 import {option} from '../../../../option'
 import {headerGetTitle} from "./headersParts/headerGetTitle";
 import {headerGetDesc} from "./headersParts/headerGetDesc";
+import {useRouter} from "next/router";
 
 
 export const CatalogHeaders = (props) => {
+  const loc = useRouter();
   const catalog = props.catalog;
   const domen = option.DOMEN;
-  const title = headerGetTitle(catalog)
-  const desc = headerGetDesc(catalog)
+  const title = headerGetTitle(catalog, loc)
+  const desc = headerGetDesc(catalog, loc)
   // const img = `${option}/img/catalog${catalog}.jpeg`
   console.log(title);
   return<Head>

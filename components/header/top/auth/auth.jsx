@@ -1,10 +1,11 @@
-import { connect } from "react-redux";
+import {connect} from "react-redux";
 import React from "react";
-import { ModalAuth } from "./loginModal/modal.jsx";
+import {ModalAuth} from "./loginModal/modal.jsx";
 import s from "./auth.module.css";
-import { changeStateAuthModal } from "../../../../redux/modal/actions";
-import { authExit } from "../../../../redux/auth/actions";
+import {changeStateAuthModal} from "../../../../redux/modal/actions";
+import {authExit} from "../../../../redux/auth/actions";
 import {Locales} from "./locales/locales";
+import {useRouter} from "next/router";
 
 const mapStateToProps = (state) => {
   return {
@@ -13,8 +14,9 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { changeStateAuthModal, authExit })(
+export default connect(mapStateToProps, {changeStateAuthModal, authExit})(
   (props) => {
+    const locale = useRouter().locale;
     let FN = props?.user?.FN;
     return (
       <div className={s.authBox}>
@@ -25,15 +27,15 @@ export default connect(mapStateToProps, { changeStateAuthModal, authExit })(
               onClick={() => props.changeStateAuthModal()}
               className={s.authBtn}
             >
-              Войти в свою учетную запись
+              {locale === 'ru' ? 'Войти в свой аккаунт' : 'Увійти в свій аккаунт'}
             </span>
-            <ModalAuth />
+            <ModalAuth/>
           </>
         ) : (
           <span>
-            Привет {FN ? FN : "Аноним"}!{" "}
+            {locale === 'ru' ? 'Привет' : 'Привіт'} {FN ? FN : locale === 'ru' ? "Аноним" : "Анонім"}!{" "}
             <span className={s.exitBtn} onClick={() => props.authExit()}>
-              Выход
+              {locale === 'ru' ? 'Выход' : 'Вихід'}
             </span>
           </span>
         )}

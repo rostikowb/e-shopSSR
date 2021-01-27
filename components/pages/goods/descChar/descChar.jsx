@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import s from "./descChar.module.css";
+import {useRouter} from "next/router";
 
 export const DescChar = (props) => {
   // const [isActive, setActive] = useState(0);
+  const locale = useRouter().locale;
 
   return (
     <div className={s.descCharBox}>
@@ -23,11 +25,11 @@ export const DescChar = (props) => {
       ) : null}
 
       <div className={s.descBox}>
-        <h2>Описание</h2>
+        <h2>{locale === "ru" ? "Описание" : "Опис"}</h2>
         <div
           // style={{ maxHeight: !isActive ? "187px" : "1700px" }}
           className={s.desc}
-          dangerouslySetInnerHTML={{ __html: props.data[0] }}
+          dangerouslySetInnerHTML={{__html: props.data[0]}}
         />
         {/*<span onClick={() => setActive(!isActive)} className={s.openBtn}>*/}
         {/*{!isActive ? "Развернуть" : "Свернуть"}*/}

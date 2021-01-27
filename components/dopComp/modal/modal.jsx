@@ -1,11 +1,13 @@
 import React, {useEffect} from "react";
 import s from "./modal.module.css"
 import closedIcon from "../filtersChecked/cancel.svg";
+import {useRouter} from "next/router";
 
 export const Modal = (props) => {
   const {children, options, style} = props;
   const {changeState, bottomChild, title} = options
   const {wrapper, top} = style||{};
+  const locale = useRouter().locale;
 
   useEffect(()=>{
     if(window.innerWidth < 800) document.body.style.overflow = 'hidden'
@@ -38,7 +40,7 @@ export const Modal = (props) => {
         </div>
         <div className={`${s.bottom} ${bottomChild ? s.bottomIsDopChild : null}`}>
           {bottomChild ? bottomChild : null}
-          <div className={s.closeBtn} onClick={() => handleChangeState()}>ЗАКРЫТЬ</div>
+          <div className={s.closeBtn} onClick={() => handleChangeState()}>{locale==="ru"?"ЗАКРЫТЬ":"ЗАКРИТИ"}</div>
         </div>
       </div>
     </div>

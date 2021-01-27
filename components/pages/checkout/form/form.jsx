@@ -38,6 +38,7 @@ const CheckoutFor = (props) => {
   const token = props.token;
   const optCity = props.optCity;
   const optBranchN = props.optBranchN;
+  const locale = useRouter().locale;
   const [done, setDone] = useState(false);
   // const [isReg, setIsReg] = useState(!token);
   const [data, setData] = useState({
@@ -161,7 +162,7 @@ const CheckoutFor = (props) => {
   useEffect(() => {
     if (props.isDoneSend) {
       props.deleteAllBasket()
-      loc.push('/checkout/done', '/checkout/done', {shallow:true})
+      loc.push('/checkout/done', '/checkout/done', {shallow: true})
     }
   }, [props.isDoneSend]);
 
@@ -169,19 +170,19 @@ const CheckoutFor = (props) => {
     <div className={s.formBox}>
       <div className={s.form}>
         <div className={s.namesGroup}>
-          <h2>Контактные данные</h2>
+          <h2>{locale === "ru" ? "Контактные данные" : "Контактні дані"}</h2>
           <TextField
             variant="outlined"
             margin="normal"
             fullWidth
             id="email"
-            label="Емейл Адрес (необязательно)"
+            label={locale === "ru" ? "Емейл Адрес (необязательно)" : "Емейл Адреса (необовязково)"}
             name="email"
             autoComplete="email"
             // error={!dataV?.email}
             type="email"
             value={data?.email}
-            helperText={"Пример email'a - example@gmail.com"}
+            helperText={locale === "ru" ? "Пример email'a - example@gmail.com" : "Приклад email'a - example@gmail.com"}
             onChange={(event) => chngInpLn("email", event.target.value)}
           />
           <TextField
@@ -191,18 +192,18 @@ const CheckoutFor = (props) => {
             required={true}
             fullWidth
             id="number"
-            label="Номер телефона"
+            label={locale === "ru" ? "Номер телефона" : "Номер телефону"}
             name="number"
             autoComplete="number"
             type="number"
             value={data?.tel}
             error={!dataV?.tel}
             onChange={(event) => chngInpLn("tel", event.target.value, 10)}
-            helperText={!dataV?.tel ? "Минимум 10 цифр" : null}
+            helperText={!dataV?.tel ? locale === "ru" ? "Минимум 10 цифр" : "Мінімум 10 цифр" : null}
           />
         </div>
         <div className={s.namesGroup}>
-          <h2>ФИО получателя</h2>
+          <h2>{locale === "ru" ? "ФИО получателя" : "ПІБ одержувача"}</h2>
           <TextField
             variant="outlined"
             // color={"secondary"}
@@ -210,7 +211,7 @@ const CheckoutFor = (props) => {
             required={true}
             fullWidth
             id="LN"
-            label="Фамилия"
+            label={locale === "ru" ? "Фамилия" : "Прізвище"}
             autoComplete="given-name"
             name="name"
             type="text"
@@ -218,7 +219,7 @@ const CheckoutFor = (props) => {
             error={!dataV?.LN}
             onChange={(event) => chngInpLn("LN", event.target.value, 1)}
             helperText={
-              !dataV?.LN ? "Фамилия должна содержать минимум две буквы" : null
+              !dataV?.LN ? locale === "ru" ? "Фамилия должна содержать минимум две буквы" : "Прізвище повинна містити мінімум дві букви" : null
             }
           />
           <TextField
@@ -227,7 +228,7 @@ const CheckoutFor = (props) => {
             required={true}
             fullWidth
             id="FN"
-            label="Имя"
+            label={locale === "ru" ? "Имя" : "Імя"}
             autoComplete="additional-name"
             name="name"
             type="text"
@@ -235,7 +236,7 @@ const CheckoutFor = (props) => {
             error={!dataV?.FN}
             onChange={(event) => chngInpLn("FN", event.target.value, 1)}
             helperText={
-              !dataV?.FN ? "Имя должно содержать минимум две буквы" : null
+              !dataV?.FN ? locale === "ru" ? "Имя должно содержать минимум две буквы" : "Ім'я повинно містити мінімум дві букви" : null
             }
           />
           <TextField
@@ -244,7 +245,7 @@ const CheckoutFor = (props) => {
             required={true}
             fullWidth
             id="SN"
-            label="Отчество"
+            label={locale === "ru" ? "Отчество" : "По батькові"}
             autoComplete="family-name"
             name="name"
             type="text"
@@ -252,19 +253,19 @@ const CheckoutFor = (props) => {
             error={!dataV?.SN}
             onChange={(event) => chngInpLn("SN", event.target.value, 1)}
             helperText={
-              !dataV?.SN ? "Отчество должно содержать минимум две буквы" : null
+              !dataV?.SN ? locale === "ru" ? "Отчество должно содержать минимум две буквы" : "По батькові повинно містити мінімум дві букви" : null
             }
           />
         </div>
         <div className={s.namesGroup}>
-          <h2 className={s.title}>Адресс доставки</h2>
+          <h2 className={s.title}>{locale === "ru" ? "Адресс доставки":""}</h2>
           <div className={s.select}>
             <Autocomplete
               id="asynchronous-demo"
               style={{width: "100%"}}
               loading={optCity.stub}
-              loadingText={"Ищем..."}
-              noOptionsText={"Нет совпадений"}
+              loadingText={locale === "ru" ? "Ищем..." : "Шукаємо"}
+              noOptionsText={locale === "ru" ? "Нет совпадений" : "Немає збігів"}
               freeSolo
               value={data?.optCity}
               getOptionSelected={(option, value) => {
@@ -281,7 +282,7 @@ const CheckoutFor = (props) => {
               renderInput={(params) => (
                 <TextField
                   {...params}
-                  label="Населенный пункт..."
+                  label={locale === "ru" ? "Населенный пункт..." : "Населений пункт..."}
                   variant="outlined"
                   InputProps={{
                     ...params.InputProps,
@@ -303,9 +304,9 @@ const CheckoutFor = (props) => {
               id="asynchronous-dmo"
               style={{width: "100%"}}
               loading={optCity.stub}
-              loadingText={"Ищем..."}
+              loadingText={locale === "ru" ? "Ищем..." : "Шукаємо"}
               freeSolo
-              noOptionsText={"Нет совпадений"}
+              noOptionsText={locale === "ru" ? "Нет совпадений" : "Немає збігів"}
               value={data?.optBranchN}
               getOptionSelected={(option, value) =>
                 (typeof option === "string" ? option : option.Description) ===
@@ -319,7 +320,7 @@ const CheckoutFor = (props) => {
               renderInput={(params) => (
                 <TextField
                   {...params}
-                  label="№ Отделения"
+                  label={locale === "ru" ? "№ Отделения" : "№ Відділення"}
                   variant="outlined"
                   InputProps={{
                     ...params.InputProps,
@@ -337,7 +338,7 @@ const CheckoutFor = (props) => {
             />
           </div>
         </div>
-        <h2 className={s.title}>Дополнительно</h2>
+        <h2 className={s.title}>{locale === "ru" ? "Дополнительно":"Додатково"}</h2>
         <div className={s.select}>
           <TextField
             style={{margin: 0}}
@@ -348,14 +349,14 @@ const CheckoutFor = (props) => {
             required={false}
             fullWidth
             id="msg"
-            label="Примечание к заказу (необязательно)"
+            label={locale === "ru" ? "Примечание к заказу (необязательно)" : "Примітка до замовлення (необов'язково)"}
             autoComplete="msg"
             name="msg"
             type="text"
             rows={5}
             rowsMax={14}
             // error={!dataV.msg}
-            helperText="Что нам принять к сведению?"
+            helperText={locale === "ru" ? "Что нам принять к сведению?" : "Що нам взяти до відома?"}
             onChange={(event) => chngInpLn("msg", event.target.value, 4)}
           />
         </div>
@@ -423,7 +424,7 @@ const CheckoutFor = (props) => {
         disabled={!done || stub}
         onClick={() => sendData()}
       >
-        {stub ? "Отправляю!" : "Отправить заказ!"}
+        {stub ? "Отправляю!" : locale === "ru" ? "Отправить заказ!" : "Відправити замовлення"}
       </Button>
     </div>
   );

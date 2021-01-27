@@ -41,6 +41,7 @@ export const Searc = (props) => {
   let loc = useRouter();
   const catalog = loc?.query?.catalog;
   const searchL = loc?.query?.search;
+  const locale = loc.locale;
   const [searchRes, setSearchRes] = useState([])
   const [input, setInput] = useState('')
   const [load, setLoad] = useState(false)
@@ -119,7 +120,7 @@ export const Searc = (props) => {
     <form className={s.searchBox} noValidate autoComplete="off">
       <div className={s.search}>
         <input className={s.searchInput} value={input} onChange={(e) => searchHandler(e.target.value)} name="search"
-               placeholder="Хочу найти..."
+               placeholder={locale === "ru" ? "Хочу найти..." : "Хочу знайти..."}
                type="search"/>
         <FontAwesomeIcon className={s.searchIcon} icon={faSearch}/>
         {/*<button className={s.btnSearchStart}>ИСКАТЬ</button>*/}

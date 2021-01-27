@@ -1,10 +1,12 @@
 import React from "react";
 import s from "./price.module.css";
+import {useRouter} from "next/router";
 
 export const OGPrice = (props) => {
   const price = props.price[0];
   const mainPrice = Math.round(Number(price)).toLocaleString("ru-RU");
   const interest = props.price[1];
+  const locale = useRouter().locale;
 
   let discount;
   if (interest) {
@@ -25,9 +27,9 @@ export const OGPrice = (props) => {
         )}
       </div>
       {props.price[2] === "true" ? (
-        <span className={s.avlbl + " " + s.avlblYes}>В наличии</span>
+        <span className={s.avlbl + " " + s.avlblYes}>{locale === "ru" ?"В наличии" : "В наявності"}</span>
       ) : (
-        <span className={s.avlbl + " " + s.avlblNo}>Нет в наличии</span>
+        <span className={s.avlbl + " " + s.avlblNo}>{locale === "ru" ?"Нет в наличии" : "Немає в наявності"}</span>
       )}
     </div>
   );

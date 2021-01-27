@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import s from "./commentBox.module.css";
-import { fetchOneGoods } from "../../../../redux/oneGoods/action";
-import { connect } from "react-redux";
-import { setCatalog } from "../../../../redux/goodsArr/actions";
-import { changeStateCommentsModal } from "../../../../redux/modal/actions";
-import { authUpdateUD } from "../../../../redux/auth/actions";
-import { CommentModal } from "./commentModal/commentModal";
-import { NotComments } from "./notComments/notComments";
-import { CommentsArr } from "./commentsArr/commentsArr";
-import { AddCommentsBtn } from "./addCommentsBtn/addCommentsBtn";
+import {fetchOneGoods} from "../../../../redux/oneGoods/action";
+import {connect} from "react-redux";
+import {setCatalog} from "../../../../redux/goodsArr/actions";
+import {changeStateCommentsModal} from "../../../../redux/modal/actions";
+import {authUpdateUD} from "../../../../redux/auth/actions";
+import {CommentModal} from "./commentModal/commentModal";
+import {NotComments} from "./notComments/notComments";
+import {CommentsArr} from "./commentsArr/commentsArr";
+import {AddCommentsBtn} from "./addCommentsBtn/addCommentsBtn";
+import {useRouter} from "next/router";
 
 export const CommentBo = (props) => {
   const UD = props.UD;
@@ -20,6 +21,7 @@ export const CommentBo = (props) => {
   const [boughtIndex, setBoughtIndex] = useState(false);
   const [isComment, setIsComment] = useState(false);
   const isBuyS = isBuy === 0 || isBuy === 1 || isBuy === 2;
+  const locale = useRouter().locale;
   // console.log(isComment);
   const UD_Update = () => {
     if (isBuyS) props.authUpdateUD(token);
@@ -56,7 +58,7 @@ export const CommentBo = (props) => {
 
   return (
     <div className={s.commentBox}>
-      <h2>Отзывы</h2>
+      <h2>{locale === "ru" ? "Отзывы" : "Відгуки"}</h2>
       {/*
       //
       //
@@ -64,13 +66,13 @@ export const CommentBo = (props) => {
       */}
       {comments?.length ? (
         <>
-          {isBuy === 3 && !isComment ? <AddCommentsBtn data={commAdd} /> : null}
-          <CommentsArr data={comments} />
+          {isBuy === 3 && !isComment ? <AddCommentsBtn data={commAdd}/> : null}
+          <CommentsArr data={comments}/>
         </>
       ) : (
         <div className={s.commentInBox}>
-          <NotComments data={isBuy} />
-          {isBuy === 3 && !isComment ? <AddCommentsBtn data={commAdd} /> : null}
+          <NotComments data={isBuy}/>
+          {isBuy === 3 && !isComment ? <AddCommentsBtn data={commAdd}/> : null}
         </div>
       )}
       {/*
@@ -80,7 +82,7 @@ export const CommentBo = (props) => {
       */}
       {props.modal ? (
         <CommentModal
-          data={{ boughtId: UD.boughtArr[boughtIndex]._id, boughtIndex }}
+          data={{boughtId: UD.boughtArr[boughtIndex]._id, boughtIndex}}
         />
       ) : null}
     </div>

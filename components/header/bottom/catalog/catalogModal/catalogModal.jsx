@@ -25,6 +25,7 @@ export const CatalogModal = connect(mapStateToProps, {
   fetchFilterArr
 })((props) => {
   const loc = useRouter();
+  const locale = loc.locale;
 
   const isUnderAttack = (value) => {
     props.changeStateCatalogModal();
@@ -47,9 +48,12 @@ export const CatalogModal = connect(mapStateToProps, {
   return <>
     <Modal options={option}>
       <div className={s.catalogBox}>
-        <div className={s.catalogBlock}><h2>Для смартфона</h2><Smart modal={isUnderAttack}/></div>
-        <div className={s.catalogBlock}><h2>Малая электроника</h2><Electro modal={isUnderAttack}/></div>
-        <div className={s.catalogBlock}><h2>Другое</h2><Another modal={isUnderAttack}/></div>
+        <div className={s.catalogBlock}><h2>{locale === 'ru' ? "Для смартфона" : "Для смартфону"}</h2><Smart
+          modal={isUnderAttack}/></div>
+        <div className={s.catalogBlock}><h2>{locale === 'ru' ? "Малая электроника" : "Мала електроніка"}</h2><Electro
+          modal={isUnderAttack}/></div>
+        <div className={s.catalogBlock}><h2>{locale === 'ru' ? "Другое" : "Інше"}</h2><Another modal={isUnderAttack}/>
+        </div>
 
       </div>
     </Modal>

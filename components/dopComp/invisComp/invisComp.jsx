@@ -6,14 +6,21 @@ import {lsToStore} from "../../../localStorage/initAction";
 import {CatalogModal} from "../../header/bottom/catalog/catalogModal/catalogModal";
 import {LikesModal} from "../../header/bottom/actions/likesModal/likesModal";
 import {BasketModal} from "../../header/bottom/actions/basketModal/basketModal";
+import {useRouter} from "next/router";
 
 export const InvisCom = (props) => {
   const {feedback, catalog, like, basket} = props
+  const loc = useRouter()
 
   useEffect(() => {
     initLocalStorage();
     props.lsToStore();
   }, []);
+
+  useEffect(() => {
+    // initLocalStorage();
+    props.lsToStore();
+  }, [loc.locale]);
 
   return (
     <>

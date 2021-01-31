@@ -10,7 +10,7 @@ const locale = {
 
 const info = () => {
   const loc = useRouter()
-  console.log(loc);
+  // console.log(loc);
   return (
     <>
       <Head>

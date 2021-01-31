@@ -12,6 +12,7 @@ import {lsToStore} from "../../../localStorage/initAction";
 import Head from "next/head";
 import {option} from "../../../option";
 import stripHtml from "string-strip-html";
+import {PcImgs} from "./pcImgs/pcImgs";
 
 const Good = (props) => {
   let loc = useRouter();
@@ -77,7 +78,10 @@ const Good = (props) => {
 
 
           <div className={s.goodsInfo}>
-            <Imgs data={props.product}/>
+
+            <div className={s.pcImage}><PcImgs data={props.product}/></div>
+            <div className={s.mobiImage}><Imgs data={props.product}/></div>
+
             <DopInf data={props.product}/>
           </div>
           <div className={s.descCharComBox}>

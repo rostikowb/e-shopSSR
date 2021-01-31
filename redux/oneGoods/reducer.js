@@ -17,7 +17,7 @@ const addVisitedArr = (state, value) => {
 const initialState = {
     product: null,
     productUrl: null,
-    // imgOnShow: null,
+    imgOnShow: null,
     visitedArr: null,
     // visitedArr: visArr?.length ? visArr : set("goods/visited", ""),
     commErrMsg: null,
@@ -43,6 +43,7 @@ export const oneGoods = (state = initialState, action) => {
 
             if (action.payload && action.payload !== state.product)
                 state.product = action.payload;
+                state.imgOnShow = action.payload.img[0]
                 if(action.productUrl) state.productUrl = action.productUrl;
             // state.imgOnShow = action.payload.img[0];
             state.commErrMsg = null;

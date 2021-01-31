@@ -8,7 +8,7 @@ const Locale = (props) => {
   const loc = useRouter()
   const {locale, locales, pathname, asPath} = loc
 
-  console.log(loc);
+  // console.log(loc);
   const handleLocaleChange = (locIndex) => {
     const newLocale = locales[locIndex];
     console.log(newLocale);

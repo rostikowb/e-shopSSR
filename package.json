@@ -42,6 +42,7 @@
     "react": "^16.13.1",
     "react-addons-css-transition-group": "latest",
     "react-dom": "16.13.1",
+    "react-image-magnifiers": "^1.4.0",
     "react-lazyload": "^3.0.0",
     "react-pretty-drawer": "^0.2.7",
     "react-redux": "^7.2.1",

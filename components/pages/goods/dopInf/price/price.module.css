@@ -16,18 +16,18 @@
 .oldPrice {
   text-decoration: line-through;
   color: #898989;
-  font-size: 180%;
+  font-size: 170%;
   margin: 0 10px 0 20px;
   font-weight: lighter;
 }
 .newPrice {
   color: rgb(226, 19, 19);
-  font-size: 250%;
+  font-size: 240%;
   font-weight: lighter;
   margin: 0 5px 0 0;
 }
 .price {
-  font-size: 60px;
+  font-size: 55px;
   margin-left: 50px;
   font-weight: lighter;
 }

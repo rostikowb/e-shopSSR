@@ -28,11 +28,11 @@ module.exports = withPlugins([
     }
   },
 
-  [withPWA, {
-    pwa: {
-      dest: 'public',
-      runtimeCaching,
-    }
-  }]
+  // [withPWA, {
+  //   pwa: {
+  //     dest: 'public',
+  //     runtimeCaching,
+  //   }
+  // }]
 
 ]);

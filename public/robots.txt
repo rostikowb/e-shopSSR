@@ -1,5 +1,5 @@
 # Group 1
-User-agent: *
-Disallow: /checkout/
+# User-agent: *
+# Disallow: /checkout/
 
 Sitemap: https://vsivuha.online/sitemap.xml

@@ -63,6 +63,12 @@ const Img = (props) => {
               />
               <source
                 style={{width: "100%"}}
+                type="image/webp"
+                // media="(max-width: 1024px)"
+                srcSet={`${option.STATIC}/webp/${props.data._id}/${item}-1250.webp`}
+              />
+              <source
+                style={{width: "100%"}}
                 type="image/jpeg"
                 media="(max-width: 400px)"
                 srcSet={`${option.STATIC}/jpeg/${props.data._id}/${item}-400.jpeg`}
@@ -79,9 +85,15 @@ const Img = (props) => {
                 media="(max-width: 1024px)"
                 srcSet={`${option.STATIC}/jpeg/${props.data._id}/${item}-1024.jpeg`}
               />
+              <source
+                style={{width: "100%"}}
+                type="image/jpeg"
+                media="(max-width: 1024px)"
+                srcSet={`${option.STATIC}/jpeg/${props.data._id}/${item}-1250.jpeg`}
+              />
               <img
                 style={{width: "100%"}}
-                src={`${option.STATIC}/jpeg/${props.data._id}/${item}-1024.jpeg`}
+                src={`${option.STATIC}/jpeg/${props.data._id}/${item}-1250.jpeg`}
                 alt=""
               />
             </picture>

@@ -32,18 +32,18 @@ const PcImg = (props) => {
               style={{width: "100%"}}
               type="image/webp"
               media="(max-width: 400px)"
-              srcSet={`${option.STATIC}/webp/${_id}/${item}-400.webp`}
+              srcSet={`${option.STATIC}/webp/${_id}/${item}-150.webp`}
             />
             <source
               style={{width: "100%"}}
               type="image/jpeg"
               media="(max-width: 400px)"
-              srcSet={`${option.STATIC}/jpeg/${_id}/${item}-400.jpeg`}
+              srcSet={`${option.STATIC}/jpeg/${_id}/${item}-150.jpeg`}
             />
             <img
               style={{width: "100%"}}
 
-              src={`${option.STATIC}/jpeg/${_id}/${item}-400.jpeg`}
+              src={`${option.STATIC}/jpeg/${_id}/${item}-150.jpeg`}
               alt=""
             />
           </div>)
@@ -62,7 +62,7 @@ const PcImg = (props) => {
         inPlaceMinBreakpoint={true}
         overlayBoxImageSize={'width: 100%'}
         zoomContainerBoxShadow="0 4px 8px rgba(0,0,0,.5)"
-        largeImageSrc={`${option.STATIC}/jpeg/${_id}/${img}-1024.jpeg`}
+        largeImageSrc={`${option.STATIC}/jpeg/${_id}/${img}-1250.jpeg`}
       />
     </div>
   </div>

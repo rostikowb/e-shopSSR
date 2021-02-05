@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   margin: 20px 0 0 0;
   width: 100%;
   /*padding: 0 20px;*/
@@ -9,14 +10,17 @@
 .saleBtn {
   /*position: relative;*/
   /*background-color: #ffffff;*/
+
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  max-width: 300px;
   width: 100%;
   height: 45px;
   cursor: pointer;
-  margin: 0 25px;
+  margin: 10px;
   border: 1px solid #6b0d68;
   border-radius: 2px;
   /*padding: 0 5px;*/
@@ -32,24 +36,25 @@
   color: white;
 }
 .likeBtn {
-  /*background-color: white;*/
-  color: #919191;
+  background-color: white;
+  color: #000000;
   /*border-radius: 100px;*/
   /*border: 1px solid #919191;*/
-  width: 70px;
-  height: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  margin: 0 20px;
-  transition: all 0.3s;
-  user-select: none;
+  /*width: 70px;*/
+  /*height: 65px;*/
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*cursor: pointer;*/
+  /*margin: 0 20px;*/
+  /*transition: all 0.3s;*/
+  /*user-select: none;*/
 }
 .likeBtn:hover {
   color: #980000;
-  /*background-color: ;*/
+  background-color: white;
   transition: all 0.3s;
+  border-color: #980000;
 }
 
 .likeBtnValue{
@@ -59,7 +64,11 @@
 }
 
 .likeBtnAct {
-  color: #980000;
+  color: white;
+  background-color: #5a0957;
+
+  transition: none;
+  /*border-color: #980000;*/
 }
 .likeBtnNoAct > * {
   color: #919191;
@@ -75,7 +84,9 @@
 }
 @media (max-width: 500px) {
   .saleBtn {
-    margin: 0 -5px;
+    width: 100%;
+    max-width: none;
+    margin: 5px 0;
     font-size: 180%;
     padding: 5px 0;
     border-radius: 0;
@@ -83,19 +94,19 @@
     /*border: none;*/
   }
   .likeBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 45px;
-    cursor: pointer;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*width: 100%;*/
+    /*height: 45px;*/
+    /*cursor: pointer;*/
 
-    border-radius: 0;
-    margin: 5px 0;
-    font-size: 180%;
-    padding: 5px 0;
+    /*border-radius: 0;*/
+    /*margin: 5px 0;*/
+    /*font-size: 180%;*/
+    /*padding: 5px 0;*/
     /*color: rgb(0, 0, 0);*/
-    /*background-color: white;*/
+    background-color: white;
     /*background-color: #6b0d68;*/
     transition: none;
   }

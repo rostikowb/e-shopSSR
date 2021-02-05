@@ -41,7 +41,7 @@ const Img = (props) => {
 
       >
         {props.data.img.map((item, index) => (
-          <SwiperSlide key={item + 'imgMane' + index}>
+          <SwiperSlide key={item + 'imgManeMobile' + index}>
             <picture style={{width: "100%"}}>
               <source
                 style={{width: "100%"}}

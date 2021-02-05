@@ -11,6 +11,8 @@ import {
 import {ADD_BASKET, ADD_LIKES, DEL_LIKES} from "../../../../../redux/types";
 import {changeStateBasketModal} from "../../../../../redux/modal/actions";
 import {useRouter} from "next/router";
+import {SaleBtn} from "./sale";
+import {LikeBtn} from "./like";
 
 export const OGBt = (props) => {
   let d = props.data;
@@ -29,40 +31,42 @@ export const OGBt = (props) => {
 
   return (
     <div className={s.btnBox}>
-      {!isBasket ? (
-        <div
-          onClick={() => add(ADD_BASKET)}
-          className={s.saleBtn + " " + ss.cardBoxAll}
-          title={locale === "ru" ? "Добавить товар в корзину." : "Додати товар в корзину"}
-        >
-          {locale === "ru" ? "Купить" : "Купити"}
-        </div>
-      ) : (
-        <div
-          onClick={() => add(props.changeStateBasketModal(true))}
-          className={s.saleBtn + " " + ss.cardBoxAll}
-          title={locale === "ru" ? "Показать содержимое корзины." : "Показати вміст кошика."}
-        >
-          {locale === "ru" ? "Откр. Корзину" : "Відкр. Кошик"}
-        </div>
-      )}
+      <SaleBtn isBasket={!!isBasket} add={add} Modal={props.changeStateBasketModal} locale={locale}/>
+      <LikeBtn isLikes={!!isLikes} add={add} remove={remove} locale={locale}/>
+      {/*{!isLikes ? (*/}
+      {/*  <div*/}
+      {/*    onClick={() => (isLikes ? remove(DEL_LIKES) : add(ADD_LIKES))}*/}
+      {/*    className={s.saleBtn + " " + ss.cardBoxAll}*/}
+      {/*    title={locale === "ru" ? "Добавить товар в корзину." : "Додати товар в корзину"}*/}
+      {/*  >*/}
+      {/*    {locale === "ru" ? "Купить" : "Купити"}*/}
+      {/*  </div>*/}
+      {/*) : (*/}
+      {/*  <div*/}
+      {/*    onClick={() => add(props.changeStateBasketModal(true))}*/}
+      {/*    className={s.saleBtn + " " + ss.cardBoxAll}*/}
+      {/*    title={locale === "ru" ? "Показать содержимое корзины." : "Показати вміст кошика."}*/}
+      {/*  >*/}
+      {/*    {locale === "ru" ? "Откр. Корзину" : "Відкр. Кошик"}*/}
+      {/*  </div>*/}
+      {/*)}*/}
 
-      <div
-        onClick={() => (isLikes ? remove(DEL_LIKES) : add(ADD_LIKES))}
-        className={s.likeBtn + " " + (isLikes ? s.likeBtnAct : s.likeBtnNoAct)}
-      >
-        <span
-          className={s.likeBtnValue}>{!isLikes ? "В закладки" : locale === "ru" ? "Убрать из закладок" : "Убрать із закладок"}</span>
-        <FontAwesomeIcon
-          className={s.icon}
-          title={
-            !isLikes
-              ? locale === "ru" ? "Добавить товар в избранное/понравившееся." : "Додати товар в список бажань."
-              : locale === "ru" ? "Убрать товар из избранного/понравившегося." : "Прибрати товар зі списку бажань."
-          }
-          icon={faHeart}
-        />
-      </div>
+      {/*<div*/}
+      {/*  onClick={() => (isLikes ? remove(DEL_LIKES) : add(ADD_LIKES))}*/}
+      {/*  className={s.likeBtn + " " + (isLikes ? s.likeBtnAct : s.likeBtnNoAct)}*/}
+      {/*>*/}
+      {/*  <span*/}
+      {/*    className={s.likeBtnValue}>{!isLikes ? "В закладки" : locale === "ru" ? "Убрать из закладок" : "Убрать із закладок"}</span>*/}
+      {/*  <FontAwesomeIcon*/}
+      {/*    className={s.icon}*/}
+      {/*    title={*/}
+      {/*      !isLikes*/}
+      {/*        ? locale === "ru" ? "Добавить товар в избранное/понравившееся." : "Додати товар в список бажань."*/}
+      {/*        : locale === "ru" ? "Убрать товар из избранного/понравившегося." : "Прибрати товар зі списку бажань."*/}
+      {/*    }*/}
+      {/*    icon={faHeart}*/}
+      {/*  />*/}
+      {/*</div>*/}
     </div>
   );
 };

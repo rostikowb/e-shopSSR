@@ -29,13 +29,39 @@ export const getStaticPaths = async () => {
   //   {params: {catalog: goodsId[0].ctgrId.toString(), onegoods: `${goodsId[0]._id}__${name}`}, locale: 'ua'},
   //   {params: {catalog: goodsId[0].ctgrId.toString(), onegoods: `${goodsId[0]._id}__${name}`}, locale: 'ru'}
   // ]
-  const pathsUA = goodsId.map((post) => {
 
-    if (post["nm"]) {
+
+  // const paths = goodsId.map((post) => {
+  //   if (!post["nm"]) return console.log('error id: ' + post['_id']);
+  //
+  //   const translit = new cyrillicToTranslit()
+  //   const name_RU = translit.transform(post["nm"].replace(/[^a-zа-яё\d]/ig, '_'));
+  //   const url_RU = `/goods/${post.ctgrId}/${post._id}__${name_RU}`;
+  //   const name_UA = translit.transform(post["nm"].replace(/[^a-zа-яё\d]/ig, '_'));
+  //   const url_UA = `/goods/${post.ctgrId}/${post._id}__${name_UA}`;
+  //
+  //   links.push({
+  //     url_UA,
+  //     changefreq: 'weekly',
+  //     links: [
+  //       { lang: 'ua', url: url_UA },
+  //       { lang: 'ua-ru', url: url_RU }
+  //     ]
+  //   });
+  //
+  //
+  // })
+
+  const pathsUA = goodsId.map((post) => {
+    const nm = post["nm_UA"] || post["nm"]
+    if (nm) {
       const translit = new cyrillicToTranslit()
-      const name = translit.transform(post["nm"].replace(/[^a-zа-яё\d]/ig, '_'));
+      const name = translit.transform(nm.replace(/[^a-zа-яё\d]/ig, '_'));
       const url = `/goods/${post.ctgrId}/${post._id}__${name}`;
-      links.push({url, changefreq: 'weekly'});
+
+      const sitemap = {url, changefreq: 'weekly', links: []}
+      sitemap.links.push({ lang: 'ua', url })
+      links.push(sitemap);
 
       return {params: {catalog: post.ctgrId.toString(), onegoods: `${post._id}__${name}`}, locale: 'ua'}
     } else {
@@ -50,8 +76,12 @@ export const getStaticPaths = async () => {
     if (post["nm"]) {
       const translit = new cyrillicToTranslit()
       const name = translit.transform(post["nm"].replace(/[^a-zа-яё\d]/ig, '_'));
-      // const url = `/goods/${post.ctgrId}/${post._id}__${name}`;
-      // links.push({url, changefreq: 'weekly'});
+      const url = `/ru/goods/${post.ctgrId}/${post._id}__${name}`;
+
+      const sitemap = {url, changefreq: 'weekly', links: []}
+      sitemap.links.push({ lang: 'ua-ru', url: url })
+      links.push(sitemap);
+
       return {params: {catalog: post.ctgrId.toString(), onegoods: `${post._id}__${name}`}, locale: 'ru'}
     } else {
       console.log('error id: ' + post['_id']);

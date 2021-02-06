@@ -39,8 +39,8 @@ export const getStaticPaths = async () => {
     const url_RU = `/goods/${post.ctgrId}/${post._id}__${name_RU}`;
     const name_UA = translit.transform(post["nm"].replace(/[^a-zа-яё\d]/ig, '_'));
     const url_UA = `/goods/${post.ctgrId}/${post._id}__${name_UA}`;
-    const UApath = {params: {catalog: post.ctgrId.toString(), onegoods: `${post._id}__${name}`}, locale: 'ua'};
-    const RUpath = {params: {catalog: post.ctgrId.toString(), onegoods: `${post._id}__${name}`}, locale: 'ru'};
+    const UApath = {params: {catalog: post.ctgrId.toString(), onegoods: `${post._id}__${name_UA}`}, locale: 'ua'};
+    const RUpath = {params: {catalog: post.ctgrId.toString(), onegoods: `${post._id}__${name_RU}`}, locale: 'ru'};
 
     const param = {
       url_UA,

@@ -20,7 +20,7 @@ export const getStaticPaths = async () => {
   const goodsId = await fetchAllGoodsId()
   let links = [];
   let paths = [];
-  let goodsLang = goods.length;
+  let goodsLang = goodsId.length;
 
 
 
